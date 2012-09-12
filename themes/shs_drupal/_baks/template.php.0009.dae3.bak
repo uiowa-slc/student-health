@@ -1,0 +1,16 @@
+<?php
+    
+function drupalicious_summarise($paragraph, $limit) 
+{ 
+       $textfield = strtok($paragraph, " "); 
+       while($textfield) 
+       { 
+           $text .= " $textfield"; 
+           $words++; 
+           if(($words >= $limit) && ((substr($textfield, -1) == "!")||(substr($textfield, -1) == "."))) 
+               break; 
+           $textfield = strtok(" "); 
+       } 
+       return ltrim($text); 
+    } 
+?>

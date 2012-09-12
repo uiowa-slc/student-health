@@ -1,0 +1,20 @@
+name = SHS
+description = Student Health Services Template.
+core = 6.x
+engine = phptemplate
+stylesheets[all][] = css/styles.css
+stylesheets[all][] = css/superfish.css
+stylesheets[print][] = css/reset.css
+
+regions[left] = left sidebar 
+regions[center] = center
+regions[footer] = footer
+
+scripts[] = js/hoverIntent.js
+scripts[] = js/superfish.js
+scripts[] = js/jquery-1.2.1.pack.js
+scripts[] = js/jquery-easing.1.2.pack.js
+scripts[] = js/jquery-easing-compatibility.1.2.pack.js
+scripts[] = js/coda-slider.1.1.1.pack.js
+scripts[] = js/coda-slider.1.1.1.js
+
