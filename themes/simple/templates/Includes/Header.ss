@@ -1,17 +1,7 @@
 <header class="header" role="banner">
-	<div class="inner">
-		<a href="$BaseHref" class="brand" rel="home">
-			<h1>$SiteConfig.Title</h1>
-			<% if SiteConfig.Tagline %>
-			<p>$SiteConfig.Tagline</p>
-			<% end_if %>
-		</a>
-		<% if SearchForm %>
-			<span class="search-dropdown-icon">L</span>
-			<div class="search-bar">
-				$SearchForm
-			</div>		
-		<% end_if %>
-		<% include Navigation %>
-	</div>
+<div id="header">
+<h1 class="logo"><a href="/">Student Health | The University of Iowa</a></h1>
+<p><strong>Appointments:</strong> (319) 335-8394 <strong>Nurseline:</strong> (319) 335-9704 <strong>Pharmacy:</strong> (319) 335-9200</p>
+<a href="http://www.uiowa.edu"><img src="{$ThemeDir}/images/uiowa.png" width="78" height="64" alt="The University of Iowa" longdesc="http://www.uiowa.edu" /></a>
+</div>
 </header>
