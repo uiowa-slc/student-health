@@ -1079,3 +1079,15 @@ padding:40px 0 0 10px;}
 	width: 1px;
 	height: 1px;
 }
+
+/*Added stuff*/
+
+#newspic {
+	margin: 0 0 10px 15;
+	float: right;
+}
+
+#healthpic {
+	margin: 0 0 10px 15;
+	float: right;
+}

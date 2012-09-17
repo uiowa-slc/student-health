@@ -41,15 +41,15 @@ Pharmacy: 319-335-9200<br />
 <ul>
     <li class="home"><a href="/">Home</a>
     <ul>
-        <li><a href="/appointments">Appointments</a></li>
-        <li><a href="/comments">Comments & Contact Information</a></li>
-        <li><a href="/health-feecosts">Health Fee/Costs</a></li>
-        <li><a href="/insurance">Insurance</a></li>
-        <li><a href="/location-parking">Location/Parking</a></li>
-        <li><a href="/other-health-websites">Other Health Websites</a></li>
-        <li><a href="/parents">Parents</a></li>
-        <li><a href="/patient-rights">Patient Rights</a></li>
-        <li><a href="/requirements-and-forms">Requirements and Forms</a></li>
+        <li><a href="{$absoluteBaseURL}appointments">Appointments</a></li>
+        <li><a href="{$absoluteBaseURL}comments">Comments & Contact Information</a></li>
+        <li><a href="{$absoluteBaseURL}health-fee">Health Fee/Costs</a></li>
+        <li><a href="{$absoluteBaseURL}insurance">Insurance</a></li>
+        <li><a href="{$absoluteBaseURL}location-parking">Location/Parking</a></li>
+        <li><a href="{$absoluteBaseURL}other-health-websites">Other Health Websites</a></li>
+        <li><a href="{$absoluteBaseURL}parents">Parents</a></li>
+        <li><a href="{$absoluteBaseURL}patient-rights">Patient Rights</a></li>
+        <li><a href="{$absoluteBaseURL}requirements-and-forms">Requirements and Forms</a></li>
 
         <li><a href="/staff">Staff</a></li>
     </ul>
