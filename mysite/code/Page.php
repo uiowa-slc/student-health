@@ -6,8 +6,55 @@ class Page extends SiteTree {
 
 	public static $has_one = array(
 	);
+	
+	public function getToplevel(){
+	
+		$url_segment = $this->URLSegment;
+		
+		if (isset($this->Parent)){
+			//Debug::show($this->Parent);
+			$currentPageParent = $this->Parent;
+			$tempParent = $this->Parent;
+			
+		}
+		else {
+			$url_segment = $this->URLSegment;
+			return "False";
+		}
+		
+		
+		echo '<script type="text/
+javascript">console.log("Parent is" + $this->Parent);</script>';
+
+		echo '<script type="text/
+javascript">console.log("URLSegment is " + $url_segment );</script>';
+
+
+		
+		echo '<script type="text/
+javascript">console.log("{$CurrentPageParent->Title}");</script>';
+
+		
+		while ($tempParent){
+		
+			//$url_segment = "GOT HERE";
+			
+			
+			if ($tempParent){
+				$currentPageParent = $tempParent;
+				$url_segment = $currentPageParent->URLSegment;
+			}
+			
+			$tempParent = $currentPageParent->Parent;
+			
+			
+		}		
+
+		return $url_segment;
+	}
 
 }
+
 class Page_Controller extends ContentController {
 
 	/**

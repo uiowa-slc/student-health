@@ -556,7 +556,7 @@ border-bottom:1px solid #ccc;}
 border:1px solid #ccc;}
 
 .page-news .typography h2 {margin:0;}
-.page-news #main img, .node-type-news #main img {
+#main .page-news img, .node-type-news #main img {
 margin:0 0 10px 15px;
 float:right;}
 #block-views-services-block_1 .more a,
@@ -1090,4 +1090,19 @@ padding:40px 0 0 10px;}
 #healthpic {
 	margin: 0 0 10px 15;
 	float: right;
+}
+
+#paginate {
+	
+margin-bottom: 15px;
+margin-top: 20px;
+margin-left: auto;
+margin-right: auto;
+
+}
+
+#genericpage {
+	
+float: right;
+
 }

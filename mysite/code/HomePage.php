@@ -2,12 +2,30 @@
 class HomePage extends Page {
 
 	public static $db = array(
+	
+	
 	);
 
 	public static $has_one = array(
+	'SliderImage1' => 'Image',
+	'SliderImage2' => 'Image',
+	'SliderImage3' => 'Image',
+	'SliderImage4' => 'Image'
 	);
+	/*
 	
-
+	function getCMSFields(){
+		$fields = parent::getCMSFields();
+		
+		$fields->addFieldToTab('Root.Main', new UploadField("SliderImage1", "Slider Image 1"));
+		$fields->addFieldToTab('Root.Main', new UploadField("SliderImage2", "Slider Image 2"));
+		$fields->addFieldToTab('Root.Main', new UploadField("SliderImage3", "Slider Image 3"));
+		$fields->addFieldToTab('Root.Main', new UploadField("SliderImage4", "Slider Image 4"));
+		
+		return $fields;
+		
+	}
+	*/
 
 }
 class HomePage_Controller extends Page_Controller {
@@ -51,6 +69,13 @@ class HomePage_Controller extends Page_Controller {
 			    
 	    return $healthanswer;
 	    	    		
+	}
+	
+	public function getSliderItems(){
+		$slideritems = SliderItem::get();
+		
+		return $slideritems;
+		
 	}
 	
 	

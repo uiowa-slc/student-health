@@ -2,18 +2,30 @@
 class HealthAnswerHolder extends Page {
 
 	public static $db = array(
+	
+	
 	);
 	
 	static $has_one = array();	
 
 	
-	public static $allowed_children = array ('HealthAnswer');
 	
 
      
 }
 class HealthAnswerHolder_Controller extends Page_Controller {
 
+	public function getPaginatedAnswers(){
+	
+		$healthanswers = HealthAnswer::get();
+		
+		$pages = new PaginatedList($healthanswers, $this->request);    	
+	    $pages->setPageLength(2);
+		
+	    return $pages;
+	    	    		
+	}
+	
 	
 	
 

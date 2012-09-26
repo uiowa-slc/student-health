@@ -6,6 +6,8 @@
 	</article>
 		$Form
 		$PageComments
+		
+
 </div>
 </div>
-12312312312
+

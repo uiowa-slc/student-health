@@ -1,41 +1,44 @@
+<div class="content-container typography">	
+	<article>
+
+		
+	</article>
+		$Form
+		$PageComments
 
 <div id="main" class="typography">
-  <h1 class="node-">News</h1>  
+  <h1 class="node-">Health Answers</h1>  
       
 
-<div class="page-news view view-news-view view-id-news_view view-display-id-page_1 view-dom-id-1">
 
-	   <div class="view-content">
-    
-  	<% loop getPaginatedNews %>
-  
-
-      
-        <div class="views-row views-row-1 views-row-odd views-row-first">
-    <!-- news page -->
-<a href="{$Link}" class="imagecache imagecache-news_thumbnail imagecache-imagelink imagecache-news_thumbnail_imagelink"><img src="{$Picture.Link}" alt="News Item Image" title=""  class="imagecache imagecache-news_thumbnail" width="95" height="75" /></a><h2><a href="/news/bat-season">$Title</a></h2>
-<p class="date">$PublishDate</p>
-<p>$Content.Summary(10)</p>
-<span class="more"><a href="{$Link}" title="read more">Read More</a></span>
-
-        </div>
-
-	<% end_loop %>
-
-
-
-
-
-  </div>
-  <div class="clear">
+<div class="view view-health-answers-view view-id-health_answers_view view-display-id-page_1 view-dom-id-1 page-health-answers">
+        <div class="view-header">
+      <blockquote><h2><a href="{$absoluteBaseURL}ask-your-question/">Ask Your Question</a></h2>
+</blockquote>
+$Content
     </div>
   
-   
-  
-  
-  
-  
-</div> 
+ 
+
+      <div class="view-content">
+      
+<% loop getPaginatedAnswers %>  
+
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    <!-- news page -->
+<div class="story">
+<h2><a href="{$Link}">$Title</a></h2>
+<p class="date">$PublishDate</p><br />
+<h3>Question</h3>
+<p>$Question
+</p>
+<p class="more"><a href="[$getAbsoluteBaseURL}health-answers/{$URLSegment}" title="read more">Read the Answer</a></p>
+</div>
+  </div>
+ 
+    
+
+<% end_loop %>
 
 <% if getPaginatedNews.MoreThanOnePage %>
 
@@ -78,12 +81,11 @@
     
   </div>
   
-
-</div><!--End main-->
+  
+  
+</div>
+</div>
 <div class="clear"></div>
-</div>
-
-</div>
 </div>
 
 

@@ -1,13 +1,40 @@
+
+
+
 <div id="main" class="typography">
+  <h1 class="node-517">Feeling Like Crap - Decoding the Symptoms</h1>  
+      
 
-<div class="content-container typography">	
-	<article>
-		<h1>$Title</h1>
-		<img id="healthpic" width="193" height="151" alt="News Item Image" src="{$Picture.Link}">
-		<div class="content">$Content</div>
-			</article>
-		$Form
-		$PageComments
-</div>
+<!-- news page -->
+<h2>Question</h2>
+<p>
+$Question
+</p>
+<h2>Answer</h2>
+<p>$Answer</p>
+<p><strong><strong><a href="{$BaseHref}information"><font color="#df6421">Health Iowa/Student Health Team&nbsp;</font></a></strong></strong>&nbsp;</p>
+<p>Written $PublishDate</p>
+<p>Source: <font color="#800080"><a href="http://www.mayoclinic.org/">Mayo Clinic</a></font></p>
+</p>
+
+
+
+
+
+
+
+
+
+      
+
+ 
+  <div class="post_meta">
+  
+  	Posted by <a href="/information">tschiltz</a>.
+	Last updated 09/17/2012 - 09:29    
+    
+  </div>
 
 </div>
+<!-- end main -->
+<div class="clear"></div>

@@ -1,36 +1,76 @@
-<div class="content-container typography">	
-	<article>
-		<!--<h1>$Title</h1>-->
-		<div class="content">$Content</div>
-	</article>
-		$Form
-		$PageComments
-</div>
+
 
 
 <div id="main">
        
-<div id="block-views-home_view-block_1" class=""><div class="block-inner">
       
+<div id="block-views-home_view-block_1" class=""><div class="block-inner">
+
+  
+
+    
 <div class="slider-wrap">
 <div id="slider1" class="csw">
-	
-	<div class="coda-slider" id="slider-id">
-	  <div>
-	    <img src="{$ThemeDir}/images/logo.png" />
-	  </div>
-	 </div>
-	 
-	 <div class="coda-slider" id="slider-id">
-	  <div>
-	    <h1>Testing this </h1>
-	  </div>
-	 </div>
+<div class="panelContainer">
 
+
+
+<div class="view view-home-view view-id-home_view view-display-id-block_1 view-dom-id-1">
+    
+  
+  
+      <div class="view-content">
+      
+      	<% loop getSliderItems %>
+
+      	<div class="views-row views-row-1 views-row-odd views-row-first">
+    <!-- home page feature -->
+
+		<div style="background:url('{$Picture.Link}');" class="panel panel-text panel 2">
+		<div class="feature-content">
+		
+		<h3><a href="{$Link}">$Title</a></h3>
+		
+		<p>$Content.Summary(20)</p>
+		
+		
+		<a class="more" href="{$Link}" title="read more">Read More</a>
+		
+		
+		</div><!--end feature content-->
+		<!--
+		<script>
+		alert("Hi");
+		var pos = {$Pos};
+		console.log(pos);
+		
+		</script>
+		-->
+		
+		</div>
+		</div>
+  		
+		<% end_loop %>
+		
+      </div>
+  
+  
+  
+  
+  
+  
+</div> 
 </div>
+<!-- .panelContainer --></div>
+<!-- #slider1 -->
+<div id="navigation"></div>
 </div>
-</div>
-</div>
+<!-- .slider-wrap -->
+
+  
+</div></div> <!-- /block-inner, /block -->
+
+
 
 <div id="block-views-news_view-block_1" class=""><div class="block-inner">
 
@@ -98,17 +138,18 @@
 
 <!--end health answers--></div>
 
-</div>
+<div class="clear"> 
+</div><!--Drew: think this is end body-->
 </div></div>
 </div>
-<div class="clear">
+
 
           
           
 <!-- /sidebar -->
-<!--
+
 <script type="text/javascript">
-jQuery(window).bind("load", function() {
+	jQuery(window).bind("load", function() {
 		jQuery('#slider1').codaSlider({
                 autoSlide: true,
                 autoSlideInterval: 4000,
@@ -116,4 +157,5 @@ jQuery(window).bind("load", function() {
 				autoHeight: false
             });
 	});
-</script>-->
+//]]>
+</script>

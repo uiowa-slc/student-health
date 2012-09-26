@@ -1,11 +1,8 @@
 <?php
-class HealthAnswer extends Page {
+class SliderItem extends Page {
 
 	 static $db = array(
-	'PublishDate' => 'Date',
-	'Question' => 'HTMLText',
-	'Answer' => 'HTMLText',
-	'Source' => 'Text'
+	'PublishDate' => 'Date'
 	);
 
 
@@ -18,10 +15,7 @@ class HealthAnswer extends Page {
         $fields = parent::getCMSFields();
         
         $fields->addFieldToTab('Root.Main', new UploadField('Picture'));
-        $fields->addFieldToTab('Root.Main', new HTMLEditorField('Question'));
-        $fields->addFieldToTab('Root.Main', new HTMLEditorField('Answer'));
-        $fields->addFieldToTab('Root.Main', new HTMLEditorField('Source')); //Harder to post a link without it
-
+        
         $fields->addFieldToTab('Root.Main', $dateField = new DateField('PublishDate'));
         $dateField->setConfig('showcalendar', true);
         $dateField->setConfig('dateformat', 'MM/dd/YYYY');
@@ -31,14 +25,18 @@ class HealthAnswer extends Page {
 
      }
 
-}
-class HealthAnswer_Controller extends Page_Controller {
-
-	
-	public static $allowed_actions = array (
-	);
-	
-
-
 
 }
+class SliderItem_Controller extends Page_Controller {
+
+	public function getSliderItems(){
+		$slideritems = SliderItem::get();
+		
+		return $slideritems;
+		
+	}
+
+	
+}
+
+

@@ -17,6 +17,94 @@
   
 </div> <!-- /block-inner, /block -->
 
+<% if getToplevel == 'services' %>
+
+	<div id="block-menu-menu-services-menu" class="">
+	<div class="line"></div>
+	<div id="sidebar-nav">
+	
+	
+	      <h2 class="title">Services</h2> 
+	  
+	
+	    <ul class="menu"><li class="leaf first"><a href="/services/allergies" title="">Allergies</a></li>
+	<li class="leaf"><a href="/services/blood-and-body-fluid-exposure" title="">Exposure reporting</a></li>
+	<li class="leaf"><a href="/services/general-medicine" title="">General Medicine</a></li>
+	<li class="leaf"><a href="/services/gynecology" title="">Gynecology</a></li>
+	<li class="leaf"><a href="/services/immunizations" title="">Immunizations</a></li>
+	<li class="leaf"><a href="/services/international-travel" title="">International Travel</a></li>
+	<li class="leaf"><a href="/services/laboratory" title="">Laboratory</a></li>
+	<li class="leaf"><a href="/services/nurse-care-room" title="">Nurse Care Room</a></li>
+	<li class="leaf"><a href="/services/nurseline" title="Nurseline">Nurseline</a></li>
+	<li class="leaf"><a href="/services/pharmacy" title="">Pharmacy</a></li>
+	<li class="leaf"><a href="/services/psychiatry" title="">Psychiatry</a></li>
+	<li class="leaf"><a href="/services/self-care-guide" title="">Self-Care Guide</a></li>
+	<li class="leaf last"><a href="/services/sexual-health" title="">Sexual Health</a></li>
+	</ul>
+	
+	  
+	</div>
+	
+	</div> <!-- /block-inner, /block -->
+
+<% else_if getTopLevel == 'wellness' %>
+
+	
+	<div id="block-menu-menu-wellness" class="">
+	<div class="line"></div>
+	<div id="sidebar-nav">
+	
+	
+	      <h2 class="title">Wellness</h2>
+	  
+	
+	    <ul class="menu"><li class="leaf first"><a href="/wellness/drugs-and-alcohol" title="">Drugs and Alcohol</a></li>
+	<li class="leaf"><a href="/wellness/educational-programs" title="">Educational Programs </a></li>
+	<li class="leaf"><a href="/wellness/fitness" title="">Fitness</a></li>
+	<li class="leaf"><a href="/wellness/health-iowa-data" title="">Health Iowa Data</a></li>
+	<li class="leaf"><a href="/wellness/nutrition" title="">Nutrition</a></li>
+	<li class="leaf"><a href="/program-request-form" title="">Program Request Form</a></li>
+	<li class="leaf"><a href="/wellness/sexual-health" title="">Sexual Health</a></li>
+	<li class="leaf"><a href="/wellness/stress-management" title="">Stress Management</a></li>
+	<li class="leaf"><a href="/wellness/student-involvement" title="">Student Involvement</a></li>
+	<li class="leaf last"><a href="/wellness/tobacco-use" title="">Tobacco Use</a></li>
+	</ul>
+	
+	  
+	</div>
+	
+	</div> <!-- /block-inner, /block -->
+	
+<% else_if getTopLevel == 'health-answers' %>
+
+	<div id="block-menu-menu-health" class="">
+	<div class="line"></div>
+	<div id="sidebar-nav">
+	
+	
+	     <h2 class="title">Categories</h2>
+	  
+	
+	    <ul class="menu"><li class="leaf first"><a href="/category/health-answers/alcohol" title="">Alcohol</a></li>
+	<li class="leaf"><a href="/category/health-answers/cold-flu" title="">Cold / Flu</a></li>
+	<li class="leaf"><a href="/category/health-answers/fitness" title="">Fitness</a></li>
+	<li class="leaf"><a href="/category/health-answers/general" title="">General</a></li>
+	<li class="leaf"><a href="/category/health-answers/medicine" title="">Medicine</a></li>
+	<li class="leaf"><a href="/category/health-answers/mental-health" title="">Mental Health</a></li>
+	<li class="leaf"><a href="/category/health-answers/nutrition" title="">Nutrition</a></li>
+	<li class="leaf"><a href="/category/health-answers/sexual-health" title="">Sexual Health</a></li>
+	<li class="leaf"><a href="/category/health-answers/stress" title="">Stress</a></li>
+	<li class="leaf last"><a href="/category/health-answers/illness" title="">lllness</a></li>
+	</ul>
+	
+	  
+	</div>
+	
+	</div> <!-- /block-inner, /block -->
+
+
+<% end_if %>
+
 
 <div id="block-block-3" class=""><div class="block-inner">
 
@@ -37,6 +125,8 @@
 
   
 </div></div> <!-- /block-inner, /block -->
+
+
 <div id="block-block-7" class=""><div class="block-inner">
 
   
