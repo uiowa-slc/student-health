@@ -123,7 +123,7 @@
 
 					<p>$Question</p>
 					<p class="more"><a href="{$Link}" title="read more">Read the Answer</a></p>
-					<p class="ask"><a href="/health-answers/ask-your-question" title="Ask Your Question">Ask Your Question</a></p>
+					<p class="ask"><a href="{$absoulteBaseURL}health-answers/ask-your-question" title="Ask Your Question">Ask Your Question</a></p>
 
 				</li>
 				
@@ -144,6 +144,7 @@
 </div>
 
 <div class="experiment">
+<!--
 <% loop getServicesChildren %>
 $Pos
 $Title

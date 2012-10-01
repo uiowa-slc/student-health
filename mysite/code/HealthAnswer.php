@@ -5,7 +5,7 @@ class HealthAnswer extends Page {
 	'PublishDate' => 'Date',
 	'Question' => 'HTMLText',
 	'Answer' => 'HTMLText',
-	'Source' => 'Text'
+	'Source' => 'HTMLText'
 	);
 
 

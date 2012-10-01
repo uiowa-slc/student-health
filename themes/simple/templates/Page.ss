@@ -26,6 +26,7 @@ Change it, enhance it and most importantly enjoy it!
 	<% require themedCSS(styles) %>
 	<% require themedCSS(reset) %>	
 	<% require themedCSS(ie7) %> 
+	<% require themedCSS(system) %>
 	<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
 	
 	
@@ -136,7 +137,7 @@ dropShadows: false});
 						<ul>
 								<% loop ChildrenOf(wellness) %>
 									
-										<li id="menu-633-1" class="first odd sf-item-{$Pos} sf-depth-2 sf-no-children"><a href="{$absoluteBaseURL}home/{$URLSegment}" title="{$Title}" class="sf-depth-2">$Title</a></li>
+										<li id="menu-633-1" class="first odd sf-item-{$Pos} sf-depth-2 sf-no-children"><a href="{$absoluteBaseURL}wellness/{$URLSegment}" title="{$Title}" class="sf-depth-2">$Title</a></li>
 										
 								<% end_loop %>
 								
