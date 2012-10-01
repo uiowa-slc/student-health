@@ -88,5 +88,39 @@ class Page_Controller extends ContentController {
 		Requirements::themedCSS('form');
 		*/
 	}
+	
+	public function getHomeChildren(){
+	
+		//This function exists because SliderItems are children of Home but shouldn't show up in the menu 
+				
+		$homeparent = HomePage::get()->First();
+    
+        $homeparentID = $homeparent->ID;
+    	
+	    $homechildren = SiteTree::get()->filter(array(
+    'Show.SiteTree.ParentID:ExactMatch' => $homeparentID));
+    
+     	$homechildren->exclude('ClassName', array('SliderItem'));
+         
+    	return $homechildren;
+    	
+	}
+	
+	public function getServicesChildren(){
+	
+		//This function exists because SliderItems are children of Home but shouldn't show up in the menu 
+				
+		$servicesparent = ServicesHolder::get()->First();
+    
+        $servicesparentID = $servicesparent->ID;
+    	
+	    $serviceschildren = SiteTree::get()->filter(array(
+    'Show.SiteTree.ParentID:ExactMatch' => $servicesparentID));
+            
+    	return $serviceschildren;
+    	
+	}
+
+
 
 }

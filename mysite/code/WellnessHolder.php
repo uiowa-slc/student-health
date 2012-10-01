@@ -1,5 +1,5 @@
 <?php
-class SelfHelpHolder extends Page {
+class WellnessHolder extends Page {
 
 	public static $db = array(
 	
@@ -12,7 +12,7 @@ class SelfHelpHolder extends Page {
 
      
 }
-class SelfHelpHolder_Controller extends Page_Controller {
+class WellnessHolder_Controller extends Page_Controller {
 
 	
 	public static $allowed_actions = array (

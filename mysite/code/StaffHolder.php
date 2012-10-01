@@ -25,5 +25,4 @@ class StaffHolder_Controller extends Page_Controller {
 	
 
 
-
 }

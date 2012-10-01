@@ -143,7 +143,11 @@
 </div></div>
 </div>
 
-
+<div class="experiment">
+<% loop getServicesChildren %>
+$Pos
+$Title
+<% end_loop %>
           
           
 <!-- /sidebar -->

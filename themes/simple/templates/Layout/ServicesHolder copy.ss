@@ -33,24 +33,10 @@
   
   
       <div class="view-content">
-      <!--
-      
-      <% loop ChildrenOf(services) %>
-      
-      	<div class="views-row views-row-[$Pos} views-row-{% if $Pos = MultipleOf(2,2) %>odd<% else %>even<% end_if %>}">
-	      	<h2><a href="{$absoluteBaseURL}services{$URLSegment}" >$Title</a></h2>
-	      	<img src="{$Picture.Link}" alt="Allergies Image" title=""  class="imagecache imagecache-services_thumnail imagecache-default imagecache-services_thumnail_default" width="70" height="70" />
-	      	$Content.Summary(20);
-	      	<span class="more"><a href="{$absoluteBaseURL}services{$URLSegment}" title="read more">Read More</a></span>
-      	</div>
-      <% end_loop %>
-      -->
-      
-      <!--
-  <div class="views-row views-row-1 views-row-odd views-row-first">
-  
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+    <!-- services page -->
 
-<h2><a href="/services/" >Allergies</a></h2>
+<h2><a href="/services/allergies" >Allergies</a></h2>
 <img src="http://studenthealth.uiowa.edu/sites/default/files/imagecache/services_thumnail/allergies.jpg" alt="Allergies Image" title=""  class="imagecache imagecache-services_thumnail imagecache-default imagecache-services_thumnail_default" width="70" height="70" /><p>If you are one of the hundreds...</p>
 <span class="more"><a href="/services/allergies" title="read more">Read More</a></span>
 
@@ -60,7 +46,7 @@
 
   </div>
   <div class="views-row views-row-2 views-row-even">
-  
+    <!-- services page -->
 
 <h2><a href="/services/blood-and-body-fluid-exposure" >Blood and Body Fluid Exposure</a></h2>
 <img src="http://studenthealth.uiowa.edu/sites/default/files/imagecache/services_thumnail/exposure_0.jpg" alt="Blood and Body Fluid Exposure Image" title=""  class="imagecache imagecache-services_thumnail imagecache-default imagecache-services_thumnail_default" width="70" height="70" /><p>If you have been exposed: This material...</p>
@@ -72,7 +58,7 @@
 
   </div>
   <div class="views-row views-row-3 views-row-odd">
-  
+    <!-- services page -->
 
 <h2><a href="/services/general-medicine" >General Medicine</a></h2>
 <img src="http://studenthealth.uiowa.edu/sites/default/files/imagecache/services_thumnail/general-medicine.jpg" alt="General Medicine Image" title=""  class="imagecache imagecache-services_thumnail imagecache-default imagecache-services_thumnail_default" width="70" height="70" /><p>Student Health Service provides primary medical care...</p>
@@ -84,7 +70,7 @@
 
   </div>
   <div class="views-row views-row-4 views-row-even">
-  
+    <!-- services page -->
 
 <h2><a href="/services/gynecology" >Gynecology</a></h2>
 <p>The Student Health Service provides complete and...</p>
@@ -96,7 +82,7 @@
 
   </div>
   <div class="views-row views-row-5 views-row-odd">
-  
+    <!-- services page -->
 
 <h2><a href="/services/international-travel" >International Travel</a></h2>
 <img src="http://studenthealth.uiowa.edu/sites/default/files/imagecache/services_thumnail/international-travel.jpg" alt="International Travel Image" title=""  class="imagecache imagecache-services_thumnail imagecache-default imagecache-services_thumnail_default" width="70" height="70" /><p>Traveling outside the United States?&nbsp;Every destination, even...</p>
@@ -108,7 +94,7 @@
 
   </div>
   <div class="views-row views-row-6 views-row-even">
-  
+    <!-- services page -->
 
 <h2><a href="/services/laboratory" >Laboratory</a></h2>
 <p>Routine laboratory procedures are performed in the...</p>
@@ -120,7 +106,7 @@
 
   </div>
   <div class="views-row views-row-7 views-row-odd">
-  
+    <!-- services page -->
 
 <h2><a href="/services/nurse-care-room" >Nurse Care Room</a></h2>
 <img src="http://studenthealth.uiowa.edu/sites/default/files/imagecache/services_thumnail/Mary%20Beth-%20Nurse%20Care%20Room_1.jpg" alt="Services Image" title=""  class="imagecache imagecache-services_thumnail imagecache-default imagecache-services_thumnail_default" width="70" height="70" /><p>Students can utilize the Nurse Care Room...</p>
@@ -132,7 +118,7 @@
 
   </div>
   <div class="views-row views-row-8 views-row-even">
-  
+    <!-- services page -->
 
 <h2><a href="/services/nurseline" >Nurseline</a></h2>
 <img src="http://studenthealth.uiowa.edu/sites/default/files/imagecache/services_thumnail/Nurseline-001_0.jpg" alt="Nurseline Image" title=""  class="imagecache imagecache-services_thumnail imagecache-default imagecache-services_thumnail_default" width="70" height="70" /><p>Nurseline can help you with whether to...</p>
@@ -144,7 +130,7 @@
 
   </div>
   <div class="views-row views-row-9 views-row-odd">
-  
+    <!-- services page -->
 
 <h2><a href="/services/pharmacy" >Pharmacy</a></h2>
 <img src="http://studenthealth.uiowa.edu/sites/default/files/imagecache/services_thumnail/pharmacy.jpg" alt="Pharmacy Image" title=""  class="imagecache imagecache-services_thumnail imagecache-default imagecache-services_thumnail_default" width="70" height="70" /><p>Medications required for treatment are prescribed by...</p>
@@ -156,7 +142,7 @@
 
   </div>
   <div class="views-row views-row-10 views-row-even">
-  
+    <!-- services page -->
 
 <h2><a href="/services/psychiatry" >Psychiatry</a></h2>
 <p>Student Health Service provides mental health care...</p>
@@ -168,7 +154,7 @@
 
   </div>
   <div class="views-row views-row-11 views-row-odd">
-  
+    <!-- services page -->
 
 <h2><a href="/services/self-care-guide" >Self-Care Guide</a></h2>
 <img src="http://studenthealth.uiowa.edu/sites/default/files/imagecache/services_thumnail/first-aid.jpg" alt="Self-Care Guide Image" title=""  class="imagecache imagecache-services_thumnail imagecache-default imagecache-services_thumnail_default" width="70" height="70" /><p>These Student Survival Guidelines were designed as...</p>
@@ -180,7 +166,7 @@
 
   </div>
   <div class="views-row views-row-12 views-row-even views-row-last">
-  
+    <!-- services page -->
 
 <h2><a href="/services/sexual-health" >Sexual Health</a></h2>
 <p>The Student Health Service provides for diagnosis,...</p>
@@ -191,7 +177,6 @@
 
 
   </div>
--->
     </div>
   
   
@@ -214,6 +199,5 @@
   </div>
 
 </div>
-getToplevel = $getToplevel
 <!-- end main -->
 <div class="clear"></div>
