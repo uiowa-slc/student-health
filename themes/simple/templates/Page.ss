@@ -1,10 +1,4 @@
-<!DOCTYPE html>
-<!--
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-Simple. by Sara (saratusar.com, @saratusar) for Innovatif - an awesome Slovenia-based digital agency (innovatif.com/en)
-Change it, enhance it and most importantly enjoy it!
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
--->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 
 <!--[if !IE]><!-->
 <html lang="$ContentLocale">
@@ -23,8 +17,10 @@ Change it, enhance it and most importantly enjoy it!
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 	<% require themedCSS(superfish) %>
+	<% require themedCSS(system-menus) %>
 	<% require themedCSS(styles) %>
 	<% require themedCSS(reset) %>	
+	<% require themedCSS(reset-min) %>	
 	<% require themedCSS(ie7) %> 
 	<% require themedCSS(system) %>
 	<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
@@ -105,7 +101,7 @@ dropShadows: false});
 			<div id="wrapper">
 				<% include Header %>
 			<div id="nav">
-				<p class="appointments"><a href="/appointments/">Appointments</a></p>
+				<p class="appointments"><a href="{$absoluteBaseURL}home/appointments/">Appointments</a></p>
 				
 				
 				<div id="block-superfish-1" class=""><div class="block-inner">
@@ -121,7 +117,7 @@ dropShadows: false});
 								
 							</ul>
 		
-					<li id="menu-437-1" class="active-trail first odd sf-item-1 sf-depth-1 sf-total-children-12 sf-parent-children-0 sf-single-children-12 menuparent"><a href="{$absoluteBaseURL}services" title="Services" class="sf-depth-1 menuparent active">Services</a>
+					<li id="menu-437-1" class="active-trail first odd sf-item-1 sf-depth-1 sf-total-children-12 sf-parent-children-0 sf-single-children-12 menuparent"><a href="{$absoluteBaseURL}services" title="Services" class="sf-depth-1 menuparent">Services</a>
 							
 							<ul>
 								
@@ -133,7 +129,7 @@ dropShadows: false});
 										
 								<% end_loop %>
 							</ul>
-					<li id="menu-437-1" class="active-trail first odd sf-item-1 sf-depth-1 sf-total-children-12 sf-parent-children-0 sf-single-children-12 menuparent"><a href="{$absoluteBaseURL}wellness" title="Services" class="sf-depth-1 menuparent active">Wellness</a>
+					<li id="menu-437-1" class="active-trail first odd sf-item-1 sf-depth-1 sf-total-children-12 sf-parent-children-0 sf-single-children-12 menuparent"><a href="{$absoluteBaseURL}wellness" title="Services" class="sf-depth-1 menuparent">Wellness</a>
 						<ul>
 								<% loop ChildrenOf(wellness) %>
 									
@@ -171,7 +167,6 @@ dropShadows: false});
 
 
 <div class="clear"></div>
-
 <% include Footer %>
 
 <script type="text/javascript">
@@ -341,6 +336,7 @@ function mce_success_cb(resp){
 }
 
 </script><!--End mc_embed_signup--><!--End mc_embed_signup-->
+
 
 
 </body>

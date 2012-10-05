@@ -41,50 +41,24 @@ Pharmacy: 319-335-9200<br />
 <ul>
     <li class="home"><a href="{$absoluteBaseURL}">Home</a>
     <ul>
-        <li><a href="{$absoluteBaseURL}appointments">Appointments</a></li>
-        <li><a href="{$absoluteBaseURL}comments">Comments & Contact Information</a></li>
-        <li><a href="{$absoluteBaseURL}health-fee">Health Fee/Costs</a></li>
-        <li><a href="{$absoluteBaseURL}insurance">Insurance</a></li>
-        <li><a href="{$absoluteBaseURL}location-parking">Location/Parking</a></li>
-        <li><a href="{$absoluteBaseURL}other-health-websites">Other Health Websites</a></li>
-        <li><a href="{$absoluteBaseURL}parents">Parents</a></li>
-        <li><a href="{$absoluteBaseURL}patient-rights">Patient Rights</a></li>
-        <li><a href="{$absoluteBaseURL}requirements-and-forms">Requirements and Forms</a></li>
-
-        <li><a href="{$absoluteBaseURL}staff">Staff</a></li>
+    	<% loop ChildrenOf(home) %>
+        	<li><a href="{$absoluteBaseURL}{$URLSegment}">$Title</a></li>
+       <% end_loop %>
     </ul>
     </li>
     <li class="services"><a href="{$absoluteBaseURL}">Services</a>
     <ul>
-        <li><a href="{$absoluteBaseURL}services/allergies">Allergies</a></li>
-        <li><a href="{$absoluteBaseURL}services/blood-and-body-fluid-exposure/">Exposure Reporting</a></li>
-        <li><a href="{$absoluteBaseURL}services/general-medicine/">General Medicine</a></li>
-        <li><a href="{$absoluteBaseURL}services/gynecology/">Gynecology</a></li>
-        <li><a href="{$absoluteBaseURL}services/international-travel">International Travel</a></li>
-        <li><a href="{$absoluteBaseURL}services/laboratory/">Laboratory</a></li>
-        <li><a href="{$absoluteBaseURL}services/nurse-care-room/">Nurse Care Room</a></li>
-        <li><a href="{$absoluteBaseURL}services/nurseline/">Nurseline</a></li>
-        <li><a href="{$absoluteBaseURL}services/pharmacy/">Pharmacy</a></li>
-        <li><a href="{$absoluteBaseURL}services/psychiatry">Psychiatry</a></li>
-        <li><a href="{$absoluteBaseURL}services/self-care-guide/">Self-Care Guide</a></li>
-        <li><a href="{$absoluteBaseURL}services/sexual-health">Sexual Health</a></li>
+    	<% loop ChildrenOf(services) %>
+        	<li><a href="{$absoluteBaseURL}{$URLSegment}">$Title</a></li>
+        <% end_loop %>
+        
     </ul>
     </li>
-    <li class="wellness"><a href="{$absoluteBaseURL}">Wellness</a>
+    <li class="wellness"><a href="{$absoluteBaseURL}wellness">Wellness</a>
     <ul>
-        <li><a href="{$absoluteBaseURL}wellness/drugs-and-alcohol">Drugs and Alcohol</a></li>
-        <li><a href="{$absoluteBaseURL}wellness/student-involvement/">Student-Involvement</a></li>
-        <li><a href="{$absoluteBaseURL}wellness/educational-programs/">Educational Programs</a></li>
-        <li><a href="{$absoluteBaseURL}wellness/fitness">Fitness</a></li>
-        <li><a href="{$absoluteBaseURL}wellness/health-iowa-data">Health Iowa Data</a></li>
-        <li><a href="{$absoluteBaseURL}wellness/internship-practicum-opportunities">Internship Practicum Opportunity</a></li>
-        <li><a href="{$absoluteBaseURL}wellness/late-night-activities/">Late Night Activities</a></li>
-        <li><a href="{$absoluteBaseURL}wellness/nutrition/">Nutrition</a></li>
-        <li><a href="{$absoluteBaseURL}wellness/program-request-form">Program Request Form</a></li>
-        <li><a href="{$absoluteBaseURL}wellness/sexual-health/">Sexual Health</a></li>
-        <li><a href="{$absoluteBaseURL}wellness/stress-management/">Stress Management</a></li>
-        <li><a href="{$absoluteBaseURL}wellness/student-health-advisory-committee/">Student Health Advisory Committee</a></li>
-        <li><a href="{$absoluteBaseURL}wellness/tobacco-use">Tobacco Use</a></li>
+        <% loop ChildrenOf(services) %>
+        	<li><a href="{$absoluteBaseURL}{$URLSegment}">$Title</a></li>
+        <% end_loop %>        
     </ul>
     </li>
     <li class="health"><a href="{$absoluteBaseURL}health-answers/">Health Answers</a>

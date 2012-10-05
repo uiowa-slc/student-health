@@ -32,7 +32,7 @@
     <% end_if %>
 
 
-        <div class="views-row views-row-{$Pos} {<% if $MultipleOf(2,2) %>views-row-odd<% else %>views-row-even<% end_if %>} ">
+        <div class="views-row views-row-{$Pos} <% if $MultipleOf(2,2) %>views-row-odd<% else %>views-row-even<% end_if %> ">
       
   <div class="views-field-field-headshot-fid">
                 <span class="field-content"><img src="$Picture.URL" alt="" title=""  class="imagecache imagecache-staff_thumbnail imagecache-default imagecache-staff_thumbnail_default" width="120" height="140" /></span>

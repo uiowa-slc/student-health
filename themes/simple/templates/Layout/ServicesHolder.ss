@@ -33,18 +33,20 @@
   
   
       <div class="view-content">
-      <!--
+      
+ 
       
       <% loop ChildrenOf(services) %>
       
-      	<div class="views-row views-row-[$Pos} views-row-{% if $Pos = MultipleOf(2,2) %>odd<% else %>even<% end_if %>}">
+      	<div class="views-row views-row-$Pos views-row-<% if MultipleOf(2,2) %>odd<% else %>even<% end_if %>">
 	      	<h2><a href="{$absoluteBaseURL}services{$URLSegment}" >$Title</a></h2>
 	      	<img src="{$Picture.Link}" alt="Allergies Image" title=""  class="imagecache imagecache-services_thumnail imagecache-default imagecache-services_thumnail_default" width="70" height="70" />
-	      	$Content.Summary(20);
+	      	<p>$Content.Summary(7)</p>
 	      	<span class="more"><a href="{$absoluteBaseURL}services{$URLSegment}" title="read more">Read More</a></span>
       	</div>
+      	
       <% end_loop %>
-      -->
+     
       
       <!--
   <div class="views-row views-row-1 views-row-odd views-row-first">
@@ -213,7 +215,7 @@
     
   </div>
 
-</div>
+</div></div>
 getToplevel = $getToplevel
 <!-- end main -->
 <div class="clear"></div>

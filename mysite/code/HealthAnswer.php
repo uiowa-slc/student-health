@@ -17,6 +17,8 @@ class HealthAnswer extends Page {
 	public function getCMSFields() {
         $fields = parent::getCMSFields();
         
+         $fields->removeFieldFromTab('Root.Main', 'Content');
+        
         $fields->addFieldToTab('Root.Main', new UploadField('Picture'));
         $fields->addFieldToTab('Root.Main', new HTMLEditorField('Question'));
         $fields->addFieldToTab('Root.Main', new HTMLEditorField('Answer'));

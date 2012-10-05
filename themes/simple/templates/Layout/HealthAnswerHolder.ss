@@ -11,7 +11,7 @@
       
 
 
-<div class="view view-health-answers-view view-id-health_answers_view view-display-id-page_1 view-dom-id-1 page-health-answers">
+<div class="view view-health-Answers-view view-id-health_Answers_view view-display-id-page_1 view-dom-id-1 page-health-Answers">
         <div class="view-header">
       <blockquote><h2><a href="{$absoluteBaseURL}ask-your-question/">Ask Your Question</a></h2>
 </blockquote>
@@ -20,7 +20,7 @@ $Content
   
  
 
-      <div class="view-content">
+      <div class="view-content page-health-answers">
       
 <% loop getPaginatedAnswers %>  
 
@@ -32,7 +32,7 @@ $Content
 <h3>Question</h3>
 <p>$Question
 </p>
-<p class="more"><a href="[$getAbsoluteBaseURL}health-answers/{$URLSegment}" title="read more">Read the Answer</a></p>
+<p class="more"><a href="[$getAbsoluteBaseURL}health-Answers/{$URLSegment}" title="read more">Read the Answer</a></p>
 </div>
   </div>
  
@@ -40,31 +40,33 @@ $Content
 
 <% end_loop %>
 
-<% if getPaginatedNews.MoreThanOnePage %>
+<% if getPaginatedAnswers.MoreThanOnePage %>
 
-	<div id="paginate">	
+	<div class="item-list">
+	<ul class="pager">	
 	
-    <% if getPaginatedNews.NotFirstPage %>
-        <a class="prev" href="$getPaginatedNews.PrevLink">Prev</a>
+    <% if getPaginatedAnswers.NotFirstPage %>
+        <a class="prev" href="$getPaginatedAnswers.PrevLink"><li class="pager-item">Prev</li></a>
     <% end_if %>	
 
-	<% loop getPaginatedNews.Pages %>	
+	<% loop getPaginatedAnswers.Pages %>	
 		<% if CurrentBool %>
-	         <span>$PageNum</span>
+	         <span><li class="pager-item">$PageNum</li></span>
 	    <% else %>
 	     	<% if Link %>
-	            <a href="$Link">$PageNum</a>
+	            <a href="$Link"><li class="pager-item">$PageNum</li></a>
 	        <% else %>
 	            
 	        <% end_if %>
 	    <% end_if %>
     
 	 <% end_loop %>  
-	 <% if getPaginatedNews.NotLastPage %>
-	 	<a class="next" href="$getPaginatedNews.NextLink">Next</a>
+	 <% if getPaginatedAnswers.NotLastPage %>
+	 	<a class="next" href="$getPaginatedAnswers.NextLink"><li class="pager-item">Next>></li></a>
 	 <% end_if %>
 	 
-	 </div> <!--end paginate div -->
+	 </div> <!--end item-list div -->
+	 </ul>
 	 
 <% end_if %>  
 
@@ -74,7 +76,7 @@ $Content
   <div class="post_meta">
   
 
-	Posted by <a href="/information">student-health</a>.
+	Posted by <a href="/information">student-health</a>. <%--This is how the Drupal site does it--%>
 	
 	
 

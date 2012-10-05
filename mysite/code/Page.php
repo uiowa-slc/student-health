@@ -2,37 +2,41 @@
 class Page extends SiteTree {
 
 	public static $db = array(
+	'PublishDate' => 'Date',
+	'PostedBy' => 'Text'
 	);
 
 	public static $has_one = array(
 	);
 	
+	public function isAddtlSidebarPage($url_segment){
+		if (($url_segment == 'services') || ($url_segment == 'wellness') || ($url_segment == 'health-answers') || ($url_segment == 'self-care-guide')){
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+	
 	public function getToplevel(){
+	
 	
 		$url_segment = $this->URLSegment;
 		
+		if ($this->isAddtlSidebarPage($url_segment)){
+			return $url_segment; 
+		}
+		
 		if (isset($this->Parent)){
 			//Debug::show($this->Parent);
-			$currentPageParent = $this->Parent;
+			//$currentPageParent = $this->Parent;
 			$tempParent = $this->Parent;
 			
 		}
 		else {
-			$url_segment = $this->URLSegment;
-			return "False";
+			return false;
 		}
-		
-		
-		echo '<script type="text/
-javascript">console.log("Parent is" + $this->Parent);</script>';
 
-		echo '<script type="text/
-javascript">console.log("URLSegment is " + $url_segment );</script>';
-
-
-		
-		echo '<script type="text/
-javascript">console.log("{$CurrentPageParent->Title}");</script>';
 
 		
 		while ($tempParent){
@@ -40,19 +44,63 @@ javascript">console.log("{$CurrentPageParent->Title}");</script>';
 			//$url_segment = "GOT HERE";
 			
 			
-			if ($tempParent){
-				$currentPageParent = $tempParent;
-				$url_segment = $currentPageParent->URLSegment;
+
+			$url_segment = $tempParent->URLSegment;
+			
+			if ($this->isAddtlSidebarPage($url_segment)){
+				return $url_segment; 
 			}
 			
-			$tempParent = $currentPageParent->Parent;
-			
-			
+			$tempParent = $tempParent->Parent;
+						
 		}		
 
 		return $url_segment;
 	}
+	
 
+	/*
+	public function isSelfCare(){
+		//Used in sidebar to determine if the self-care sidebar should show up (because the page is the self-care page holder or a children of it).  No, this is not the best way to do this
+		$url_segment = $this->URLSegment;
+		
+		if ($url_segment == 'self-care-guide'){
+			return true;
+		}
+		
+		$parent = $this->parent;
+		
+		while ($parent){
+			if ($url_segment == 'self-care-guide'){
+				return true;
+				}
+		}
+		
+		return false;
+	}
+	*/
+	
+	
+	public function getCMSFields() {
+	
+        $fields = parent::getCMSFields();
+        
+        $fields->addFieldToTab('Root.Main', new UploadField('Picture'));
+
+        $fields->addFieldToTab('Root.Main', $dateField = new DateField('PublishDate'));
+        $fields->addFieldToTab('Root.Main', new TextField('PostedBy'));
+        
+        $dateField->setConfig('showcalendar', true);
+        $dateField->setConfig('dateformat', 'MM/dd/YYYY');
+                
+        return $fields;
+
+     }
+	
+	
+	
+	
+	
 }
 
 class Page_Controller extends ContentController {

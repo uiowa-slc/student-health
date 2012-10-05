@@ -270,6 +270,7 @@ margin:0px auto 0px auto;}
 #body {
 background:white;
 width:980px;
+overflow:hidden;
 }
 
 /* ---------------- 05 - Home Page Content  ---------------- */
@@ -779,6 +780,7 @@ padding:10px 0px 10px 45px;
 margin-bottom:7px;}
 
 #quick-links li.app {background:url(../images/appointments-icon.png) no-repeat;}
+#quick-links li.insurance{background:url(../images/insurance.png) no-repeat;}		
 #quick-links li.pharmacy{background:url(../images/pharmacy.png) no-repeat;}		
 #quick-links li.nurseline{background:url(../images/nurseline.png) no-repeat;}		
 #quick-links li.immunizations{background:url(../images/immunizations.png) no-repeat;}		
@@ -1105,4 +1107,8 @@ margin-right: auto;
 	
 float: right;
 
+}
+
+iframe {
+	border: none;
 }
