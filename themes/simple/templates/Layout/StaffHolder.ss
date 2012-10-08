@@ -43,11 +43,11 @@
   </div>
   
   <div class="views-field-field-title-value">
-                <span class="field-content">$Title</span>
+                <span class="field-content">$JobTitle</span>
   </div>
   
   <div class="views-field-body">
-                <div class="field-content"><a href="/staff/kathleen-s-wittich-md">...</a></div>
+                <div class="field-content"><a href="{$Link}">...</a></div>
 
   </div>
   </div>
@@ -85,11 +85,11 @@
   </div>
   
   <div class="views-field-field-title-value">
-                <span class="field-content">$Title</span>
+                <span class="field-content">$JobTitle</span>
   </div>
   
   <div class="views-field-body">
-                <div class="field-content"><a href="/staff/kathleen-s-wittich-md">...</a></div>
+                <div class="field-content"><a href="{$Link}">...</a></div>
 
   </div>
   </div>
@@ -125,11 +125,11 @@
   </div>
   
   <div class="views-field-field-title-value">
-                <span class="field-content">$Title</span>
+                <span class="field-content">$JobTitle</span>
   </div>
   
   <div class="views-field-body">
-                <div class="field-content"><a href="/staff/kathleen-s-wittich-md">...</a></div>
+                <div class="field-content"><a href="{$Link}">...</a></div>
 
   </div>
   </div>
@@ -165,11 +165,11 @@
   </div>
   
   <div class="views-field-field-title-value">
-                <span class="field-content">$Title</span>
+                <span class="field-content">$JobTitle</span>
   </div>
   
   <div class="views-field-body">
-                <div class="field-content"><a href="/staff/kathleen-s-wittich-md">...</a></div>
+                <div class="field-content"><a href="{$Link}">...</a></div>
 
   </div>
   </div>
@@ -206,11 +206,11 @@
   </div>
   
   <div class="views-field-field-title-value">
-                <span class="field-content">$Title</span>
+                <span class="field-content">$JobTitle</span>
   </div>
   
   <div class="views-field-body">
-                <div class="field-content"><a href="/staff/kathleen-s-wittich-md">...</a></div>
+                <div class="field-content"><a href="{$Link}">...</a></div>
 
   </div>
   </div>
@@ -223,11 +223,7 @@
 
 <div class="clear"></div>
 
-<div class="post_meta">
-  
-  	   Posted by <a href="/information">student-health</a> at $LastEdited.
-    
- </div>
+<% include PostedBy %>
 
 
 

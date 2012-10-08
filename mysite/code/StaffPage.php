@@ -3,7 +3,7 @@ class StaffPage extends Page {
 
 	 static $db = array(	 
 	'Name' => 'Text',
-	'Title' => 'Text',
+	'JobTitle' => 'Text',
 	'Email' => 'Text',
 	'Category' => 'Text'	
 	);
@@ -31,7 +31,7 @@ class StaffPage extends Page {
         $categoryArray = array('Health Care Provider Staff', 'Health Iowa Staff', 'Nursing Staff', 'Scheduling Staff', 'Administrative Staff');    
         $fields->addFieldToTab('Root.Main', new DropdownField('Category', 'Category', $categoryArray));
         
-        $fields->addFieldToTab('Root.Main', new TextField('Title'));
+        $fields->addFieldToTab('Root.Main', new TextField('JobTitle'));
         $fields->addFieldToTab('Root.Main', new TextField('Email'));
                 
         return $fields;

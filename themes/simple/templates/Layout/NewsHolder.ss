@@ -39,18 +39,19 @@
 
 <% if getPaginatedNews.MoreThanOnePage %>
 
-	<div id="paginate">	
-	
+	<div class="item-list">
+	<ul class="pager">	
+		
     <% if getPaginatedNews.NotFirstPage %>
-        <a class="prev" href="$getPaginatedNews.PrevLink">Prev</a>
+        <a class="prev" href="$getPaginatedNews.PrevLink"><li class="pager-item">Prev</li>/a>
     <% end_if %>	
 
 	<% loop getPaginatedNews.Pages %>	
 		<% if CurrentBool %>
-	         <span>$PageNum</span>
+	         <span><li class="pager-item">$PageNum</li></span>
 	    <% else %>
 	     	<% if Link %>
-	            <a href="$Link">$PageNum</a>
+	            <a href="$Link"><li class="pager-item">$PageNum</li></a>
 	        <% else %>
 	            
 	        <% end_if %>
@@ -58,25 +59,17 @@
     
 	 <% end_loop %>  
 	 <% if getPaginatedNews.NotLastPage %>
-	 	<a class="next" href="$getPaginatedNews.NextLink">Next</a>
+	 	<a class="next" href="$getPaginatedNews.NextLink"><li class="pager-item">Next</li></a>
 	 <% end_if %>
 	 
-	 </div> <!--end paginate div -->
+	 </div> <!--end item-list div -->
+	 </ul>
 	 
 <% end_if %>  
 
      
 
- 
-  <div class="post_meta">
-  
-
-	Posted by <a href="/information">student-health</a>.
-	
-	
-
-    
-  </div>
+<% include PostedBy %>
   
 
 </div><!--End main-->

@@ -2,8 +2,6 @@
 class GenericPage extends Page {
 
 	 static $db = array(
-	'PublishDate' => 'Date',
-	'PostedBy' => 'Text'
 
 	);
 

@@ -10,4 +10,6 @@
 		$PageComments
 </div>
 
+<% include PostedBy %>
+
 </div>

@@ -32,7 +32,7 @@ $Content
 <h3>Question</h3>
 <p>$Question
 </p>
-<p class="more"><a href="[$getAbsoluteBaseURL}health-Answers/{$URLSegment}" title="read more">Read the Answer</a></p>
+<p class="more"><a href="{$Link}" title="read more">Read the Answer</a></p>
 </div>
   </div>
  
@@ -65,29 +65,20 @@ $Content
 	 	<a class="next" href="$getPaginatedAnswers.NextLink"><li class="pager-item">Next>></li></a>
 	 <% end_if %>
 	 
-	 </div> <!--end item-list div -->
-	 </ul>
+	 </ul> 
+	</div>
 	 
 <% end_if %>  
 
      
 
- 
-  <div class="post_meta">
-  
-
-	Posted by <a href="/information">student-health</a>. <%--This is how the Drupal site does it--%>
-	
-	
-
-    
-  </div>
+ <% include PostedBy %>
   
   
   
 </div>
 </div>
 <div class="clear"></div>
-</div>
+</div></div></div>
 
 

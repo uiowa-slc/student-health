@@ -57,15 +57,10 @@
             
 
  <div class="clear"></div>
-  <div class="post_meta">
-  
-  	Posted by <a href="/information">student-health</a>.
-	Last updated 08/17/2010 - 11:16    
-    
-  </div>
+  <% include PostedBy %>
 
-</div>
-getToplevel = $getToplevel
+</div></div></div>
+
 
 <!-- end main -->
 <div class="clear"></div>

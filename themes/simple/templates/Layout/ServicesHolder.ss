@@ -39,10 +39,10 @@
       <% loop ChildrenOf(services) %>
       
       	<div class="views-row views-row-$Pos views-row-<% if MultipleOf(2,2) %>odd<% else %>even<% end_if %>">
-	      	<h2><a href="{$absoluteBaseURL}services{$URLSegment}" >$Title</a></h2>
+	      	<h2><a href="{$absoluteBaseURL}services/{$URLSegment}" >$Title</a></h2>
 	      	<img src="{$Picture.Link}" alt="Allergies Image" title=""  class="imagecache imagecache-services_thumnail imagecache-default imagecache-services_thumnail_default" width="70" height="70" />
 	      	<p>$Content.Summary(7)</p>
-	      	<span class="more"><a href="{$absoluteBaseURL}services{$URLSegment}" title="read more">Read More</a></span>
+	      	<span class="more"><a href="{$absoluteBaseURL}services/{$URLSegment}" title="read more">Read More</a></span>
       	</div>
       	
       <% end_loop %>
@@ -208,14 +208,10 @@
       
 
  
-  <div class="post_meta">
-  
-  	Posted by <a href="/information">student-health</a>.
-	Last updated 08/17/2010 - 11:16    
-    
-  </div>
+<% include PostedBy %>
 
-</div></div>
+
+</div></div></div></div>
 getToplevel = $getToplevel
 <!-- end main -->
 <div class="clear"></div>

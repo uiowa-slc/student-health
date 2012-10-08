@@ -1,19 +1,21 @@
 <div id="main" class="typography">	
 
 
-		<div class="content">$Content</div>
+		<div class="content">
+			<div>
+				<div class="header-wrap-interior"><img src="http://studenthealth.uiowa.edu/sites/all/themes/shs/images/healthiowa.png" alt="Health Iowa" /></div>
+					<div class="right-column">
+						$RightColumn
+					</div>
+				$Content			
+		</div>
 	
 		$Form
 		$PageComments
  
-  <div class="post_meta">
-  
-  	Posted by <a href="/information">student-health</a>.
-	Last updated 08/17/2010 - 11:16    
-    
-  </div>
+  <% include PostedBy %>
 
-</div>
-getToplevel = $getToplevel
+</div></div></div>
+
 <!-- end main -->
 <div class="clear"></div>

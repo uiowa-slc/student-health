@@ -89,12 +89,7 @@
       
 
  
-  <div class="post_meta">
-  
-  	Posted by <a href="/information">student-health</a>.
-	Last updated 12/19/2011 - 14:21    
-    
-  </div>
+<% include PostedBy %>
 
 </div>
 <!-- end main -->

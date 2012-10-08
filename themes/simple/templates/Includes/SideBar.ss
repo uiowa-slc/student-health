@@ -17,6 +17,9 @@
   
 </div> <!-- /block-inner, /block -->
 
+
+<%--get top level is misnamed, but the point is to customize the sidebar based on where a page is in the site tree --%>
+
 <% if getToplevel == 'services' %>
 
 	<div id="block-menu-menu-services-menu" class="">

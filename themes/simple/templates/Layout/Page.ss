@@ -15,14 +15,9 @@
 		$PageComments
 		
 
-  <div class="post_meta">
+ <% include PostedBy %>
   
-
-	Posted by <a href="/information">student-health</a> at $LastEdited.
-	    
-  </div>
-  
-</div>
+</div></div></div>
 
 
 </div>

@@ -24,7 +24,7 @@
 	<% require themedCSS(ie7) %> 
 	<% require themedCSS(system) %>
 	<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
-	
+	<link href='http://fonts.googleapis.com/css?family=Nobile' rel='stylesheet' type='text/css'>
 	
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
 	
@@ -107,7 +107,7 @@ dropShadows: false});
 				<div id="block-superfish-1" class=""><div class="block-inner">
 				
 					<ul id="superfish-1" class="sf-menu primary-links sf-horizontal sf-style-default sf-total-items-5 sf-parent-items-3 sf-single-items-2">
-						<li id="menu-437-1" class="active-trail first odd sf-item-1 sf-depth-1 sf-total-children-12 sf-parent-children-0 sf-single-children-12 menuparent"><a href="{$absoluteBaseURL}home" title="Home" class="sf-depth-1 menuparent active">Home</a>
+						<li id="menu-437-1" class="active-trail first odd sf-item-1 sf-depth-1 sf-total-children-12 sf-parent-children-0 sf-single-children-12 menuparent"><a href="{$absoluteBaseURL}home" title="Home" class="sf-depth-1 menuparent <% if InSection(home) %>active<% end_if %>">Home</a>
 							<ul>
 								<% loop ChildrenOf(home) %>
 									
@@ -117,7 +117,7 @@ dropShadows: false});
 								
 							</ul>
 		
-					<li id="menu-437-1" class="active-trail first odd sf-item-1 sf-depth-1 sf-total-children-12 sf-parent-children-0 sf-single-children-12 menuparent"><a href="{$absoluteBaseURL}services" title="Services" class="sf-depth-1 menuparent">Services</a>
+					<li id="menu-437-1" class="active-trail first odd sf-item-1 sf-depth-1 sf-total-children-12 sf-parent-children-0 sf-single-children-12 menuparent"><a href="{$absoluteBaseURL}services" title="Services" class="sf-depth-1 menuparent <% if InSection(services) %>active<% end_if %>">Services</a>
 							
 							<ul>
 								
@@ -129,7 +129,7 @@ dropShadows: false});
 										
 								<% end_loop %>
 							</ul>
-					<li id="menu-437-1" class="active-trail first odd sf-item-1 sf-depth-1 sf-total-children-12 sf-parent-children-0 sf-single-children-12 menuparent"><a href="{$absoluteBaseURL}wellness" title="Services" class="sf-depth-1 menuparent">Wellness</a>
+					<li id="menu-437-1" class="active-trail first odd sf-item-1 sf-depth-1 sf-total-children-12 sf-parent-children-0 sf-single-children-12 menuparent"><a href="{$absoluteBaseURL}wellness" title="Services" class="sf-depth-1 menuparent <% if InSection(wellness) %>active<% end_if %>">Wellness</a>
 						<ul>
 								<% loop ChildrenOf(wellness) %>
 									
@@ -139,9 +139,9 @@ dropShadows: false});
 								
 						</ul>
 	
-<li id="menu-335-1" class="middle even sf-item-4 sf-depth-1 sf-no-children"><a href="{$absoluteBaseURL}health-answers" title="Health Answers" class="sf-depth-1">Health Answers</a></li>		
+<li id="menu-335-1" class="middle even sf-item-4 sf-depth-1 sf-no-children"><a href="{$absoluteBaseURL}health-answers" title="Health Answers" class="sf-depth-1 <% if InSection(health-answers) %>active<% end_if %>">Health Answers</a></li>		
 		
-<li id="menu-336-1" class="last odd sf-item-5 sf-depth-1 sf-no-children"><a href="{$absoluteBaseURL}news" title="News" class="sf-depth-1">News</a></li>						
+<li id="menu-336-1" class="last odd sf-item-5 sf-depth-1 sf-no-children"><a href="{$absoluteBaseURL}news" title="News" class="sf-depth-1 <% if InSection(news) %>active<% end_if %>">News</a></li>						
 
 	</li>
 </ul>

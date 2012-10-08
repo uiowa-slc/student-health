@@ -28,12 +28,7 @@ $Question
       
 
  
-  <div class="post_meta">
-  
-  	Posted by <a href="/information">tschiltz</a>.
-	Last updated 09/17/2012 - 09:29    
-    
-  </div>
+<% include PostedBy %>
 
 </div>
 <!-- end main -->

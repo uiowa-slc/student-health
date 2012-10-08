@@ -15,17 +15,9 @@
 		$PageComments
 		
 
-  <div class="post_meta">
-  
-	 <% if PostedBy %>
-	 	Posted by <a href="/information">$PostedBy</a> at $LastEdited.
-	 <% else %>
-	 	Posted by <a href="/information">student-health</a> at $LastEdited.
-	 <% end_if %>   
-  </div>
+<% include PostedBy %>
   
 </div>
 
 
-</div>
-
+</div></div></div>
