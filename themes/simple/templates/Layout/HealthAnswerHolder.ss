@@ -6,15 +6,18 @@
 		$Form
 		$PageComments
 
-<div id="main" class="typography">
+<div id="main" class="typography page-health-answers">
   <h1 class="node-">Health Answers</h1>  
       
 
 
 <div class="view view-health-Answers-view view-id-health_Answers_view view-display-id-page_1 view-dom-id-1 page-health-Answers">
         <div class="view-header">
-      <blockquote><h2><a href="{$absoluteBaseURL}ask-your-question/">Ask Your Question</a></h2>
-</blockquote>
+        <% if $URLSegment =='health-answers' %>
+		      <blockquote><h2><a href="{$absoluteBaseURL}ask-your-question/">Ask Your Question</a></h2>
+		      </blockquote>
+		<% end_if %>
+
 $Content
     </div>
   
@@ -24,11 +27,11 @@ $Content
       
 <% loop getPaginatedAnswers %>  
 
-        <div class="views-row views-row-1 views-row-odd views-row-first">
+        <div class="views-row views-row-$Pos">
     <!-- news page -->
 <div class="story">
 <h2><a href="{$Link}">$Title</a></h2>
-<p class="date">$PublishDate</p><br />
+<p class="date">$formatDate</p><br />
 <h3>Question</h3>
 <p>$Question
 </p>

@@ -18,7 +18,7 @@
 </div> <!-- /block-inner, /block -->
 
 
-<%--get top level is misnamed, but the point is to customize the sidebar based on where a page is in the site tree --%>
+<%--get top level is misnamed, but the point is to customize the sidebar based on where a page is in the site tree.  I did not realize InSection could be used at the time --%>
 
 <% if getToplevel == 'services' %>
 
@@ -28,24 +28,18 @@
 	
 	
 	      <h2 class="title">Services</h2> 
-	  
+	      
+	      <ul class="menu">
+	      
+			  <% loop ChildrenOf(services) %>
 	
-	    <ul class="menu"><li class="leaf first"><a href="{$absoluteBaseURL}services/allergies" title="">Allergies</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}services/blood-and-body-fluid-exposure" title="">Exposure reporting</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}services/general-medicine" title="">General Medicine</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}services/gynecology" title="">Gynecology</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}services/immunizations" title="">Immunizations</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}services/international-travel" title="">International Travel</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}services/laboratory" title="">Laboratory</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}services/nurse-care-room" title="">Nurse Care Room</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}services/nurseline" title="Nurseline">Nurseline</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}services/pharmacy" title="">Pharmacy</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}services/psychiatry" title="">Psychiatry</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}services/self-care-guide" title="">Self-Care Guide</a></li>
-	<li class="leaf last"><a href="{$absoluteBaseURL}services/sexual-health" title="">Sexual Health</a></li>
-	</ul>
+			  		<li class="leaf "><a href="{$Link}" title="">$Title</a></li>
+
 	
-	  
+			  <% end_loop %>
+			  
+		  </ul> 
+		  
 	</div>
 	
 	</div> <!-- /block-inner, /block -->
@@ -60,18 +54,15 @@
 	
 	      <h2 class="title">Wellness</h2>
 	  
+	      <ul class="menu">
+	      
+			  <% loop ChildrenOf(wellness) %>
 	
-	    <ul class="menu"><li class="leaf first"><a href="{$absoluteBaseURL}wellness/drugs-and-alcohol" title="">Drugs and Alcohol</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}wellness/educational-programs" title="">Educational Programs </a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}wellness/fitness" title="">Fitness</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}wellness/health-iowa-data" title="">Health Iowa Data</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}wellness/nutrition" title="">Nutrition</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}program-request-form" title="">Program Request Form</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}wellness/sexual-health" title="">Sexual Health</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}wellness/stress-management" title="">Stress Management</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}wellness/student-involvement" title="">Student Involvement</a></li>
-	<li class="leaf last"><a href="{$absoluteBaseURL}wellness/tobacco-use" title="">Tobacco Use</a></li>
-	</ul>
+			  		<li class="leaf "><a href="{$Link}" title="">$Title</a></li>
+	
+			  <% end_loop %>
+			  
+		  </ul> 
 	
 	  
 	</div>
@@ -86,8 +77,19 @@
 	
 	
 	     <h2 class="title">Categories</h2>
+	     
+	     	
+	     <ul class="menu">
+	     
+	     	<% loop ChildrenOf(health-answers) %>
+	     	
+	     		<li class="leaf"><a href="{$Link}" title="">$Title</a></li>
+	     		
+	        <% end_loop %>
+	        
+	     </ul>
 	  
-	
+	<!--
 	    <ul class="menu"><li class="leaf first"><a href="{$absoluteBaseURL}category/health-answers/alcohol" title="">Alcohol</a></li>
 	<li class="leaf"><a href="{$absoluteBaseURL}category/health-answers/cold-flu" title="">Cold / Flu</a></li>
 	<li class="leaf"><a href="{$absoluteBaseURL}category/health-answers/fitness" title="">Fitness</a></li>
@@ -97,9 +99,9 @@
 	<li class="leaf"><a href="{$absoluteBaseURL}category/health-answers/nutrition" title="">Nutrition</a></li>
 	<li class="leaf"><a href="{$absoluteBaseURL}category/health-answers/sexual-health" title="">Sexual Health</a></li>
 	<li class="leaf"><a href="{$absoluteBaseURL}category/health-answers/stress" title="">Stress</a></li>
-	<li class="leaf last"><a href="{$absoluteBaseURL}category/health-answers/illness" title="">lllness</a></li>
+	<li class="leaf last"><a href="{$absoluteBaseURL}category/health-answers/illness" title="">Illness</a></li>
 	</ul>
-	
+	-->
 	  
 	</div>
 	
@@ -114,29 +116,15 @@
 	
 	 <h2 class="title">Self-Care Guide</h2>
 	  	
-    <ul class="menu"><li class="leaf first"><a href="{$absoluteBaseURL}services/self-care-guide/animal-bites" title="">Animal Bites</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}services/back-pain" title="Back Pain">Back Pain</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}services/self-care-guide/burns" title="">Burns</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}services/common-cold" title="">Common Cold</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}services/self-care-guide/depression" title="">Depression</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}services/self-care-guide/drinking-responsibly" title="">Drinking Responsibly</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}services/self-care-guide/exercise" title="">Exercise</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}services/self-care-guide/fever" title="">Fever</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}services/flu" title="Flu">Flu</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}services/self-care-guide/headaches" title="">Headaches</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}services/self-care-guide/insect-bite-or-sting" title="">Insect Bite or Sting</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}services/self-care-guide/minor-wound-care" title="">Minor Wound Care</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}services/pink-eye" title="Pink Eye">Pink Eye</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}services/rash" title="Rash">Rash</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}services/self-care-guide/sexual-health" title="">Sexual Health</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}services/self-care-guide/sexual-violence" title="">Sexual Violence</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}services/self-care-guide/sleep-problems" title="">Sleep Problems</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}services/self-care-guide/sore-throat" title="">Sore Throat</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}services/self-care-guide/sprains" title="">Sprains</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}services/stomach-pain" title="Stomach Pain">Stomach Pain</a></li>
-	<li class="leaf"><a href="{$absoluteBaseURL}services/self-care-guide/stress" title="">Stress</a></li>
-	<li class="leaf last"><a href="{$absoluteBaseURL}services/urinary-tract-infections" title="Urinary Tract Infections">Urinary Tract Infections</a></li>
-	</ul>
+	      <ul class="menu">
+	      
+			  <% loop ChildrenOf(self-care-guide) %>
+	
+			  		<li class="leaf "><a href="{$Link}" title="">$Title</a></li>
+	
+			  <% end_loop %>
+			  
+		  </ul> 
 	  
 	</div>
 	

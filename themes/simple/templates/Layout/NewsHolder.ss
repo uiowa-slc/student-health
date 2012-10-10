@@ -14,7 +14,7 @@
         <div class="views-row views-row-1 views-row-odd views-row-first">
     <!-- news page -->
 <a href="{$Link}" class="imagecache imagecache-news_thumbnail imagecache-imagelink imagecache-news_thumbnail_imagelink"><img src="{$Picture.Link}" alt="News Item Image" title=""  class="imagecache imagecache-news_thumbnail" width="95" height="75" /></a><h2><a href="/news/bat-season">$Title</a></h2>
-<p class="date">$PublishDate</p>
+<p class="date">$formatDate</p>
 <p>$Content.Summary(10)</p>
 <span class="more"><a href="{$Link}" title="read more">Read More</a></span>
 

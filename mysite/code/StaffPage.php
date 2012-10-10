@@ -4,8 +4,7 @@ class StaffPage extends Page {
 	 static $db = array(	 
 	'Name' => 'Text',
 	'JobTitle' => 'Text',
-	'Email' => 'Text',
-	'Category' => 'Text'	
+	'Email' => 'Text'
 	);
 
 

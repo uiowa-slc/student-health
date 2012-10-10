@@ -21,6 +21,8 @@ class HealthAnswerHolder_Controller extends Page_Controller {
 		
 		$pages = new PaginatedList($healthanswers, $this->request);    	
 	    $pages->setPageLength(2);
+	    
+	    $pages->sort('LastEdited');
 		
 	    return $pages;
 	    	    		

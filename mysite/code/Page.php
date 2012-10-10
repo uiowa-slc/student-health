@@ -2,7 +2,6 @@
 class Page extends SiteTree {
 
 	public static $db = array(
-	'PublishDate' => 'Date', //Using last edited, ignore
 	'PostedBy' => 'Text'
 	);
 
@@ -87,11 +86,11 @@ class Page extends SiteTree {
         
         $fields->addFieldToTab('Root.Main', new UploadField('Picture'));
 
-        $fields->addFieldToTab('Root.Main', $dateField = new DateField('PublishDate'));
+        //$fields->addFieldToTab('Root.Main', $dateField = new DateField('PublishDate'));
         $fields->addFieldToTab('Root.Main', new TextField('PostedBy'));
         
-        $dateField->setConfig('showcalendar', true);
-        $dateField->setConfig('dateformat', 'MM/dd/YYYY');
+        //$dateField->setConfig('showcalendar', true);
+        //$dateField->setConfig('dateformat', 'MM/dd/YYYY');
                 
         return $fields;
 
@@ -110,6 +109,12 @@ class Page extends SiteTree {
 		
 	}	
 	
+	public function formatDate(){
+		$timestamp = strtotime($this->LastEdited);
+		$formattedDate = date("l, F j, Y", $timestamp);	
+		return $formattedDate;
+	}
+
 
 	
 	

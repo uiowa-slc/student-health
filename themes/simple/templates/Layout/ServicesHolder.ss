@@ -212,6 +212,6 @@
 
 
 </div></div></div></div>
-getToplevel = $getToplevel
+
 <!-- end main -->
 <div class="clear"></div>
