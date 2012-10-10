@@ -20,7 +20,30 @@
 
 <%--get top level is misnamed, but the point is to customize the sidebar based on where a page is in the site tree.  I did not realize InSection could be used at the time --%>
 
-<% if getToplevel == 'services' %>
+<% if InSection(self-care-guide) %>
+
+	<div id="block-menu-menu-health" class="">
+	<div class="line"></div>
+	<div id="sidebar-nav">
+	
+	
+	 <h2 class="title">Self-Care Guide</h2>
+	  	
+	      <ul class="menu">
+	      
+			  <% loop ChildrenOf(self-care-guide) %>
+	
+			  		<li class="leaf "><a href="{$Link}" title="">$Title</a></li>
+	
+			  <% end_loop %>
+			  
+		  </ul> 
+	  
+	</div>
+	
+	</div> <!-- /block-inner, /block -->
+
+<% else_if InSection(services) %>
 
 	<div id="block-menu-menu-services-menu" class="">
 	<div class="line"></div>
@@ -44,7 +67,7 @@
 	
 	</div> <!-- /block-inner, /block -->
 
-<% else_if getTopLevel == 'wellness' %>
+<% else_if InSection(wellness) %>
 
 	
 	<div id="block-menu-menu-wellness" class="">
@@ -69,7 +92,7 @@
 	
 	</div> <!-- /block-inner, /block -->
 	
-<% else_if getTopLevel == 'health-answers' %>
+<% else_if InSection(health-answers) %>
 
 	<div id="block-menu-menu-health" class="">
 	<div class="line"></div>
@@ -107,30 +130,32 @@
 	
 	</div> <!-- /block-inner, /block -->
 	
-<% else_if getTopLevel == 'self-care-guide' %>
+<% else_if InSection(home) %>
 
+	<% if $URLSegment != 'home' %>
+	
 	<div id="block-menu-menu-health" class="">
 	<div class="line"></div>
 	<div id="sidebar-nav">
-	
-	
-	 <h2 class="title">Self-Care Guide</h2>
-	  	
-	      <ul class="menu">
-	      
-			  <% loop ChildrenOf(self-care-guide) %>
-	
-			  		<li class="leaf "><a href="{$Link}" title="">$Title</a></li>
-	
-			  <% end_loop %>
-			  
-		  </ul> 
-	  
-	</div>
+		
+	     <h2 class="title">Home</h2>
+	     
+	     <ul class="menu">
+	     
+	     	<% loop getHomeChildren %>
+	     	
+	     		<li class="leaf"><a href="{$Link}" title="">$Title</a></li>
+	     		
+	        <% end_loop %>
+	        
+	     </ul>
+	     	 
+	 </div>
 	
 	</div> <!-- /block-inner, /block -->
-
-
+	
+	 <% end_if %> 
+		
 <% end_if %>
 
 

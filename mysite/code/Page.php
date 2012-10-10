@@ -8,6 +8,8 @@ class Page extends SiteTree {
 	public static $has_one = array(
 	);
 	
+	
+	
 	public function isAddtlSidebarPage($url_segment){
 		if (($url_segment == 'services') || ($url_segment == 'wellness') || ($url_segment == 'health-answers') || ($url_segment == 'self-care-guide')){
 			return true;
@@ -16,6 +18,8 @@ class Page extends SiteTree {
 			return false;
 		}
 	}
+	
+	
 	
 	public function getToplevel(){
 	
@@ -57,7 +61,7 @@ class Page extends SiteTree {
 		return $url_segment;
 	}
 	
-
+	
 	/*
 	public function isSelfCare(){
 		//Used in sidebar to determine if the self-care sidebar should show up (because the page is the self-care page holder or a children of it).  No, this is not the best way to do this
