@@ -4,7 +4,8 @@
 	<article>
 		<h1>$Title</h1>
 		<p class="date">$JobTitle</p>
-		<img id="newspic" width="193" height="151" alt="News Item Image" src="{$Picture.Link}">
+		<p class="date"><a href="mailto:{$Email}">$Email</a></p>
+		<img id="newspic" width="193" height="151" alt="Staff Pic" src="{$Picture.Link}">
 		<div class="content">$Content</div>
 			</article>
 		$Form

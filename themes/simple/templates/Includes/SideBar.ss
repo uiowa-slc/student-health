@@ -18,7 +18,6 @@
 </div> <!-- /block-inner, /block -->
 
 
-<%--get top level is misnamed, but the point is to customize the sidebar based on where a page is in the site tree.  I did not realize InSection could be used at the time --%>
 
 <% if InSection(self-care-guide) %>
 

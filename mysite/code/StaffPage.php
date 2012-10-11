@@ -27,8 +27,8 @@ class StaffPage extends Page {
         
         $fields->addFieldToTab('Root.Main', new TextField('Name'));
         
-        $categoryArray = array('Health Care Provider Staff', 'Health Iowa Staff', 'Nursing Staff', 'Scheduling Staff', 'Administrative Staff');    
-        $fields->addFieldToTab('Root.Main', new DropdownField('Category', 'Category', $categoryArray));
+        //$categoryArray = array('Health Care Provider Staff', 'Health Iowa Staff', 'Nursing Staff', 'Scheduling Staff', 'Administrative Staff');    
+        //$fields->addFieldToTab('Root.Main', new DropdownField('Category', 'Category', $categoryArray));
         
         $fields->addFieldToTab('Root.Main', new TextField('JobTitle'));
         $fields->addFieldToTab('Root.Main', new TextField('Email'));

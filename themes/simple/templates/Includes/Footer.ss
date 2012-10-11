@@ -56,7 +56,7 @@ Pharmacy: 319-335-9200<br />
     </li>
     <li class="wellness"><a href="{$absoluteBaseURL}wellness">Wellness</a>
     <ul>
-        <% loop ChildrenOf(services) %>
+        <% loop ChildrenOf(wellness) %>
         	<li><a href="{$absoluteBaseURL}{$URLSegment}">$Title</a></li>
         <% end_loop %>        
     </ul>
