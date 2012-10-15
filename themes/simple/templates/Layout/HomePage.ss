@@ -23,7 +23,7 @@
       
       	<% loop getSliderItems %>
 
-      	<div class="views-row views-row-1 views-row-odd views-row-first">
+      	<div class="views-row views-row-{$Pos} views-row-odd views-row-first">
     <!-- home page feature -->
 
 		<div style="background:url('{$Picture.Link}');" class="panel panel-text panel 2">

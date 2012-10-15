@@ -47,16 +47,18 @@ float:right;
 text-align:center;
 background:orange;}
 
-.page-health-answers blockquote {
-padding:15px;
-margin:0 0 20px 20px;
-width:160px;}
-
 .page-node blockquote {
 float:right;
 padding:5px;
 margin:0 0 20px 20px;
 width:210px;}
+
+.page-health-answers blockquote {
+padding:15px;
+margin:0 0 20px 20px;
+width:160px;}
+
+
 
 
 .page-health-answers blockquote a {
@@ -1111,4 +1113,15 @@ float: right;
 
 iframe {
 	border: none;
+}
+
+#ForgotPassword {
+	
+	padding-top: 10px;
+}
+
+#Remember {
+	padding-top: 20px;
+	padding-bottom: 20px;
+	width: 210px;
 }
