@@ -1,0 +1,13 @@
+name 		= "Library"
+description 	= "Include content types in a library. CCK, Trigger, Core Profile, and Views are recommended."
+package 	= Library
+core 		= "6.x"
+
+
+
+; Information added by drupal.org packaging script on 2011-02-25
+version = "6.x-2.x-dev"
+core = "6.x"
+project = "library"
+datestamp = "1298619545"
+

@@ -1,0 +1,16 @@
+#health-iowa ul li {
+
+width:43px;
+height:230px;
+display:inline;
+overflow:hidden;
+text-indent:-9999px;
+}
+
+		
+			#search input.submit {
+				color:white;
+			
+				background:none;
+		
+			}
