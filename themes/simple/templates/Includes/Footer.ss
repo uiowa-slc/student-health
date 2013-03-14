@@ -5,7 +5,7 @@
 
   
 
-    <div class="footer-box"><img height="59" width="322" class="footer-logo" alt="Student Health Services" src="{$ThemeDir}/images/footer-logo.png" />
+    <div class="footer-box"><img height="14" width="322" class="footer-logo" alt="Student Health Services" src="{$ThemeDir}/images/footer-logo.png" />
 <div class="contact">
 <p><strong>Address</strong></p>
 <p>4189 Westlawn South<br />

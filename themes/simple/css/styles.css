@@ -205,10 +205,10 @@ h1.logo a {
 float:left;
 display:block;
 text-indent:-9999px;
-width:405px;
+width:656px;
 color:transparent;
-background:url(../images/logo.png) no-repeat 7px 15px;
-height:87px;}
+background:url(../images/logo_horizontal.png) no-repeat 7px 15px;
+height:44px;}
 
 #header {
 height:87px;
@@ -217,8 +217,9 @@ padding:0px;
 
 #header p {
 font-weight:lighter;
+clear: left;
 float:left;
-margin:60px 0px 0px 0px;
+margin:17px 0px 0px 0px;
 color:white;
 font-size:11px;}
 
@@ -227,7 +228,7 @@ font-weight:bold;
 margin-left:20px;}
 
 #header img {
-margin:10px 0px 0px 0px;
+margin:-35px 0px 0px 0px;
 float:right;}
 
 #header img.header-logo {
@@ -770,7 +771,7 @@ border:2px solid white;}
 
 #search {height:65px;}
 #quick-links, #sidebar-nav  {min-height:240px;}
-#health-iowa {min-height:320px;}
+#health-iowa {min-height:460px;}
 #quick-links li a {
 color:#333;
 text-decoration:none;
@@ -791,10 +792,11 @@ margin-bottom:7px;}
 
 h2.ha{ 
 width:230px;
-background:url(../images/health-iowa.png) no-repeat -15px 0px;
+background:url(../images/dumbbell-herky.png) no-repeat -15px 0px;
 text-indent: -999em; 
 overflow: hidden; 
-height: 80px;}
+height: 203px;
+margin-bottom: 15px;}
 
 #health-iowa ul li a{
 float:left;
@@ -953,7 +955,7 @@ margin:30px 0 0 5px;}
 
 #uiowa a, .contact a {color:#cb6f02;}
 img.footer-logo {
-margin: 0;}
+margin: 5px 0 15px 5px;}
 
 img.uiowa-logo {
 float:right;
