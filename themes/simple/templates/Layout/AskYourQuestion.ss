@@ -10,7 +10,7 @@
   
   <div class="content">
     $Content
-<form action="/ask-your-question"  accept-charset="UTF-8" method="post" id="webform-client-form-82" class="webform-client-form" enctype="multipart/form-data">
+<form action="{$BaseHref}ask-your-question"  accept-charset="UTF-8" method="post" id="webform-client-form-82" class="webform-client-form" enctype="multipart/form-data">
 <div><div class="webform-component webform-component-textfield" id="webform-component-first-name"><div class="form-item" id="edit-submitted-first-name-wrapper">
  <label for="edit-submitted-first-name">First Name (optional): </label>
  <input type="text" maxlength="128" name="submitted[first_name]" id="edit-submitted-first-name" size="60" value="" class="form-text" />

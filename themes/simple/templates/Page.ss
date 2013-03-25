@@ -162,9 +162,9 @@ dropShadows: false});
       
 <div id="body">
 		
-<% include SideBar %>
+	<% include SideBar %>
 		$Layout
-
+</div>
 
 <div class="clear"></div>
 <% include Footer %>

@@ -31,10 +31,10 @@
 		
 		<h3><a href="{$Link}">$Title</a></h3>
 		
-		<p>$Content.Summary(20)</p>
+		<p>$Content.Summary(20)
 		
 		
-		<a class="more" href="{$Link}" title="read more">Read More</a>
+		<a class="more" href="{$Link}" title="read more">Read More</a></p>
 		
 		
 		</div><!--end feature content-->
@@ -141,14 +141,9 @@
 <div class="clear"> 
 </div><!--Drew: think this is end body-->
 </div></div>
-</div>
-
-<div class="experiment">
+s
 <!--
-<% loop getServicesChildren %>
-$Pos
-$Title
-<% end_loop %>
+
           
           
 <!-- /sidebar -->
