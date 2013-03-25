@@ -5,7 +5,9 @@
 
   
 
-    <div class="footer-box"><img height="14" width="322" class="footer-logo" alt="Student Health Services" src="{$ThemeDir}/images/footer-logo.png" />
+    <div class="footer-box">
+<div id="herky">Student Health and Wellness</div>
+<div id="about">The information available on our website is provided for informational purposes. The information found on our website is not intended to replace the relationship that exists between a patient/site visitor and his/her physician. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition. The SHS site is funded by the Student Health Service, and is updated by SHS staff. <a href="{$absoluteBaseURL}information">More Information</a></div>
 <div class="contact">
 <p><strong>Address</strong></p>
 <p>4189 Westlawn South<br />
@@ -37,7 +39,7 @@ Pharmacy: 319-335-9200<br />
 
 </div>
 </div>
-<div class="footer-nav">The information available on our website is provided for informational purposes. The information found on our website is not intended to replace the relationship that exists between a patient/site visitor and his/her physician. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition. The SHS site is funded by the Student Health Service, and is updated by SHS staff. <a href="{$absoluteBaseURL}information">More Information</a>
+<div class="footer-nav">
 <ul>
     <li class="home"><a href="{$absoluteBaseURL}">Home</a>
     <ul>

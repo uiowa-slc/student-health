@@ -211,7 +211,7 @@
 
     <div class="line">&nbsp;</div>
 <div id="health-iowa">
-<h2 class="ha"><a href="{$absoluteBaseURL}wellness">Health Iowa</a></h2>
+<h2 class="ha"><a href="{$absoluteBaseURL}wellness">Wellness</a></h2>
 <ul>
 <li class="fitness"><a title="Fitness" href="[$absoluteBaseURL}wellness/fitness">Fitness</a></li>
 <li class="nutrition"><a title="Nutrition" href="{$absoluteBaseURL}wellness/nutrition">Nutrition</a></li>

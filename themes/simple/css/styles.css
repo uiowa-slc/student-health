@@ -771,7 +771,7 @@ border:2px solid white;}
 
 #search {height:65px;}
 #quick-links, #sidebar-nav  {min-height:240px;}
-#health-iowa {min-height:460px;}
+#health-iowa {min-height:320px;}
 #quick-links li a {
 color:#333;
 text-decoration:none;
@@ -791,12 +791,17 @@ margin-bottom:7px;}
 #quick-links li.self-care{background:url(../images/self-care.png) no-repeat;}		
 
 h2.ha{ 
+font-size: 2.75em;
+font-weight: bold;
 width:230px;
-background:url(../images/dumbbell-herky.png) no-repeat -15px 0px;
-text-indent: -999em; 
-overflow: hidden; 
-height: 203px;
-margin-bottom: 15px;}
+overflow: hidden;
+margin-bottom: 20px;
+text-align: center;
+margin-left: -.2em;}
+
+h2.ha a{
+color: #666;
+}
 
 #health-iowa ul li a{
 float:left;
@@ -884,14 +889,31 @@ margin:20px auto 0px auto;}
 
 .footer-box {
 margin:0;
-width:320px;
+width:550px;
 float:left;}
 
 .footer-nav {
-float:right;
+float:left;
 font:lighter 13px Arial, Helvetica, sans-serif;
-width:630px;
-margin:0;
+width:380px;
+margin:0 0 0 50px;;
+}
+
+#herky{
+	background-image: url(../images/dumbbell-herky.png);
+	text-indent: -999px;
+	overflow: hidden;
+	width: 229px;
+	height: 233px;
+	float: left;
+	margin-right: 20px;
+	display: block;
+}
+
+#about{
+	height: 233px;
+	font-size: 14px;
+	line-height: 21px;
 }
 
 .footer-nav ul {margin:10px 0px 0px 0px;}
@@ -914,10 +936,10 @@ font:lighter 13px Arial, Helvetica, sans-serif;}
 
 .footer-nav li.home {
 margin:0 20px 0 0;
-width:130px;}
-.footer-nav li.services {width:160px;}
-.footer-nav li.wellness {width:170px;}
-.footer-nav li.health{}
+width:47%;}
+.footer-nav li.services {width:47%;}
+.footer-nav li.wellness {width:47%; margin-top: 20px;}
+.footer-nav li.health{margin-top: 20px;}
 .footer-nav li.newss{margin:20px 0 0 0;}
 
 #disclaimer {
@@ -941,7 +963,7 @@ font:lighter 13px/16px Arial, Helvetica, sans-serif;
 width:150px;
 height:80px;
 color:#666;
-margin:10px 0 30px 10px;
+margin:20px 0 40px 10px;
 float:left;}
 
 #uiowa img {
