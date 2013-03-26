@@ -91,5 +91,8 @@
  
 <% include PostedBy %>
 
+SDFSDFSDF
+
+$questionForm
 </div>
 <!-- end main -->

@@ -23,6 +23,9 @@
 	<% require themedCSS(reset-min) %>	
 	<% require themedCSS(ie7) %> 
 	<% require themedCSS(system) %>
+	<% require themedCSS(form) %>
+	
+	
 	<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
 	<link href='http://fonts.googleapis.com/css?family=Nobile' rel='stylesheet' type='text/css'>
 	
