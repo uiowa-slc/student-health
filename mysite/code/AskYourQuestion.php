@@ -23,7 +23,12 @@ class AskYourQuestion_Controller extends Page_Controller {
 		TextField::create("FirstName"),
 		TextField::create("LastName"),
 		TextAreaField::create("Question"),
-		OptionsetField::create("ResponsePreference", "Response Preference",  $source = array(
+		OptionsetField::create("ResponsePreference", "Would you like a response?", $source = array(
+		 "1" => "Yes",
+		 "2" => "No"), $value = "1"),
+		
+		TextField::create("Email"),
+		OptionsetField::create("QuestionType", "Question type:",  $source = array(
       "1" => "Alcohol",
       "2" => "Cold / Flu",
       "3" => "Fitness",
@@ -34,9 +39,8 @@ class AskYourQuestion_Controller extends Page_Controller {
       "8" => "Nutrition",
       "9" => "Sexual Health",
       "10" => "Stress"
-   ), $value = "1"),
-		TextField::create("Email"),
-		TextField::create("QuestionType")
+   ), $value = "1")
+	
 
 		);
 		
@@ -60,12 +64,12 @@ class AskYourQuestion_Controller extends Page_Controller {
 		$questionHolder = QuestionHolder::get()->First();
 
 		$newQuestion->setParent($questionHolder);
-		$newQuestion->Title = $data["FirstName"] . $data["LastName"] . 'Question';
+		$newQuestion->Title = $data["FirstName"] . $data["LastName"];
 		
 		print_r($questionHolder);
 		
 		$newQuestion->writeToStage('Stage');
-		$newQuestion->publish('Stage', 'Live');
+		//$newQuestion->publish('Stage');
 		return $this->redirectBack();
 		
 	}
