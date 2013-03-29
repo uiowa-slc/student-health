@@ -900,6 +900,16 @@ width:380px;
 margin:0 0 0 50px;;
 }
 
+#dr-herky{
+	background-image: url(../images/dr-herky.png);
+	text-indent: -999px;
+	overflow: hidden;
+	width: 211px;
+	height: 233px;
+	margin-bottom: 20px;
+	display: block;
+}
+
 #herky{
 	background-image: url(../images/dumbbell-herky.png);
 	text-indent: -999px;
