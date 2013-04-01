@@ -139,9 +139,9 @@
 <!--end health answers--></div>
 
 <div class="clear"> 
-</div><!--Drew: think this is end body-->
+</div>
 </div></div>
-s
+
 <!--
 
           

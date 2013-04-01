@@ -13,7 +13,10 @@ class AskYourQuestion extends Page {
 }
 class AskYourQuestion_Controller extends Page_Controller {
 
+	//static $allowed_actions = array('questionForm');
+
 	public function questionForm(){
+			
 		$tempQuestion = QuestionPage::get()->First();
 		
 		//$fields = $tempQuestion->getFrontEndFields();
@@ -27,7 +30,7 @@ class AskYourQuestion_Controller extends Page_Controller {
 		 "1" => "Yes",
 		 "2" => "No"), $value = "1"),
 		
-		TextField::create("Email", "Email:"),
+		EmailField::create("Email", "Email:"),
 		OptionsetField::create("QuestionType", "Question type:",  $source = array(
       "1" => "Alcohol",
       "2" => "Cold / Flu",
@@ -52,11 +55,15 @@ class AskYourQuestion_Controller extends Page_Controller {
         
 		$form = new Form($this, 'questionForm', $fields, $actions);
 		
+		$protector = SpamProtectorManager::update_form($form, 'Message', null, "Please enter the following words");
+		
 		return $form;
 	}
 	
 	function askQuestion($data, $form){
 	
+		Session::clear("message");
+		
 		$newQuestion = new HealthAnswer();
 		$form->saveInto($newQuestion);
 		
@@ -70,7 +77,33 @@ class AskYourQuestion_Controller extends Page_Controller {
 		
 		$newQuestion->writeToStage('Stage');
 		//$newQuestion->publish('Stage');
-		return $this->redirectBack();
+
+		//$form->AddErrorMessage('ResponsePreference', "You must indicate that you've read our Terms and Conditions before registering.", 'good');
+		
+		//$form->sessionMessage("Your question has been sent!", "good");
+		//$form->setMessage("Your question has been sent!", 'good');
+		Session::set("success", "1");
+		//$url = Director::absoluteBaseURL() .'/health-answers/ask-your-question/?success=1';
+		Director::redirectBack();
+		return $this->redirect($url);
 		
 	}
+	
+	function Success(){
+		//$param = $this->request->allParams();
+		//$param = $this->request->param('success');
+		
+		$param = Session::get("success");
+		
+		//print_r ("PARAM IS " . $param);
+		
+
+		if ($param=="1"){
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+		
 }

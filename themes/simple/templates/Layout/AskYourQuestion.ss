@@ -10,6 +10,9 @@
   
   <div class="content">
     $Content
+    <% if Success %>
+    	<div class="questionSuccess">Your question has been sent!</div>
+    <% end_if %>
     $questionForm
   </div>
 
