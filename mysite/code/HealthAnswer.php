@@ -2,7 +2,11 @@
 class HealthAnswer extends Page {
 
 	 static $db = array(
-	'PublishDate' => 'Date',
+	 "FirstName" => 'Text',
+	"LastName" => 'Text',
+	"ResponsePreference" => "Text",
+	"Email" => "Text",
+	"QuestionType" => "Text",
 	'Question' => 'HTMLText',
 	'Answer' => 'HTMLText',
 	'Source' => 'HTMLText'
@@ -23,6 +27,12 @@ class HealthAnswer extends Page {
         $fields->addFieldToTab('Root.Main', new HTMLEditorField('Question'));
         $fields->addFieldToTab('Root.Main', new HTMLEditorField('Answer'));
         $fields->addFieldToTab('Root.Main', new HTMLEditorField('Source')); //Harder to post a link without it
+         $fields->addFieldToTab('Root.Main', new TextField('FirstName', 'First Name'));
+        $fields->addFieldToTab('Root.Main', new TextField('LastName', 'Last Name'));
+        $fields->addFieldToTab('Root.Main', new HTMLEditorField('Question', 'Question Text'));
+        $fields->addFieldToTab('Root.Main', new TextField('ResponsePreference', 'Response Preference'));
+        $fields->addFieldToTab('Root.Main', new TextField('Email'));
+        $fields->addFieldToTab('Root.Main', new TextField('QuestionType', 'Question Type'));
 
         $fields->addFieldToTab('Root.Main', $dateField = new DateField('PublishDate'));
         $dateField->setConfig('showcalendar', true);

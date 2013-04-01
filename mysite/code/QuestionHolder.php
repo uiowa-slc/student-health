@@ -6,7 +6,7 @@ class QuestionHolder extends Page {
 	
 	static $has_one = array();	
 
-	public static $allowed_children = array("QuestionPage");
+	public static $allowed_children = array("QuestionPage", "HealthAnswer");
 	
 
      

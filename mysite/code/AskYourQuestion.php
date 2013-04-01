@@ -20,14 +20,14 @@ class AskYourQuestion_Controller extends Page_Controller {
 		
 		$fields = new FieldList(
 		
-		TextField::create("FirstName"),
-		TextField::create("LastName"),
-		TextAreaField::create("Question"),
+		TextField::create("FirstName", "First Name:"),
+		TextField::create("LastName", "Last Name:"),
+		TextAreaField::create("Question", "Question:"),
 		OptionsetField::create("ResponsePreference", "Would you like a response?", $source = array(
 		 "1" => "Yes",
 		 "2" => "No"), $value = "1"),
 		
-		TextField::create("Email"),
+		TextField::create("Email", "Email:"),
 		OptionsetField::create("QuestionType", "Question type:",  $source = array(
       "1" => "Alcohol",
       "2" => "Cold / Flu",
@@ -45,7 +45,7 @@ class AskYourQuestion_Controller extends Page_Controller {
 		);
 		
 		$actions = new FieldList(
-            new FormAction('askQuestion', 'Submit Your Question')
+            new FormAction('askQuestion', 'Submit')
         );
         
         $validator = new RequiredFields('FirstName', 'LastName', 'Question', 'ResponsePreference', 'Email', 'QuestionType');
@@ -57,7 +57,7 @@ class AskYourQuestion_Controller extends Page_Controller {
 	
 	function askQuestion($data, $form){
 	
-		$newQuestion = new QuestionPage();
+		$newQuestion = new HealthAnswer();
 		$form->saveInto($newQuestion);
 		
 		
@@ -66,7 +66,7 @@ class AskYourQuestion_Controller extends Page_Controller {
 		$newQuestion->setParent($questionHolder);
 		$newQuestion->Title = $data["FirstName"] . $data["LastName"];
 		
-		print_r($questionHolder);
+		
 		
 		$newQuestion->writeToStage('Stage');
 		//$newQuestion->publish('Stage');
