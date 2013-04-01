@@ -97,8 +97,8 @@ dropShadows: false});
 	
 </head>
 <body class="$ClassName<% if Menu(2) %><% else %> no-sidebar<% end_if %> page-node">
-	<iframe src="http://studentlife.uiowa.edu/assets/StudentLifeBar_shs.html" width="100%" height="38" scrolling="no" style="border: none" frameborder="0">
-	</iframe>
+	<% include DivisionBarNonResponsive %>
+
 	<div id="background">
 		<div id="container">
 			<div id="wrapper">
