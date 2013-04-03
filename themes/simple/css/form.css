@@ -17,7 +17,7 @@ textarea:invalid {
     background-color: #f0dddd
 }
 form {
-    max-width: 70%;
+    /*max-width: 70%;*/
 }
 form .message {
     float:right;
@@ -209,6 +209,10 @@ a.btn:after {
 .questionSuccess {
 	color: green;
 	margin-bottom: 5px;
+}
+
+label span {
+	color: red;
 }
 
 @media only screen and (max-width: 700px) { 

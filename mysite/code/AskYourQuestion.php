@@ -2,14 +2,19 @@
 class AskYourQuestion extends Page {
 
 	public static $db = array(
+	"EmailTo" => "Email"
 	);
 	
 	static $has_one = array();	
 
+	public function getCMSFields() {
 	
+        $fields = parent::getCMSFields();
 	
-
-     
+        $fields->addFieldToTab('Root.Main', new EmailField('EmailTo', 'Email'));
+        
+        return $fields;
+   }
 }
 class AskYourQuestion_Controller extends Page_Controller {
 
@@ -23,15 +28,15 @@ class AskYourQuestion_Controller extends Page_Controller {
 		
 		$fields = new FieldList(
 		
-		TextField::create("FirstName", "First Name:"),
-		TextField::create("LastName", "Last Name:"),
-		TextAreaField::create("Question", "Question:"),
-		OptionsetField::create("ResponsePreference", "Would you like a response?", $source = array(
+		TextField::create("FirstName", "<span>*</span> First Name:"),
+		TextField::create("LastName", "<span>*</span> Last Name:"),
+		TextAreaField::create("Question", "<span>*</span> Question:"),
+		OptionsetField::create("ResponsePreference", "<span>*</span> Would you like a response?", $source = array(
 		 "1" => "Yes",
 		 "2" => "No"), $value = "1"),
 		
-		EmailField::create("Email", "Email:"),
-		OptionsetField::create("QuestionType", "Question type:",  $source = array(
+		EmailField::create("Email", "<span>*</span> Email:"),
+		OptionsetField::create("QuestionType", "<span>*</span> Question type:",  $source = array(
       "1" => "Alcohol",
       "2" => "Cold / Flu",
       "3" => "Fitness",
@@ -53,7 +58,7 @@ class AskYourQuestion_Controller extends Page_Controller {
         
         $validator = new RequiredFields('FirstName', 'LastName', 'Question', 'ResponsePreference', 'Email', 'QuestionType');
         
-		$form = new Form($this, 'questionForm', $fields, $actions);
+		$form = new Form($this, 'questionForm', $fields, $actions, $validator);
 		
 		$protector = SpamProtectorManager::update_form($form, 'Message', null, "Please enter the following words");
 		
