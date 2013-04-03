@@ -2,7 +2,7 @@
 class AskYourQuestion extends Page {
 
 	public static $db = array(
-	"EmailTo" => "Email"
+	"EmailTo" => "Text"
 	);
 	
 	static $has_one = array();	
@@ -11,7 +11,7 @@ class AskYourQuestion extends Page {
 	
         $fields = parent::getCMSFields();
 	
-        $fields->addFieldToTab('Root.Main', new EmailField('EmailTo', 'Email'));
+        $fields->addFieldToTab('Root.Main', new EmailField('EmailTo', 'Email:'));
         
         return $fields;
    }
@@ -60,7 +60,7 @@ class AskYourQuestion_Controller extends Page_Controller {
         
 		$form = new Form($this, 'questionForm', $fields, $actions, $validator);
 		
-		$protector = SpamProtectorManager::update_form($form, 'Message', null, "Please enter the following words");
+		//$protector = SpamProtectorManager::update_form($form, 'Message', null, "Please enter the following words");
 		
 		return $form;
 	}
@@ -89,8 +89,26 @@ class AskYourQuestion_Controller extends Page_Controller {
 		//$form->setMessage("Your question has been sent!", 'good');
 		Session::set("success", "1");
 		//$url = Director::absoluteBaseURL() .'/health-answers/ask-your-question/?success=1';
-		Director::redirectBack();
-		return $this->redirect($url);
+		
+		
+		
+		
+		
+		
+		$subject = "Student Health Question - " . $data["QuestionType"];
+		
+    	$body = "A new question has been asked" . '<br><br>Access link in CMS <a href="' . $newQuestion->Link() . '">hereee</a>';
+
+    	$email = new Email(); 
+    	$email->setTo($this->EmailTo); 	         
+    	$email->setFrom($data["Email"]); 
+    	$email->setSubject("New student health question"); 
+    	$email->setBody($body); 
+    	$email->send(); 
+
+		return Controller::redirectBack();
+		
+		
 		
 	}
 	
