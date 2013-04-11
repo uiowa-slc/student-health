@@ -211,14 +211,9 @@
 
     <div class="line">&nbsp;</div>
 <div id="health-iowa">
-<h2 class="ha"><a href="{$absoluteBaseURL}wellness">Wellness</a></h2>
-<ul>
-<li class="fitness"><a title="Fitness" href="[$absoluteBaseURL}wellness/fitness">Fitness</a></li>
-<li class="nutrition"><a title="Nutrition" href="{$absoluteBaseURL}wellness/nutrition">Nutrition</a></li>
-<li class="tabacco"><a title="Tabacco Use" href="{$absoluteBaseURL}wellness/tobacco-use">Tobacco Use</a></li>
-<li class="sexual-health"><a title="Sexual Health" href="{$absoluteBaseURL}wellness/sexual-health">Sexual Health</a></li>
-<li class="substance"><a title="Substance Abuse" href="{$absoluteBaseURL}wellness/drugs-and-alcohol">Drugs and Alcohol</a></li>
-</ul>
+
+<div style="clear: left">&nbsp;</div>
+<p>Our mission is to deliver quality healthcare and promote healthy lifestyles enhancing success and learning for all University of Iowa students.</p>
 </div>
 
 
