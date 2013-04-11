@@ -772,7 +772,7 @@ border:2px solid white;}
 
 #search {height:65px;}
 #quick-links, #sidebar-nav  {min-height:240px;}
-#health-iowa {min-height:320px;}
+#health-iowa {min-height:160px;}
 #quick-links li a {
 color:#333;
 text-decoration:none;
@@ -890,7 +890,7 @@ margin:20px auto 0px auto;}
 
 .footer-box {
 margin:0;
-width:550px;
+width:450px;
 float:left;}
 
 .footer-nav {
@@ -898,6 +898,17 @@ float:left;
 font:lighter 13px Arial, Helvetica, sans-serif;
 width:380px;
 margin:0 0 0 50px;;
+}
+
+#footer li a{
+	color: #cb6f02;
+	font-size: 20px;
+	line-height: 44px;
+	margin-left: 20px;
+}
+
+#footer li a:hover{
+	border-bottom: 1px dashed #000;
 }
 
 #dumbbell-herky{
@@ -922,9 +933,9 @@ margin:0 0 0 50px;;
 }
 
 #about{
-	height: 233px;
-	font-size: 14px;
-	line-height: 21px;
+	width: 100%;
+	font-size: 12px;
+	line-height: 18px;
 }
 
 .footer-nav ul {margin:10px 0px 0px 0px;}
