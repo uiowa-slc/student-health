@@ -169,7 +169,7 @@ class Page_Controller extends ContentController {
         $homeparentID = $homeparent->ID;
     	
 	    $homechildren = SiteTree::get()->filter(array(
-    'Show.SiteTree.ParentID:ExactMatch' => $homeparentID));
+    'Show.SiteTree.ParentID:ExactMatch' => $homeparentID))->sort('Title');
     
      	$homechildren->exclude('ClassName', array('SliderItem'));
          
@@ -191,7 +191,12 @@ class Page_Controller extends ContentController {
     	return $serviceschildren;
     	
 	}
-	
+	/*
+	public function getHomeChildren(){
+		$home = HomePage::get()->where("\"URLSegment\" = 'home'")->sort('Title');
+		return $home->Children();
+	}
+	*/
 	
 	
 	

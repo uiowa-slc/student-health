@@ -43,7 +43,7 @@ Pharmacy: 319-335-9200<br />
 <ul>
     <li class="home"><a href="{$absoluteBaseURL}">Home</a>
     <ul>
-    	<% loop ChildrenOf(home) %>
+    	<% loop getHomeChildren %>
         	<li><a href="{$absoluteBaseURL}{$URLSegment}">$Title</a></li>
        <% end_loop %>
     </ul>

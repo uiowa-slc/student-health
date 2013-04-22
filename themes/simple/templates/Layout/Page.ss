@@ -5,7 +5,7 @@
 		<h1>$Title</h1>
 		
 		<% if Picture %>
-			<div id="genericpicture"><img src="{$Picture.URL}" style="float:right;" /></div>
+			<div class="imagefield-field_services_image"><img src="{$Picture.URL}" style="float:right;" /></div>
 		<% end_if %>
 
 		<div class="content">$Content</div>

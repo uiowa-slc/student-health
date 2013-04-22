@@ -50,9 +50,6 @@ class HealthAnswer_Controller extends Page_Controller {
 	public static $allowed_actions = array (
 	);
 	
-	public function onAfterPublish(){
-		
-	}
-
+	
 
 }
