@@ -1,4 +1,9 @@
 <?php
+//This page type is no longer in use!!!
+//
+//Don't use it, ever
+
+
 class QuestionPage extends Page {
 
 	public static $db = array(
