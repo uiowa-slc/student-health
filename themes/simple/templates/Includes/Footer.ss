@@ -7,7 +7,7 @@
 
     <div class="footer-box">
 <div id="herky">Student Health and Wellness</div>
-<div id="about">The information available on our website is provided for informational purposes. The information found on our website is not intended to replace the relationship that exists between a patient/site visitor and his/her physician. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition. The SHS site is funded by the Student Health Service, and is updated by SHS staff. <a href="{$absoluteBaseURL}information">More Information</a></div>
+<div id="about">The information available on our website is provided for informational purposes. The information found on our website is not intended to replace the relationship that exists between a patient/site visitor and his/her physician. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition. The site is funded by Student Health & Wellness, and is updated by Student Health & Wellness staff. <a href="{$absoluteBaseURL}information">More Information</a></div>
 <div class="contact">
 <p><strong>Address</strong></p>
 <p>4189 Westlawn South<br />

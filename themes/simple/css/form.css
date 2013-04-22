@@ -161,7 +161,7 @@ form .optionset li .radio{
 }
 
 a.btn, button, input[type="submit"] {
-    background: url(../images/formbg.gif);
+    /*background: url(../images/formbg.gif);*/
     color: #666666;
     display: inline-block;
     border-radius: 4px;

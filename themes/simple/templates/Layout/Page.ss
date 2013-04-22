@@ -3,14 +3,15 @@
 	
 	<article>
 		<h1>$Title</h1>
+		
+		<% if Picture %>
+			<div id="genericpicture"><img src="{$Picture.URL}" style="float:right;" /></div>
+		<% end_if %>
 
 		<div class="content">$Content</div>
-		<iframe id="asdfg"></iframe><!--Gets rid of the problem??-->
-		<!--
-		<% if Picture %>
-			<div id="genericpicture"><img src="{$Picture}" /></div>
-		<% end_if %>
-		-->
+		<!--<iframe id="asdfg"></iframe>-->
+		
+	
 			</article>
 		$Form
 		$PageComments

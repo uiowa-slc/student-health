@@ -33,7 +33,7 @@
         <div class="views-row views-row-[$Pos} views-row-odd views-row-first">
 
 			<h2><a href="/services/self-care-guide/animal-bites" >$Title</a></h2>
-			<img src="http://studenthealth.uiowa.edu/sites/default/files/imagecache/services_thumnail/dog-bite.jpg" alt="Animal Bites Image" title=""  class="imagecache imagecache-services_thumnail imagecache-default imagecache-services_thumnail_default" width="70" height="70" /><p>$Content.NoHTML.Summary(8)</p><!--NoHTML allows for pictures to be pasted at the top of the content pane without breaking the preview/summary.  Don't ask me why it works-->
+			<img src="{$Picture.URL}" alt="Animal Bites Image" title=""  class="imagecache imagecache-services_thumnail imagecache-default imagecache-services_thumnail_default" width="70" height="70" /><p>$Content.NoHTML.Summary(8)</p><!--NoHTML allows for pictures to be pasted at the top of the content pane without breaking the preview/summary.  Don't ask me why it works-->
 			<span class="more"><a href="{$absoulteBaseURL}services/self-care-guide/{$URLSegment}" title="read more">Read More</a></span>
 
   		</div>

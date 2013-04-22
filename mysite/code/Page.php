@@ -6,6 +6,7 @@ class Page extends SiteTree {
 	);
 
 	public static $has_one = array(
+		'Picture' => 'Image'
 	);
 	
 	

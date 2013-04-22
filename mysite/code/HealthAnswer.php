@@ -9,7 +9,7 @@ class HealthAnswer extends Page {
 	"QuestionType" => "Text",
 	'Question' => 'HTMLText',
 	'Answer' => 'HTMLText',
-	'Source' => 'HTMLText'
+	'Source' => 'Text'
 	);
 
 
@@ -26,7 +26,7 @@ class HealthAnswer extends Page {
         $fields->addFieldToTab('Root.Main', new UploadField('Picture'));
         $fields->addFieldToTab('Root.Main', new HTMLEditorField('Question'));
         $fields->addFieldToTab('Root.Main', new HTMLEditorField('Answer'));
-        $fields->addFieldToTab('Root.Main', new HTMLEditorField('Source')); //Harder to post a link without it
+        $fields->addFieldToTab('Root.Main', new TextField('Source')); //Harder to post a link without it
          $fields->addFieldToTab('Root.Main', new TextField('FirstName', 'First Name'));
         $fields->addFieldToTab('Root.Main', new TextField('LastName', 'Last Name'));
         $fields->addFieldToTab('Root.Main', new HTMLEditorField('Question', 'Question Text'));
