@@ -85,7 +85,7 @@
 		    
 
           <li class="views-row views-row-1 views-row-odd views-row-first">
-<a href="{$Link}" class="imagecache imagecache-news_thumbnail imagecache-imagelink imagecache-news_thumbnail_imagelink"><div><img src="{$Picture.URL}" alt="News Item Image" title=""  class="imagecache imagecache-news_thumbnail" width="95" height="75" /></div></a>
+<a href="{$Link}" class="imagecache imagecache-news_thumbnail imagecache-imagelink imagecache-news_thumbnail_imagelink">$Picture.croppedImage(95,75)</a>
 <h5><a href="/news/{$Title}">$Title</a></h5>
 
 	<p>$Content.Summary(10)11</p>

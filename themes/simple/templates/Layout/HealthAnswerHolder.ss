@@ -52,12 +52,12 @@ $Content
 		<ul class="pager">	
 		
 	    <% if getAllAnswers.NotFirstPage %>
-	        <a class="prev" href="$getAllAnswers.PrevLink"><li class="pager-item">Prev</li></a>
+	        <a class="prev" href="$getAllAnswers.PrevLink"><li class="pager-item">< Prev</li></a>
 	    <% end_if %>	
 	
 		<% loop getAllAnswers.Pages %>	
 			<% if CurrentBool %>
-		         <span><li class="pager-item">$PageNum</li></span>
+		         <span><li class="pager-current">$PageNum</li></span>
 		    <% else %>
 		     	<% if Link %>
 		            <a href="$Link"><li class="pager-item">$PageNum</li></a>
@@ -68,7 +68,7 @@ $Content
 	    
 		 <% end_loop %>  
 		 <% if getAllAnswers.NotLastPage %>
-		 	<a class="next" href="$getAllAnswers.NextLink"><li class="pager-item">Next>></li></a>
+		 	<a class="next" href="$getAllAnswers.NextLink"><li class="pager-item">Next ></li></a>
 		 <% end_if %>
 		 
 		 </ul> 
@@ -100,12 +100,12 @@ $Content
 		<ul class="pager">	
 		
 	    <% if getPaginatedAnswers.NotFirstPage %>
-	        <a class="prev" href="$getPaginatedAnswers.PrevLink"><li class="pager-item">Prev</li></a>
+	        <a class="prev" href="$getPaginatedAnswers.PrevLink"><li class="pager-item">< Prev</li></a>
 	    <% end_if %>	
 	
 		<% loop getPaginatedAnswers.Pages %>	
 			<% if CurrentBool %>
-		         <span><li class="pager-item">$PageNum</li></span>
+		         <span><li class="pager-current">$PageNum</li></span>
 		    <% else %>
 		     	<% if Link %>
 		            <a href="$Link"><li class="pager-item">$PageNum</li></a>
@@ -116,7 +116,7 @@ $Content
 	    
 		 <% end_loop %>  
 		 <% if getPaginatedAnswers.NotLastPage %>
-		 	<a class="next" href="$getPaginatedAnswers.NextLink"><li class="pager-item">Next>></li></a>
+		 	<a class="next" href="$getPaginatedAnswers.NextLink"><li class="pager-item">Next ></li></a>
 		 <% end_if %>
 		 
 		 </ul> 
