@@ -28,81 +28,91 @@ class AskYourQuestion_Controller extends Page_Controller {
 		
 		$fields = new FieldList(
 		
-		TextField::create("FirstName", "<span>*</span> First Name:"),
-		TextField::create("LastName", "<span>*</span> Last Name:"),
+		TextField::create("FirstName", "First Name:"),
+		TextField::create("LastName", "Last Name:"),
 		TextAreaField::create("Question", "<span>*</span> Question:"),
 		OptionsetField::create("ResponsePreference", "<span>*</span> Would you like a response?", $source = array(
-		 "1" => "Yes",
-		 "2" => "No"), $value = "1"),
+		 "Yes" => "Yes",
+		 "No" => "No"), $value = "1"),
 		
 		EmailField::create("Email", "<span>*</span> Email:"),
-		OptionsetField::create("QuestionType", "<span>*</span> Question type:",  $source = array(
-      "1" => "Alcohol",
-      "2" => "Cold / Flu",
-      "3" => "Fitness",
-      "4" => "General",
-      "5" => "Illness",
-      "6" => "Medicine",
-      "7" => "Mental Health",
-      "8" => "Nutrition",
-      "9" => "Sexual Health",
-      "10" => "Stress"
+		OptionsetField::create("QuestionType", "<span>*</span> Question type:",  $sourced = array(
+      "Alcohol" => "Alcohol",
+      "Cold / Flu" => "Cold / Flu",
+      "Fitness" => "Fitness",
+      "General" => "General",
+      "Illness" => "Illness",
+      "Medicine" => "Medicine",
+      "Mental Health" => "Mental Health",
+      "Nutrition" => "Nutrition",
+      "Sexual Health" => "Sexual Health",
+      "Stress" => "Stress"
    ), $value = "1")
 	
 
 		);
 		
 		$actions = new FieldList(
-            new FormAction('askQuestion', 'Submit')
+            new FormAction('askQuestion', 'Submit', $sourced)
         );
         
-        $validator = new RequiredFields('FirstName', 'LastName', 'Question', 'ResponsePreference', 'Email', 'QuestionType');
+        $validator = new RequiredFields('Question', 'ResponsePreference', 'Email', 'QuestionType');
         
 		$form = new Form($this, 'questionForm', $fields, $actions, $validator);
 		
 		//$protector = SpamProtectorManager::update_form($form, 'Message', null, "Please enter the following words");
 		
+		
 		return $form;
 	}
 	
-	function askQuestion($data, $form){
+	function askQuestion($data, $form, $sourced){
 	
 		Session::clear("message");
 		
-		$newQuestion = new HealthAnswer();
-		$form->saveInto($newQuestion);
+		//$newQuestion = new HealthAnswer();
+		//$form->saveInto($newQuestion);
 		
 		
 		$questionHolder = QuestionHolder::get()->First();
 
-		$newQuestion->setParent($questionHolder);
-		$newQuestion->Title = $data["FirstName"] . $data["LastName"];
+		//$newQuestion->setParent($questionHolder);
+		//$newQuestion->Title = $data["FirstName"] . $data["LastName"];
 		
 		
 		
-		$newQuestion->writeToStage('Stage');
+		//$newQuestion->writeToStage('Stage');
 		//$newQuestion->publish('Stage');
 
-		//$form->AddErrorMessage('ResponsePreference', "You must indicate that you've read our Terms and Conditions before registering.", 'good');
+
+		/*Error message functionality for forms
+		$form->AddErrorMessage('ResponsePreference', "You must indicate that you've read our Terms and Conditions before registering.", 'good');
 		
-		//$form->sessionMessage("Your question has been sent!", "good");
-		//$form->setMessage("Your question has been sent!", 'good');
+		$form->sessionMessage("Your question has been sent!", "good");
+		$form->setMessage("Your question has been sent!", 'good');*/
+		
 		Session::set("success", "1");
 		//$url = Director::absoluteBaseURL() .'/health-answers/ask-your-question/?success=1';
 		
-		
-		
-		
-		
-		
 		$subject = "Student Health Question - " . $data["QuestionType"];
 		
-    	$body = "A new question has been asked" . '<br><br>Access link in CMS <a href="' . $newQuestion->Link() . '">hereee</a>';
+    	$body = "A new question has been asked <br><br>" . 
+    	//'<br><br>Access link in CMS <a href="' . $newQuestion->Link() . '">hereee</a><br><br>'
+    	'First Name: '. $data["FirstName"] . '<br><br>
+    	Last Name: '. $data["LastName"] . '<br><br>
+    	Question: '. $data["Question"] . '<br><br>
+    	ResponsePreference: '. $data["ResponsePreference"] . '<br><br>
+    	Email: '. $data["Email"] . '<br><br>
+    	QuestionType: '. $data["QuestionType"]  . '<br><br>';
+    	
+
+    	
+    	
 
     	$email = new Email(); 
     	$email->setTo($this->EmailTo); 	         
     	$email->setFrom($data["Email"]); 
-    	$email->setSubject("New student health question"); 
+    	$email->setSubject($subject); 
     	$email->setBody($body); 
     	$email->send(); 
 

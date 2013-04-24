@@ -9,7 +9,8 @@ class HealthAnswer extends Page {
 	"QuestionType" => "Text",
 	'Question' => 'HTMLText',
 	'Answer' => 'HTMLText',
-	'Source' => 'Text'
+	'ArticleDate' => 'Date',
+
 	);
 
 
@@ -26,18 +27,18 @@ class HealthAnswer extends Page {
         $fields->addFieldToTab('Root.Main', new UploadField('Picture'));
         $fields->addFieldToTab('Root.Main', new HTMLEditorField('Question'));
         $fields->addFieldToTab('Root.Main', new HTMLEditorField('Answer'));
-        $fields->addFieldToTab('Root.Main', new TextField('Source')); //Harder to post a link without it
-         $fields->addFieldToTab('Root.Main', new TextField('FirstName', 'First Name'));
-        $fields->addFieldToTab('Root.Main', new TextField('LastName', 'Last Name'));
-        $fields->addFieldToTab('Root.Main', new HTMLEditorField('Question', 'Question Text'));
-        $fields->addFieldToTab('Root.Main', new TextField('ResponsePreference', 'Response Preference'));
-        $fields->addFieldToTab('Root.Main', new TextField('Email'));
-        $fields->addFieldToTab('Root.Main', new TextField('QuestionType', 'Question Type'));
-
-        $fields->addFieldToTab('Root.Main', $dateField = new DateField('PublishDate'));
+        $fields->addFieldToTab('Root.QuestionInfo', new TextField('FirstName', 'First Name'));
+        $fields->addFieldToTab('Root.QuestionInfo', new TextField('LastName', 'Last Name'));
+        
+        $fields->addFieldToTab('Root.Main', $dateField = new DateField('ArticleDate'));
         $dateField->setConfig('showcalendar', true);
         $dateField->setConfig('dateformat', 'MM/dd/YYYY');
         
+        $fields->addFieldToTab('Root.QuestionInfo', new TextField('ResponsePreference', 'Response Preference'));
+        $fields->addFieldToTab('Root.QuestionInfo', new TextField('Email'));
+        $fields->addFieldToTab('Root.QuestionInfo', new TextField('QuestionType', 'Question Type'));
+        
+
         
         return $fields;
 

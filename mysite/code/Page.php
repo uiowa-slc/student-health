@@ -102,18 +102,6 @@ class Page extends SiteTree {
      }
      
      
-     //Used to record the name of the person that last published the page when a page is published
-     /*
-     public function onBeforeWrite(){
-     
-		$member = Member::currentUser();
-		$postedby = $member->FirstName . ' ' . $member->Surname;
-		$this->PostedBy = $postedby;
-		parent::onBeforeWrite();
-		//return Debug::show($this);
-	
-		
-	}	*/
 	
 	public function formatDate(){
 		$timestamp = strtotime($this->LastEdited);

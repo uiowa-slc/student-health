@@ -2,7 +2,7 @@
 
 
 <div id="main" class="typography">
-  <h1 class="node-517">Feeling Like Crap - Decoding the Symptoms</h1>  
+  <h1 class="node-517">$Title</h1>  
       
 
 <!-- news page -->
