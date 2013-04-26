@@ -86,9 +86,9 @@
 
           <li class="views-row views-row-1 views-row-odd views-row-first">
 <a href="{$Link}" class="imagecache imagecache-news_thumbnail imagecache-imagelink imagecache-news_thumbnail_imagelink">$Picture.croppedImage(95,75)</a>
-<h5><a href="/news/{$Title}">$Title</a></h5>
+<h5><a href="{$Link}">$Title</a></h5>
 
-	<p>$Content.Summary(10)11</p>
+	<p>$Content.Summary(10)</p>
 	
 	<span class="more"><a href="{$Link}" title="read more">Read More</a></span>
 		
@@ -121,7 +121,7 @@
 				<li class="views-row views-row-1 views-row-odd views-row-first views-row-last"><!-- news page -->
 					<h4>Question</h4>
 
-					<p>$Question</p>
+					<p>$Question.Summary(50)</p>
 					<p class="more"><a href="{$Link}" title="read more">Read the Answer</a></p>
 					<p class="ask"><a href="{$absoulteBaseURL}health-answers/ask-your-question" title="Ask Your Question">Ask Your Question</a></p>
 

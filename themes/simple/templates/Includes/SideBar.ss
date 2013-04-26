@@ -105,7 +105,11 @@
 	     
 	     	<% loop ChildrenOf(health-answers) %>
 	     	
-	     		<li class="leaf"><a href="{$Link}" title="">$Title</a></li>
+	     		<% if ShowInMenus %>
+	     	
+		     		<li class="leaf"><a href="{$Link}" title="">$Title</a></li>
+		     		
+		     	<% end_if %>
 	     		
 	        <% end_loop %>
 	        
@@ -133,25 +137,29 @@
 
 	<% if $URLSegment != 'home' %>
 	
-	<div id="block-menu-menu-health" class="">
-	<div class="line"></div>
-	<div id="sidebar-nav">
+		<div id="block-menu-menu-health" class="">
+		<div class="line"></div>
+		<div id="sidebar-nav">
+			
+		     <h2 class="title">Home</h2>
+		     
+		     <ul class="menu">
+		     
+		     	<% loop getHomeChildren %>
+		     	
+		     		<% if ShowInMenus %>
+		     	
+		     			<li class="leaf"><a href="{$Link}" title="">$Title</a></li>
+		     			
+		     		<% end_if %>
+		     		
+		        <% end_loop %>
+		        
+		     </ul>
+		     	 
+		 </div>
 		
-	     <h2 class="title">Home</h2>
-	     
-	     <ul class="menu">
-	     
-	     	<% loop getHomeChildren %>
-	     	
-	     		<li class="leaf"><a href="{$Link}" title="">$Title</a></li>
-	     		
-	        <% end_loop %>
-	        
-	     </ul>
-	     	 
-	 </div>
-	
-	</div> <!-- /block-inner, /block -->
+		</div> <!-- /block-inner, /block -->
 	
 	 <% end_if %> 
 		

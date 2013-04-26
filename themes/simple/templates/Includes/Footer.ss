@@ -42,26 +42,32 @@ Pharmacy: 319-335-9200<br />
 <div class="footer-nav">
 <ul>
     <li class="home"><a href="{$absoluteBaseURL}">Home</a>
+    <!--
     <ul>
     	<% loop getHomeChildren %>
         	<li><a href="{$absoluteBaseURL}{$URLSegment}">$Title</a></li>
        <% end_loop %>
     </ul>
+    -->
     </li>
     <li class="services"><a href="{$absoluteBaseURL}">Services</a>
+    <!--
     <ul>
     	<% loop ChildrenOf(services) %>
         	<li><a href="{$absoluteBaseURL}{$URLSegment}">$Title</a></li>
         <% end_loop %>
         
     </ul>
+    -->
     </li>
     <li class="wellness"><a href="{$absoluteBaseURL}wellness">Wellness</a>
+    <!--
     <ul>
         <% loop ChildrenOf(wellness) %>
         	<li><a href="{$absoluteBaseURL}{$URLSegment}">$Title</a></li>
         <% end_loop %>        
     </ul>
+    -->
     </li>
     <li class="health"><a href="{$absoluteBaseURL}health-answers/">Health Answers</a>
     <ul>

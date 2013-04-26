@@ -65,7 +65,7 @@ class HomePage_Controller extends Page_Controller {
 		
 	public function getHealthItem(){
 	
-		$healthanswer = HealthAnswer::get()->limit(1);
+		$healthanswer = HealthAnswer::get()->sort('ArticleDate', 'DESC')->limit(1);
 			    
 	    return $healthanswer;
 	    	    		
