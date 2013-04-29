@@ -38,7 +38,7 @@ class HealthAnswerHolder_Controller extends Page_Controller {
 		$pages = new PaginatedList($healthanswers, $this->request);    	
 	    $pages->setPageLength(3);
 	    
-	    $pages->sort('LastEdited', 'DESC');
+	    $pages->sort('ArticleDate', 'DESC');
 		
 	    return $pages;
 		
@@ -50,7 +50,7 @@ class HealthAnswerHolder_Controller extends Page_Controller {
 		$pages = new PaginatedList($this->Children(), $this->request);   	
 	    $pages->setPageLength(3);
 	    
-	    $pages->sort('LastEdited', 'DESC');
+	    $pages->sort('ArticleDate', 'DESC');
 		
 	    return $pages;
 		

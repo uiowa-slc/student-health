@@ -43,6 +43,12 @@ class HealthAnswer extends Page {
         return $fields;
 
      }
+     
+     public function formatDate(){
+		$timestamp = strtotime($this->ArticleDate);
+		$formattedDate = date("l, F j, Y", $timestamp);	
+		return $formattedDate;
+	}
 
 }
 class HealthAnswer_Controller extends Page_Controller {

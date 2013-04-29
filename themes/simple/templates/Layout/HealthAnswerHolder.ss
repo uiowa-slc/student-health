@@ -34,7 +34,7 @@ $Content
 	    <!-- news page -->
 	<div class="story">
 	<h2><a href="{$Link}">$Title</a></h2>
-	<p class="date">$formatDate</p><br />
+	<% if ArticleDate %><p class="date">$formatDate</p><br /><% end_if %>
 	<h3>Question</h3>
 	<p>$Question
 	</p>
@@ -84,7 +84,7 @@ $Content
 
 	    	<div class="story">
 			    <h2><a href="{$Link}">$Title</a></h2>
-			    <p class="date">$formatDate</p><br />
+			    <% if ArticleDate %><p class="date">$formatDate</p><br /><% end_if %>
 			    <h3>Question</h3>
 			    <p>$Question</p>
 			    <p class="more"><a href="{$Link}" title="read more">Read the Answer</a></p>
