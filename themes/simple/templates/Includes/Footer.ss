@@ -33,13 +33,13 @@ Pharmacy: 319-335-9200<br />
 <a href="{$absoluteBaseURL}comments">More contact info</a></p>
 </div>
 <div style="clear: left">&nbsp;</div>
-<p>Our mission is to deliver quality healthcare and promote healthy lifestyles enhancing success and learning for all University of Iowa students.</p>
-<div id="uiowa">
-<p>&copy; <a href="http://www.uiowa.edu/">The University of Iowa</a> 2012. All rights reserved.</p>
+
 
 </div>
-</div>
+
 <div class="footer-nav">
+
+<div class="footer-list">
 <ul>
     <li class="home"><a href="{$absoluteBaseURL}">Home</a>
     <!--
@@ -71,23 +71,32 @@ Pharmacy: 319-335-9200<br />
     </li>
     <li class="health"><a href="{$absoluteBaseURL}health-answers/">Health Answers</a>
     <ul>
-        <li><a href="{$absoluteBaseURL}health-answers/ask-your-question">Ask Your Question</a></li>
+        <!--<li><a href="{$absoluteBaseURL}health-answers/ask-your-question">Ask Your Question</a></li>-->
     </ul>
     </li>
     <li class="newss"><a href="{$absoluteBaseURL}news/">News</a></li>
 </ul>
+	<div class="clear"></div>
 </div>
-<div id="disclaimer">
-<div style="float: right;">
-<p><a href="http://www.aaahc.org/eweb/StartPage.aspx"><img width="316" height="76" alt="" src="{$ThemeDir}/images/ambulatory_healthcare_accreditation.jpeg" /></a></p>
-</div>
-<div style="float: left; width: 350px;">
-<p><a href="https://www.healthonnet.org/HONcode/Conduct.html?HONConduct747124"> <img src="http://www.honcode.ch/HONcode/Seal/HONConduct747124_s.gif" hspace="2" vspace="2" align="left" width="49" height="72" style="border:0px" title="This website is certified by Health On the Net Foundation. Click to verify." alt="This website is certified by Health On the Net Foundation. Click to verify." /></a></p>
-<p>This site complies with the<br />
-<a href="http://www.healthonnet.org/HONcode/Conduct.html"> HONcode standard for trustworthy health</a><br />
+
+<div class="footer-standard">
+<p><a href="http://www.aaahc.org/eweb/StartPage.aspx"><img width="316" height="76" alt="" src="{$ThemeDir}/images/ambulatory_healthcare_accreditation.jpeg" /></a></p></div>
+
+<div class="footer-standard">
+<p style="margin-left: 5px;"><a href="https://www.healthonnet.org/HONcode/Conduct.html?HONConduct747124"> <img style="margin-right: 10px;" src="http://www.honcode.ch/HONcode/Seal/HONConduct747124_s.gif" hspace="2" vspace="2" align="left" width="49" height="72" style="border:0px" title="This website is certified by Health On the Net Foundation. Click to verify." alt="This website is certified by Health On the Net Foundation. Click to verify." /></a></p>
+<p>This site complies with the
+<a href="http://www.healthonnet.org/HONcode/Conduct.html"> HONcode standard for trustworthy health</a>
 information:  <a href="https://www.healthonnet.org/HONcode/Conduct.html?HONConduct747124">verify here</a>.</p>
+
+<div class="clear"></div>
+</div>
+<div id="uiowa">
+	<p>&copy; <a href="http://www.uiowa.edu/">The University of Iowa</a> 2012. All rights reserved.</p>
 </div>
 </div>
+
+
+
 <p>&nbsp;</p>
 
   

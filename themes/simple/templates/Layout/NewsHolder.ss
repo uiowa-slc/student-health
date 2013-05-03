@@ -13,7 +13,7 @@
       
         <div class="views-row views-row-$Pos">
     <!-- news page -->
-<a href="{$Link}" class="imagecache imagecache-news_thumbnail imagecache-imagelink imagecache-news_thumbnail_imagelink"><img src="{$Picture.Link}" alt="News Item Image" title=""  class="imagecache imagecache-news_thumbnail" width="95" height="75" /></a><h2><a href="/news/bat-season">$Title</a></h2>
+<a href="{$Link}" class="imagecache imagecache-news_thumbnail imagecache-imagelink imagecache-news_thumbnail_imagelink">$Picture.croppedImage(95,75)</a><h2><a href="/news/bat-season">$Title</a></h2>
 <p class="date">$formatDate</p>
 <p>$Content.Summary(10)</p>
 <span class="more"><a href="{$Link}" title="read more">Read More</a></span>
@@ -43,7 +43,7 @@
 	<ul class="pager">	
 		
     <% if getPaginatedNews.NotFirstPage %>
-        <a class="prev" href="$getPaginatedNews.PrevLink"><li class="pager-item">Prev</li>/a>
+        <a class="prev" href="$getPaginatedNews.PrevLink"><li class="pager-item">Prev</li></a>
     <% end_if %>	
 
 	<% loop getPaginatedNews.Pages %>	

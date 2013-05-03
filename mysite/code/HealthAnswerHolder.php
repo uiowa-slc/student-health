@@ -8,7 +8,7 @@ class HealthAnswerHolder extends Page {
 	
 	static $has_one = array();	
 	
-	static $allowed_children = array('HealthAnswer');
+	static $allowed_children = array('HealthAnswer', 'HealthAnswerHolder');
 
 	
 	
@@ -36,7 +36,7 @@ class HealthAnswerHolder_Controller extends Page_Controller {
 		$healthanswers = HealthAnswer::get();
 		
 		$pages = new PaginatedList($healthanswers, $this->request);    	
-	    $pages->setPageLength(3);
+	    $pages->setPageLength(5);
 	    
 	    $pages->sort('ArticleDate', 'DESC');
 		
@@ -48,7 +48,7 @@ class HealthAnswerHolder_Controller extends Page_Controller {
 	
 		
 		$pages = new PaginatedList($this->Children(), $this->request);   	
-	    $pages->setPageLength(3);
+	    $pages->setPageLength(5);
 	    
 	    $pages->sort('ArticleDate', 'DESC');
 		

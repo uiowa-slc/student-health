@@ -30,6 +30,7 @@ class QuestionPage extends Page {
         $fields->addFieldToTab('Root.Main', new TextField('Email'));
         $fields->addFieldToTab('Root.Main', new TextField('QuestionType', 'Question Type'));
         
+        
         $fields->addFieldToTab('Root.Main', $dateField = new DateField('PublishDate'));
         $dateField->setConfig('showcalendar', true);
         $dateField->setConfig('dateformat', 'MM/dd/YYYY');
