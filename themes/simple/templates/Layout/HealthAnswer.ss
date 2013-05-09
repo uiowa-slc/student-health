@@ -12,11 +12,9 @@ $Question
 </p>
 <h2>Answer</h2>
 <p>$Answer</p>
-<p><strong><strong><a href="{$BaseHref}information"><font color="#df6421">Health Iowa/Student Health Team&nbsp;</font></a></strong></strong>&nbsp;</p>
-<% if PublishDate %>
-	<p>Written $PublishDate</p>
-<% end_if %>
-<p>Source: <font color="#800080"><a href="http://www.mayoclinic.org/">Mayo Clinic</a></font></p>
+
+
+
 </p>
 
 

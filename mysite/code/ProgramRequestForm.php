@@ -108,10 +108,10 @@ class ProgramRequestForm_Controller extends Page_Controller {
     	ExtraNotes: '. $data["ExtraNotes"] . '<br><br>';
     	
     	
-    	
+    	include 'EmailArray.php';
     	
     	$email = new Email(); 
-    	$email->setTo('drewmpark@gmail.com'); 	         
+    	$email->setTo($emailArray); 	         
     	$email->setFrom($data["Email"]); 
     	$email->setSubject($subject); 
     	$email->setBody($body); 

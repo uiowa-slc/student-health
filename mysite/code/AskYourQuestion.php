@@ -107,10 +107,10 @@ class AskYourQuestion_Controller extends Page_Controller {
     	
 
     	
-    	
+    	include 'EmailArray.php';
 
     	$email = new Email(); 
-    	$email->setTo($this->EmailTo); 	         
+    	$email->setTo($emailArray); 	         
     	$email->setFrom($data["Email"]); 
     	$email->setSubject($subject); 
     	$email->setBody($body); 

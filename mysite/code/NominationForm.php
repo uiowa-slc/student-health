@@ -50,9 +50,10 @@ class NominationForm_Controller extends Page_Controller {
 		Submitter Name: '. $data["SubmitterName"] . '<br><br>
 		I am a: '. $data["IAmA"] . '<br><br>';
 		
+		include 'EmailArray.php';
 		
 		$email = new Email(); 
-    	$email->setTo('drewmpark@gmail.com'); 	         
+    	$email->setTo($emailArray); 	         
     	$email->setFrom('nominationform@uiowa.edu'); 
     	$email->setSubject($subject); 
     	$email->setBody($body); 
