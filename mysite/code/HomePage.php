@@ -71,8 +71,8 @@ class HomePage_Controller extends Page_Controller {
 	    	    		
 	}
 	
-	public function getSliderItems(){
-		$slideritems = SliderItem::get();
+	public function getSliderItems($limit = 4){
+		$slideritems = SliderItem::get()->limit($limit)->sort('PublishDate', 'DESC');
 		
 		return $slideritems;
 		

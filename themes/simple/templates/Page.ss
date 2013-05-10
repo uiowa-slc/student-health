@@ -109,12 +109,13 @@ dropShadows: false});
 				
 				<div id="block-superfish-1" class=""><div class="block-inner">
 				
-					<ul id="superfish-1" class="sf-menu primary-links sf-horizontal sf-style-default sf-total-items-5 sf-parent-items-3 sf-single-items-2">
-						<li id="menu-437-1" class="active-trail first odd sf-item-1 sf-depth-1 sf-total-children-12 sf-parent-children-0 sf-single-children-12 menuparent"><a href="{$absoluteBaseURL}home" title="Home" class="sf-depth-1 menuparent <% if InSection(home) %>active<% end_if %>">Home</a>
+					<ul id="superfish-1" class="sf-menu primary-links sf-horizontal sf-style-default sf-total-items-6 sf-parent-items-3 sf-single-items-2">
+						<!--<li id="menu-437-1" class="active-trail first odd sf-item-1 sf-depth-1 sf-total-children-12 sf-parent-children-0 sf-single-children-12 menuparent"><a href="{$absoluteBaseURL}home" title="Home" class="sf-depth-1 menuparent <% if InSection(home) %>active<% end_if %>">Home</a>-->
+						<li id="menu-437-1" class="active-trail first odd sf-item-1 sf-depth-1 sf-total-children-12 sf-parent-children-0 sf-single-children-12 menuparent"><a href="{$absoluteBaseURL}info" title="Home" class="sf-depth-1 menuparent <% if InSection(home) %>active<% end_if %>">Info</a>
 							<ul>
-								<% loop ChildrenOf(home) %>
+								<% loop ChildrenOf(info) %>
 									
-										<li id="menu-633-1" class="first odd sf-item-{$Pos} sf-depth-2 sf-no-children"><a href="{$absoluteBaseURL}home/{$URLSegment}" title="{$Title}" class="sf-depth-2">$Title</a></li>
+										<li id="menu-633-1" class="first odd sf-item-{$Pos} sf-depth-2 sf-no-children"><a href="{$absoluteBaseURL}info/{$URLSegment}" title="{$Title}" class="sf-depth-2">$Title</a></li>
 										
 								<% end_loop %>
 								

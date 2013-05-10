@@ -41,10 +41,11 @@ Pharmacy: 319-335-9200<br />
 
 <div class="footer-list">
 <ul>
-    <li class="home"><a href="{$absoluteBaseURL}">Home</a>
+	<li class="home"><a href="{$absoluteBaseURL}">Home</a>
+    <!--<li class="info"><a href="{$absoluteBaseURL}">Info</a>-->
     <!--
     <ul>
-    	<% loop getHomeChildren %>
+    	<% loop ChildrenOf(home) %>
         	<li><a href="{$absoluteBaseURL}{$URLSegment}">$Title</a></li>
        <% end_loop %>
     </ul>

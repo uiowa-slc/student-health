@@ -145,13 +145,13 @@
 		     
 		     <ul class="menu">
 		     
-		     	<% loop getHomeChildren %>
+		     	<% loop ChildrenOf(info) %>
 		     	
-		     		<% if ShowInMenus %>
+		     	
 		     	
 		     			<li class="leaf"><a href="{$Link}" title="">$Title</a></li>
 		     			
-		     		<% end_if %>
+		     	
 		     		
 		        <% end_loop %>
 		        
