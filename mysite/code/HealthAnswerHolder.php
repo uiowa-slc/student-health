@@ -56,7 +56,12 @@ class HealthAnswerHolder_Controller extends Page_Controller {
 		
 	}
 	
+	public function withinPageRange(){
+		
+		
+	}
 	
+	public functio
 	
 	
 	

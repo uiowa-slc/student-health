@@ -55,7 +55,7 @@ $Content
 	        <a class="prev" href="$getAllAnswers.PrevLink"><li class="pager-item">< Prev</li></a>
 	    <% end_if %>	
 	
-		<% loop getAllAnswers.Pages %>	
+		<% loop getAllAnswers.PaginationSummary(7) %>	
 			<% if CurrentBool %>
 		         <span><li class="pager-current">$PageNum</li></span>
 		    <% else %>
@@ -103,16 +103,22 @@ $Content
 	        <a class="prev" href="$getPaginatedAnswers.PrevLink"><li class="pager-item">< Prev</li></a>
 	    <% end_if %>	
 	
-		<% loop getPaginatedAnswers.Pages %>	
-			<% if CurrentBool %>
-		         <span><li class="pager-current">$PageNum</li></span>
-		    <% else %>
-		     	<% if Link %>
-		            <a href="$Link"><li class="pager-item">$PageNum</li></a>
-		        <% else %>
-		            
-		        <% end_if %>
-		    <% end_if %>
+		<% loop getPaginatedAnswers.PaginationSummary(7) %>
+	
+				
+				<% if CurrentBool %>
+						
+							<span><li class="pager-current">$PageNum</li></span>
+							
+			        
+			    <% else %>
+			     	<% if Link %>
+			            <a href="$Link"><li class="pager-item">$PageNum</li></a>
+			        <% else %>
+			            
+			        <% end_if %>
+			    <% end_if %>
+			    
 	    
 		 <% end_loop %>  
 		 <% if getPaginatedAnswers.NotLastPage %>
