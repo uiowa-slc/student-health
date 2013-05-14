@@ -4,10 +4,10 @@
 	 	<% if $PostedBy=="Drew Parker " || $PostedBy=="Default Admin " || $PostedBy=="Drew Parker" || $PostedBy=="Default Admin" %>
 	 		Posted by <a href="/information">student-health</a> at $LastEdited
 	 	<% else %>
-	 		Posted by <a href="/information">$PostedBy</a> at $LastEdited 
+	 		Posted by <a href="{$BaseHref}information">$PostedBy</a> at $LastEdited 
 	 	<% end_if %>	 	
 	 <% else %>
-	 	Posted by <a href="/information">student-health</a> at $LastEdited 
+	 	Posted by <a href="{$BaseHref}information">student-health</a> at $LastEdited 
 	 <% end_if %>   
 	 
   </div>

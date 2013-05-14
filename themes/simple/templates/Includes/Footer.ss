@@ -51,7 +51,7 @@ Pharmacy: 319-335-9200<br />
     </ul>
     -->
     </li>
-    <li class="services"><a href="{$absoluteBaseURL}">Services</a>
+    <li class="services"><a href="{$absoluteBaseURL}services">Services</a>
     <!--
     <ul>
     	<% loop ChildrenOf(services) %>

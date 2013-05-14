@@ -104,7 +104,7 @@ dropShadows: false});
 			<div id="wrapper">
 				<% include Header %>
 			<div id="nav">
-				<p class="appointments"><a href="{$absoluteBaseURL}home/appointments/">Appointments</a></p>
+				<p class="appointments"><a href="{$absoluteBaseURL}info/appointments/">Appointments</a></p>
 				
 				
 				<div id="block-superfish-1" class=""><div class="block-inner">

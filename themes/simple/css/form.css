@@ -39,6 +39,10 @@ form .bad {
 .radio {
     margin-top: 3px;
 }
+
+.checkboxset:before {
+	clear: both;
+}
 .checkbox label.right,
     .radio label.right {
         text-align: left;
@@ -75,7 +79,7 @@ div.field {
     font-family: Arial, Helvetica, sans-serif
 }
 form label.left {
-    max-width:50%;
+    max-width:90%;
     padding-right: 5%;
     padding-bottom:10px;
     margin-top: 3px;
@@ -83,6 +87,7 @@ form label.left {
     font-size: 16px;
     font-weight: bold;
     color: rgb(102, 102, 102);
+    float: none;
     
 }
 form label.right {

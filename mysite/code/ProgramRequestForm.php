@@ -15,12 +15,31 @@ class ProgramRequestForm_Controller extends Page_Controller {
 
 	public function programRequest(){
 	
+		$desiredFormat = new CheckboxSetField('DesiredFormat', 'Format(s) desired:', array(
+		'Powerpoint' => 'Power point presentation (if you would like a power point presentation, please list in the additional notes/comments section at the bottom of the page if you can provide the required materials – computer, projector, projector screen)',
+		'Game' => 'Game',
+		'Discussion' => 'Discussion'
+		));
+		
+		
+		
+		$topicOfPresentation = new CheckboxSetField('TopicOfPresentation', 'Topic Of Presentation:', array(
+		'StressManagement' => 'Stress Management',
+		'PhysicalActivity' => 'Physical Activity',
+		'SexualHealth' => 'Sexual Health',
+		'Nutrition' => 'Nutrition',
+		'SubstanceAbuse' => 'Substance Abuse',
+		'Tobacco' => 'Tobacco',
+		'GeneralHealth' => 'General health'
+		));
+		
+	
 		$fields = new FieldList(
 		new TextField('FirstName', 'First Name:'),
 		new TextField('LastName', 'Last Name:'),
 		new OptionsetField('PreferredMode', 'Preferred mode of communication:', array(
 			'Phone' => 'Phone',
-			'Email' => 'Firefox'
+			'Email' => 'Email'
 			
 			)),
 		new TextField('Phone', 'Phone:'),
@@ -29,20 +48,8 @@ class ProgramRequestForm_Controller extends Page_Controller {
 		new TextField('FirstChoice', '1st Choice:'),
 		new TextField('SecondChoice', '2nd Choice:'),
 		new TextField('LocationOfEvent', 'Location Of Event:'),
-		new CheckboxSetField('DesiredFormat', 'Format(s) desired:', array(
-		'Powerpoint' => 'Power point presentation (if you would like a power point presentation, please list in the additional notes/comments section at the bottom of the page if you can provide the required materials – computer, projector, projector screen)',
-		'Game' => 'Game',
-		'Discussion' => 'Discussion'
-		)),
-		new CheckboxSetField('TopicOfPresentation', 'Topic Of Presentation:', array(
-		'StressManagement' => 'Stress Management',
-		'PhysicalActivity' => 'Physical Activity',
-		'SexualHealth' => 'Sexual Health',
-		'Nutrition' => 'Nutrition',
-		'SubstanceAbuse' => 'Substance Abuse',
-		'Tobacco' => 'Tobacco',
-		'GeneralHealth' => 'General health'
-		)),
+		$desiredFormat,
+		$topicOfPresentation,
 		new TextareaField('ExtraNotes', 'Extra notes/comments we need to know:'));
 				
 	

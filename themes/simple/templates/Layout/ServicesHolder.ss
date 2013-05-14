@@ -10,7 +10,7 @@
   
   
   <div class="content">
-    <p>SHS offers a variety of clinical and health promotion services. Click the links below to read more about our various services:</p>
+    <p>$Content</p>
   </div>
 
   
