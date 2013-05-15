@@ -55,17 +55,16 @@ $Content
 	        <a class="prev" href="$getAllAnswers.PrevLink"><li class="pager-item">< Prev</li></a>
 	    <% end_if %>	
 	
-		<% loop getAllAnswers.PaginationSummary(7) %>	
+		<% loop getAllAnswers.PaginationSummary(7) %>
 			<% if CurrentBool %>
 		         <span><li class="pager-current">$PageNum</li></span>
 		    <% else %>
 		     	<% if Link %>
 		            <a href="$Link"><li class="pager-item">$PageNum</li></a>
 		        <% else %>
-		            
+		            <li class="pager-item">...</li>
 		        <% end_if %>
 		    <% end_if %>
-	    
 		 <% end_loop %>  
 		 <% if getAllAnswers.NotLastPage %>
 		 	<a class="next" href="$getAllAnswers.NextLink"><li class="pager-item">Next ></li></a>
