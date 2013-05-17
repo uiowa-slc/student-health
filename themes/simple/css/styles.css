@@ -874,7 +874,8 @@ cursor:pointer;
 #footer {
 background:#cecba5;
 bottom:0;
-width:100%;
+width:980px;
+margin: auto;
 min-height:460px;   /* Height of the footer */
 }
 #footer::after {
@@ -885,8 +886,8 @@ min-height:460px;   /* Height of the footer */
 }
 
 #footer-content {
-width:980px;
-margin:20px auto 0px auto;}
+width:900px;
+margin:20px 35px 0px 45px;}
 
 .footer-box {
 margin:0;
@@ -1211,7 +1212,7 @@ iframe {
 
 #drherky {
 	width: 154x;
-	height: 170px;
+	height: 150px;
 	float: left;
 	margin-right: 30px;
 	display: block;
@@ -1244,7 +1245,9 @@ iframe {
 }
 
 .footer-details {
-	width: 630px;
+	width: 420px;
+	font: lighter 13px/16px Arial, Helvetica, sans-serif;
+
 }
 
 #footer-top-level li.news {
@@ -1252,6 +1255,19 @@ iframe {
 	font: lighter 13px/16px Arial, Helvetica, sans-serif;
 	color: #666;
 
+}
+
+.footer-sized {
+	min-height: 170px;
+}
+
+.footer-information {
+	min-height: 100px;
+	margin-bottom: 20px;
+}
+
+.hon {
+	margin-left: 28px;
 }
 
 
