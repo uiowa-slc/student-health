@@ -247,6 +247,17 @@ class Page_Controller extends ContentController {
 	}
 	*/
 	
+	public function getSidebarImage(){
+		$homepage = HomePage::get()->First();
+		return $homepage->SidebarImage();
+	}
+	
+	
+	public function getSidebarLink(){
+		$homepage = HomePage::get()->First();
+		return $homepage->SidebarLink;
+	}
+	
 	
 	
 	

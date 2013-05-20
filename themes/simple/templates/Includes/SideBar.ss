@@ -168,7 +168,7 @@
 
 
 
-<div id="block-block-3" class=""><div class="block-inner">
+<div id="block-block-3" class=""><div class="block-inner sidebar-pic">
 
   
 
@@ -217,11 +217,12 @@
 
   
 
-    <div class="line">&nbsp;</div>
+
 
 
 <div style="clear: left"></div>
-$getSidebarImage.croppedImage(250,204)
+
+<a href="{$getSidebarLink}">$getSidebarImage.croppedImage(250,180)</a>
 
 
 
