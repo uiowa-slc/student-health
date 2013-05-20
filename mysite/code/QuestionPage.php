@@ -39,6 +39,8 @@ class QuestionPage extends Page {
         return $fields;
 
      }
+     
+     public static $plural_name = "Question Pages";
 
 	
 
@@ -46,10 +48,6 @@ class QuestionPage extends Page {
 }
 class QuestionPage_Controller extends Page_Controller {
 
-	function onAfterPublish(){
-		//$holder = $this->QuestionType::get()->First();
-		//$this->setParent($holder);
-	}
 	
 
 }

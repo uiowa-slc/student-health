@@ -2,7 +2,7 @@
 class HomePage extends Page {
 
 	public static $db = array(
-	
+	'FeatureLink' => 'Text'
 	
 	);
 
@@ -10,7 +10,8 @@ class HomePage extends Page {
 	'SliderImage1' => 'Image',
 	'SliderImage2' => 'Image',
 	'SliderImage3' => 'Image',
-	'SliderImage4' => 'Image'
+	'SliderImage4' => 'Image',
+	'SidebarImage' => 'Image'
 	);
 	/*
 	
@@ -26,6 +27,15 @@ class HomePage extends Page {
 		
 	}
 	*/
+	
+	public function getCMSFields() {
+	
+        $fields = parent::getCMSFields();
+	
+        $fields->addFieldToTab('Root.Main', new UploadField('SidebarImage', 'Sidebar Image:'));
+        
+        return $fields;
+   }
 
 }
 class HomePage_Controller extends Page_Controller {

@@ -218,11 +218,11 @@
   
 
     <div class="line">&nbsp;</div>
-<div id="health-iowa">
 
-<div style="clear: left">&nbsp;</div>
-<p>Our mission is to deliver quality healthcare and promote healthy lifestyles enhancing success and learning for all University of Iowa students.</p>
-</div>
+
+<div style="clear: left"></div>
+$getSidebarImage.croppedImage(250,204)
+
 
 
   

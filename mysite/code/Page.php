@@ -20,6 +20,11 @@ class Page extends SiteTree {
 		}
 	}
 	
+	public function getSidebarImage(){
+		$homepage = HomePage::get()->First();
+		
+		return $homepage->SidebarImage();
+	}
 	
 	
 	public function getToplevel(){

@@ -29,12 +29,7 @@ class SliderItem extends Page {
 }
 class SliderItem_Controller extends Page_Controller {
 
-	public function getSliderItems(){
-		$slideritems = SliderItem::get();
-		
-		return $slideritems;
-		
-	}
+
 
 	
 }

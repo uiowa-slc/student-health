@@ -24,6 +24,9 @@ class NewsArticle extends Page {
         return $fields;
 
      }
+     
+     public static $plural_name = "News Articles";
+
 
 }
 class NewsArticle_Controller extends Page_Controller {

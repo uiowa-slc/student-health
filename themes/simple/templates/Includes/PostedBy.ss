@@ -1,13 +1,13 @@
   <div class="post_meta">
 
-	 <% if PostedBy %><!--Need to update this to never show my name-->
+	 <% if PostedBy %>
 	 	<% if $PostedBy=="Drew Parker " || $PostedBy=="Default Admin " || $PostedBy=="Drew Parker" || $PostedBy=="Default Admin" %>
-	 		Posted by <a href="/information">student-health</a> at $LastEdited
+	 		Posted by <a href="/information">student-health</a> at $LastEdited.Format("F j, Y - g:i a")
 	 	<% else %>
-	 		Posted by <a href="{$BaseHref}information">$PostedBy</a> at $LastEdited 
+	 		Posted by <a href="{$BaseHref}information">$PostedBy</a> at $LastEdited.Format("F j, Y - g:i a") 
 	 	<% end_if %>	 	
 	 <% else %>
-	 	Posted by <a href="{$BaseHref}information">student-health</a> at $LastEdited 
+	 	Posted by <a href="{$BaseHref}information">student-health</a> at $LastEdited.Format("F j, Y - g:i a") 
 	 <% end_if %>   
 
   </div>

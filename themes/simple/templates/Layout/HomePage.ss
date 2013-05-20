@@ -151,7 +151,7 @@
 <script type="text/javascript">
 	jQuery(window).bind("load", function() {
 		jQuery('#slider1').codaSlider({
-                autoSlide: true,
+                autoSlide: false,
                 autoSlideInterval: 4000,
                 autoSlideStopWhenClicked: true,
 				autoHeight: false
