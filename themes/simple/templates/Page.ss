@@ -1,11 +1,6 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-
-<!--[if !IE]><!-->
-<html lang="$ContentLocale">
-<!--<![endif]-->
-<!--[if IE 6 ]><html lang="$ContentLocale" class="ie ie6"><![endif]-->
-<!--[if IE 7 ]><html lang="$ContentLocale" class="ie ie7"><![endif]-->
-<!--[if IE 8 ]><html lang="$ContentLocale" class="ie ie8"><![endif]-->
+<!DOCTYPE html>
+<!--[if IE 8]><html class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--> <html> <!--<![endif]-->
 <head>
 	<% base_tag %>
 	<title><% if MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> | $SiteConfig.Title</title>
@@ -16,42 +11,13 @@
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<% require themedCSS(superfish) %>
-	<% require themedCSS(system-menus) %>
-	<% require themedCSS(styles) %>
-	<% require themedCSS(reset) %>	
-	<% require themedCSS(reset-min) %>	
-	<% require themedCSS(ie7) %> 
-	<% require themedCSS(system) %>
-	<% require themedCSS(form) %>
-	
+
 	
 	<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
 	<link href='http://fonts.googleapis.com/css?family=Nobile' rel='stylesheet' type='text/css'>
-	
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
 	
-	<script type="text/javascript" src="/misc/drupal.js?I"></script><!--Obviously I need to do something with this-->
-	<script type="text/javascript" src="{$ThemeDir}/javascript/poormanscron.js?I"></script>
-	<script type="text/javascript" src="{$ThemeDir}/javascript/jquery.hoverIntent.minified.js?I"></script>
-	<script type="text/javascript" src="{$ThemeDir}/javascript/jquery.bgiframe.min.js?I"></script>
-	<script type="text/javascript" src="{$ThemeDir}/javascript/superfish.js?I"></script>
-	<script type="text/javascript" src="{$ThemeDir}/javascript/supersubs.js?I"></script>
-	<script type="text/javascript" src="{$ThemeDir}/javascript/supposition.js?I"></script>
-	<script type="text/javascript" src="{$ThemeDir}/javascript/sftouchscreen.js?I"></script>
-	<script type="text/javascript" src="{$ThemeDir}/javascript/hoverIntent.js?I"></script>
-	<script type="text/javascript" src="{$ThemeDir}/javascript/superfish.js?I"></script>
-	<script type="text/javascript" src="{$ThemeDir}/javascript/jquery-easing.1.2.pack.js?I"></script>
-	<script type="text/javascript" src="{$ThemeDir}/javascript/jquery-easing-compatibility.1.2.pack.js?I"></script>
 
-	
-	<script type="text/javascript" src="{$ThemeDir}/javascript/jquery.coda-slider-2.0.js"></script>
-	
-	<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-jQuery.extend(Drupal.settings, { "basePath": "/", "cron": { "basePath": "/poormanscron", "runNext": 1347469639 } });
-//--><!]]>
-</script>
 <script type="text/javascript">
 <!--//--><![CDATA[//><!--
 jQuery(function(){
@@ -76,9 +42,7 @@ dropShadows: false});
 //--><!]]>
 </script>
 
-<script type="text/javascript" src="/sites/all/themes/shs/js/jquery.coda-slider-2.0.js"></script>
 
-  <script type="text/javascript"> </script>
   
   <script type="text/javascript">
 
@@ -97,7 +61,7 @@ dropShadows: false});
 	
 </head>
 <body class="$ClassName<% if Menu(2) %><% else %> no-sidebar<% end_if %> page-node">
-	<% include DivisionBarNonResponsive %>
+	<% include DivisionBar %>
 
 	<div id="background">
 		<div id="container">

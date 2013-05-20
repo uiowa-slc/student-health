@@ -134,19 +134,75 @@ class Page_Controller extends ContentController {
 	public static $allowed_actions = array (
 	);
 
-	public function init() {
-		parent::init();
 
-		// Note: you should use SS template require tags inside your templates 
-		// instead of putting Requirements calls here.  However these are 
-		// included so that our older themes still work
-		/*
-		Requirements::themedCSS('reset');
-		Requirements::themedCSS('layout'); 
-		Requirements::themedCSS('typography'); 
-		Requirements::themedCSS('form');
-		*/
-	}
+	public function init() {
+				parent::init();
+			
+			
+			
+				$themeFolder = $this->ThemeDir();
+			 
+				//Set the folder to our theme so that relative image paths work
+				Requirements::set_combined_files_folder($themeFolder . '/combinedfiles');
+				
+				Requirements::block('event_calendar/css/calendar_widget.css'); 
+				
+				/*
+				Requirements::block('event_calendar/javascript/locale/date_en.js'); 
+				Requirements::block('event_calendar/javascript/jquery.date.js'); 
+				Requirements::block('event_calendar/javascript/jquery.datePicker.js'); 
+				Requirements::block('event_calendar/javascript/calendar_core.js'); 
+				Requirements::block('event_calendar/javascript/calendar_widget.js');
+				Requirements::block('sapphire/thirdparty/jquery/jquery.js');  */
+				
+				$jsFiles = array(
+				
+					    $themeFolder.'/javascript/jquery.bgiframe.min.js',
+						$themeFolder.'/javascript/superfish.js',
+						$themeFolder.'/javascript/supersubs.js',
+						$themeFolder.'/javascript/supposition.js',
+						$themeFolder.'/javascript/sftouchscreen.js',
+						$themeFolder.'/javascript/hoverIntent.js',
+						$themeFolder.'/javascript/superfish.js',
+						$themeFolder.'/javascript/jquery-easing.1.2.pack.js',
+						$themeFolder.'/javascript/jquery-easing-compatibility.1.2.pack.js',
+						$themeFolder.'/javascript/jquery.coda-slider-2.0.js',
+						'division-bar/js/division-bar.js'
+		
+					);
+		
+					//Add all the files to combine into an array
+					$cssFiles = array(
+					    $themeFolder.'/css/superfish.css',
+					    $themeFolder.'/css/system-menus.css',
+					    $themeFolder.'/css/styles.css',
+						$themeFolder.'/css/reset.css',
+						$themeFolder.'/css/reset-min.css',
+						$themeFolder.'/css/ie7.css',
+						$themeFolder.'/css/system.css',
+						$themeFolder.'/css/form.css',
+		
+					);
+		
+				
+				if(Director::isDev()) {
+				
+					foreach($jsFiles as $jsFile){
+						Requirements::javascript($jsFile);	
+					}
+					foreach($cssFiles as $cssFile){
+						Requirements::css($cssFile);	
+					}			
+		
+				}else{
+					//Combine!  
+					Requirements::combine_files("combinedCSS.css", $cssFiles);
+					Requirements::combine_files(
+						'allcombined.js',$jsFiles);
+					}
+			}
+	
+		
 	
 	public function getHomeChildren(){
 	

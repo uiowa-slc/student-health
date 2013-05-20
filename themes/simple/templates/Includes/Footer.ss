@@ -92,7 +92,7 @@ information:  <a href="https://www.healthonnet.org/HONcode/Conduct.html?HONCondu
 <div class="clear"></div>
 </div>
 <div id="uiowa">
-	<p>&copy; <a href="http://www.uiowa.edu/">The University of Iowa</a> 2012. All rights reserved.</p>
+	<p>&copy; <a href="http://www.uiowa.edu/">The University of Iowa</a> {$Now.Year}. All rights reserved.</p>
 </div>
 </div>
 
