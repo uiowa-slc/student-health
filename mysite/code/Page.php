@@ -167,8 +167,8 @@ class Page_Controller extends ContentController {
 						$themeFolder.'/javascript/jquery-easing.1.2.pack.js',
 						$themeFolder.'/javascript/jquery-easing-compatibility.1.2.pack.js',
 						$themeFolder.'/javascript/jquery.coda-slider-2.0.js',
-						'division-bar/js/division-bar.js'
-		
+						'division-bar/js/division-bar.js',
+						$themeFolder.'/javascript/mailchimp.js'
 					);
 		
 					//Add all the files to combine into an array
