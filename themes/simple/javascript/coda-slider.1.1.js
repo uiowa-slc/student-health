@@ -55,8 +55,8 @@ jQuery.fn.codaSlider = function(settings) {
 		container.each(function(i) {
 			
 			// Create the Left and Right arrows
-			jQuery(this).before("<div class='stripNavL' id='stripNavL" + j + "'><a href='#'>Left</a><\/div>");
-			jQuery(this).after("<div class='stripNavR' id='stripNavR" + j + "'><a href='#'>Right</a><\/div>");
+			jQuery(this).before("<div class='stripNavL' id='stripNavL" + j + "'><a href='#'>previous</a><\/div>");
+			jQuery(this).after("<div class='stripNavR' id='stripNavR" + j + "'><a href='#'>next</a><\/div>");
 			
 			// Create the Tabs
 			jQuery(this).before("<div class='stripNav' id='stripNav" + j + "'><ul><\/ul><\/div>");

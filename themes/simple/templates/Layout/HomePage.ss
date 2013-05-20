@@ -98,7 +98,7 @@
 		
 			
 		</ul>
-	
+		<p><a href="news/" class="view-all">View all news &raquo;</a></p>
 	</div>
 	
 </div></div></div>
@@ -132,12 +132,13 @@
 			</ul>
 		</div>
 	</div>
+	
 </div>
 
 </div></div>
+<p><a href="health-answers/" class="view-all">View all Health Answers &raquo;</a></p>
 
 <!--end health answers--></div>
-
 <div class="clear"> 
 </div>
 </div></div>

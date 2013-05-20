@@ -449,6 +449,9 @@ color:#666;
 font:italic 17px/19px Georgia, Helvetica, sans-serif;
 margin:20px 0 0 0;}
 
+#clipboard-content {
+	background: #fdffd9;
+}
 #clipboard-content img {float:left;}
 
 #clipboard-content h4 {
@@ -474,10 +477,18 @@ font:italic 13px/19px Arial, Helvetica, sans-serif;}
 #clipboard-content .more a  {float:right; margin:0px 20px 0px 0px;}
 #clipboard-content span a {display:block;}
 #news-area {float:left;}
+a.view-all {
+	color: #DF6320;
+	float: right;
+	font: bold 12px Arial,Helvetica,sans-serif;
+	text-transform: uppercase;
+	clear: both;
+	
+}
 #clipboard {
 height:327px;
 float:right;	
-background:url(../images/notebook.png) no-repeat 0px 30px;}
+}
 
 #clipboard, #news-area {
 width:325px;
