@@ -9,5 +9,5 @@
 	 <% else %>
 	 	Posted by <a href="{$BaseHref}information">student-health</a> at $LastEdited 
 	 <% end_if %>   
-	 
+
   </div>

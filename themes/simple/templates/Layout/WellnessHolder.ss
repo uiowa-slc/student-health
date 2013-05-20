@@ -13,6 +13,7 @@
 	
 		$Form
 		$PageComments
+		
  
   <% include PostedBy %>
 
