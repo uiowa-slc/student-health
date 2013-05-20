@@ -55,7 +55,7 @@ class AskYourQuestion_Controller extends Page_Controller {
 		TextAreaField::create("Question", "<span>*</span> Question:"),
 		$responsePreference,
 
-		EmailField::create("Email", "<span>*</span> Email:")
+		EmailField::create("Email", "Email:")
 		
 	
 
@@ -65,7 +65,7 @@ class AskYourQuestion_Controller extends Page_Controller {
             new FormAction('askQuestion', 'Submit')
         );
         
-        $validator = new RequiredFields('Question', 'ResponsePreference', 'Email');
+        $validator = new RequiredFields('Question', 'ResponsePreference');
         
 		$form = new Form($this, 'questionForm', $fields, $actions, $validator);
 		
