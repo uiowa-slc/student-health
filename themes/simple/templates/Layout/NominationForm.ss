@@ -13,6 +13,9 @@
 		
 	
 			</article>
+		  <% if Success %>
+	    	<div class="questionSuccess">Your question has been sent!</div>
+	      <% end_if %>
 		$NominationForm
 		$PageComments
 		

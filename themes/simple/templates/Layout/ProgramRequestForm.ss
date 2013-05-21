@@ -8,6 +8,9 @@
 
   
   <div class="content">
+  	<% if Success %>
+	    <div class="questionSuccess">Your question has been sent!</div>
+	<% end_if %>
     $programRequest
   </div>
 

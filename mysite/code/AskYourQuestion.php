@@ -69,7 +69,7 @@ class AskYourQuestion_Controller extends Page_Controller {
         
 		$form = new Form($this, 'questionForm', $fields, $actions, $validator);
 		
-		//$protector = SpamProtectorManager::update_form($form, 'Message', null, "Please enter the following words");
+		$protector = SpamProtectorManager::update_form($form, 'Message', null, "Please enter the following words");
 		
 		
 		return $form;

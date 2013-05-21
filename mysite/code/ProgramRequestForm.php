@@ -35,18 +35,18 @@ class ProgramRequestForm_Controller extends Page_Controller {
 		
 	
 		$fields = new FieldList(
-		new TextField('FirstName', 'First Name:'),
-		new TextField('LastName', 'Last Name:'),
-		new OptionsetField('PreferredMode', 'Preferred mode of communication:', array(
+		new TextField('FirstName', '<span>*</span> First Name:'),
+		new TextField('LastName', '<span>*</span> Last Name:'),
+		new OptionsetField('PreferredMode', '<span>*</span> Preferred mode of communication:', array(
 			'Phone' => 'Phone',
 			'Email' => 'Email'
 			
 			)),
-		new TextField('Phone', 'Phone:'),
-		new TextField('Email', 'Email:'),
+		new TextField('Phone', '<span>*</span> Phone:'),
+		new TextField('Email', '<span>*</span> Email:'),
 		new TextareaField('Organization', 'Organization:'),
-		new TextField('FirstChoice', '1st Choice:'),
-		new TextField('SecondChoice', '2nd Choice:'),
+		new TextField('FirstChoice', '<span>*</span> First choice of date and time:'),
+		new TextField('SecondChoice', '<span>*</span> Second choice of date and time:'),
 		new TextField('LocationOfEvent', 'Location Of Event:'),
 		$desiredFormat,
 		$topicOfPresentation,
@@ -58,17 +58,19 @@ class ProgramRequestForm_Controller extends Page_Controller {
             new FormAction('makeProgramRequest', 'Submit')
         );
         
-        $validator = new RequiredFields();
+        $validator = new RequiredFields('FirstName', 'LastName', 'Phone', 'Email', 'FirstChoice', 'SecondChoice');
         
 		$form = new Form($this, 'programRequest', $fields, $actions, $validator);
 		
-		//$protector = SpamProtectorManager::update_form($form, 'Message', null, "Please enter the following words");
+		$protector = SpamProtectorManager::update_form($form, 'Message', null, "Please enter the following words");
 		
 		
 		return $form;
 	}
 	
 	public function makeProgramRequest($data, $form){
+	
+		Session::clear("programRequestSuccess");
 		
 		$desiredFormatResult = '';
 		$topicOfPresentationResult = '';
@@ -123,11 +125,31 @@ class ProgramRequestForm_Controller extends Page_Controller {
     	$email->setSubject($subject); 
     	$email->setBody($body); 
     	$email->send(); 
+    	
+    	Session::set("programRequestSuccess", "1");
 
 		return Controller::redirectBack();
 		
 	}
 	
+	
+	function Success(){
+		//$param = $this->request->allParams();
+		//$param = $this->request->param('success');
+		
+		$param = Session::get("programRequestSuccess");
+		
+		//print_r ("PARAM IS " . $param);
+		
+
+		if ($param=="1"){
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+
 	
 	
 

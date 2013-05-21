@@ -17,8 +17,8 @@ class NominationForm_Controller extends Page_Controller {
 	
 	public function NominationForm(){
 		$fields = new FieldList(
-			new TextField('HonoreeName', 'Honoree Name:'),
-			new TextAreaField('Description', 'Please describe the exemplary performance (include date and time of event)'),
+			new TextField('HonoreeName', '<span>*</span> Honoree Name:'),
+			new TextAreaField('Description', '<span>*</span> Please describe the exemplary performance (include date and time of event)'),
 			new TextField('SubmitterName', 'Submitter Name:'),
 			new OptionsetField('IAmA', 'I am a:', array(
 			'Patient/Visitor' => 'Patient/Visitor',
@@ -30,11 +30,11 @@ class NominationForm_Controller extends Page_Controller {
             new FormAction('sendNominationForm', 'Submit')
         );
         
-        $validator = new RequiredFields();
+        $validator = new RequiredFields('HonoreeName', 'Description');
         
 		$form = new Form($this, 'NominationForm', $fields, $actions, $validator);
 		
-		//$protector = SpamProtectorManager::update_form($form, 'Message', null, "Please enter the following words");
+		$protector = SpamProtectorManager::update_form($form, 'Message', null, "Please enter the following words");
 		
 		
 		return $form;
@@ -42,9 +42,11 @@ class NominationForm_Controller extends Page_Controller {
 	
 	public function sendNominationForm($data, $form){
 	
+		Session::clear("nominationSuccess");
+	
 		$subject = 'New nomination';
 		
-		$body = "A new program request has been made <br><br>" .
+		$body = "A new nomination has been made <br><br>" .
 		'Honoree Name: '. $data["HonoreeName"] . '<br><br>
 		Description: '. $data["Description"] . '<br><br>
 		Submitter Name: '. $data["SubmitterName"] . '<br><br>
@@ -59,9 +61,28 @@ class NominationForm_Controller extends Page_Controller {
     	$email->setBody($body); 
     	$email->send(); 
     	
+    	Session::set("nominationSuccess", "1"); 
+    	
     	return Controller::redirectBack();
 	}
 	
+	function Success(){
+		//$param = $this->request->allParams();
+		//$param = $this->request->param('success');
+		
+		$param = Session::get("nominationSuccess");
+		
+		//print_r ("PARAM IS " . $param);
+		
+
+		if ($param=="1"){
+			return true;
+		}
+		else {
+			return false;
+		}
+	}
+
 	
 
 	
