@@ -199,6 +199,12 @@
 	<!-- Add your own MailChimp form style overrides in your site stylesheet or in here. --><!-- Add your own MailChimp form style overrides in your site stylesheet or in here. -->
 </style><div id="mc_embed_signup">
 <form action="http://uiowa.us2.list-manage1.com/subscribe/post?u=c61b1cddac92babd42d7d628e&amp;id=c3ef47a8fb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+
+<div id="socialMedia">
+	<a href="https://twitter.com/hawkeye_health"><img id="twitterPic" src="{$ThemeDir}/images/twitter-logo.png" /></a>
+	<a href="http://www.youtube.com/user/UIStudentWellness"><img id="youtubePic" src="{$ThemeDir}/images/youtube-logo.png" /></a>
+</div>
+
 <div class="mc-field-group">
 	<label for="mce-EMAIL">Subscribe to our newsletter! Enter your email address below:</label><br />
 	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" />
@@ -209,9 +215,9 @@
 </div>
 <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" /></div>
 </form>
+
 </div>
 
-  
 </div></div> <!-- /block-inner, /block -->
 <div id="block-block-4" class=""><div class="block-inner">
 
