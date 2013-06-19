@@ -21,7 +21,7 @@ class NewsHolder_Controller extends Page_Controller {
 	
 	public function getPaginatedNews(){
 	
-		$news = NewsArticle::get();
+		$news = NewsArticle::get()->sort('PublishDate', 'DESC');
 		
 		$pages = new PaginatedList($news, $this->request);    	
 	    $pages->setPageLength(4);

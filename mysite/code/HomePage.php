@@ -48,7 +48,7 @@ class HomePage_Controller extends Page_Controller {
 		
 	public function getNewsItems(){
 	
-		$news = NewsArticle::get()->limit(3);
+		$news = NewsArticle::get()->sort('PublishDate', 'DESC')->limit(3);
 		
 		/*
 		$homepageNews = new ArrayList(); 
