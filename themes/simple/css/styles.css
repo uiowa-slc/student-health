@@ -609,7 +609,7 @@ font-size:13px;}
 margin:20px 0 0 0;}
 
 .view-id-services .views-row {
-width:190px;
+width:180px;
 background:#fbfbf4;
 float:left;
 padding:10px;
@@ -635,7 +635,7 @@ overflow: hidden;
 .view-id-services .views-row-30
 
  {
-margin:0 10px;}
+/*margin:0 10px;*/}
 
 .imagefield-field_services_image {
 margin:0 0 20px 20px;
