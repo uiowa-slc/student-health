@@ -201,7 +201,7 @@
 <form action="http://uiowa.us2.list-manage1.com/subscribe/post?u=c61b1cddac92babd42d7d628e&amp;id=c3ef47a8fb" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
 
 <div id="socialMediaContainer">
-	<p>Connect with Student Health: </p>
+	<p>Connect with Student Health & Wellness: </p>
 	<div id="socialMedia">
 		<a href="https://twitter.com/hawkeye_health"><img id="twitterPic" src="{$ThemeDir}/images/twitter-logo.png" /></a>
 		<a href="http://www.youtube.com/user/UIStudentWellness"><img id="youtubePic" src="{$ThemeDir}/images/youtube-logo.png" /></a>
