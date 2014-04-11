@@ -1,7 +1,7 @@
 <?php
 class AskYourQuestion extends Page {
 
-	public static $db = array(
+	private static $db = array(
 	"EmailTo" => "Text"
 	);
 	

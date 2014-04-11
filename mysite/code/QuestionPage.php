@@ -6,7 +6,7 @@
 
 class QuestionPage extends Page {
 
-	public static $db = array(
+	private static $db = array(
 		"FirstName" => 'Text',
 		"LastName" => 'Text',
 		"Question" => 'Text',
@@ -40,7 +40,7 @@ class QuestionPage extends Page {
 
      }
      
-     public static $plural_name = "Question Pages";
+     private static $plural_name = "Question Pages";
 
 	
 

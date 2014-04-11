@@ -1,7 +1,7 @@
 <?php
 class HomeContent extends Page {
 
-	public static $db = array(
+	private static $db = array(
 	);
 	
 	static $has_one = array();	
