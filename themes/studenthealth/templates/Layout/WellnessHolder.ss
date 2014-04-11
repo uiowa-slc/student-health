@@ -3,7 +3,7 @@
 
 		<div class="content">
 			<div>
-				<!--<div class="header-wrap-interior"><img src="http://studenthealth.uiowa.edu/sites/all/themes/shs/images/healthiowa.png" alt="Health Iowa" /></div>-->
+				<!--<div class="header-wrap-interior"><img src="$ThemeDir/images/healthiowa.png" alt="Health Iowa" /></div>-->
 					<div class="right-column">
 					<div id="dumbbell-herky">Student Health & Wellness</div>
 						$RightColumn
