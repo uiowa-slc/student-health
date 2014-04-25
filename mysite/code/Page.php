@@ -2,13 +2,14 @@
 class Page extends SiteTree {
 
 	private static $db = array(
-		
+	'PostedBy' => 'Text'
 	);
 
 	private static $has_one = array(
+		'Picture' => 'Image'
 	);
-
-
+	
+	
 	private static $many_many = array (
 	);
 
