@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/colymba/GridFieldBulkEditingTools.git",
-                "reference": "43c8b0ee730525ab6e2f23def9333cccac9d0571"
+                "reference": "8836b2e389d006c9502ea7da1c48388ca5a71730"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/colymba/GridFieldBulkEditingTools/zipball/43c8b0ee730525ab6e2f23def9333cccac9d0571",
-                "reference": "43c8b0ee730525ab6e2f23def9333cccac9d0571",
+                "url": "https://api.github.com/repos/colymba/GridFieldBulkEditingTools/zipball/8836b2e389d006c9502ea7da1c48388ca5a71730",
+                "reference": "8836b2e389d006c9502ea7da1c48388ca5a71730",
                 "shasum": ""
             },
             "require": {
@@ -45,7 +45,7 @@
                 "gridfield bulk upload",
                 "silverstripe"
             ],
-            "time": "2014-03-15 13:53:20"
+            "time": "2014-05-12 16:10:06"
         },
         {
             "name": "composer/installers",
@@ -53,15 +53,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "df19b48f557987e0a9bddff0c12dde37d5bcb757"
+                "reference": "eb9b5b6f59fbaaa6aa7c8fabd2d66e60f376eaa2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/df19b48f557987e0a9bddff0c12dde37d5bcb757",
-                "reference": "df19b48f557987e0a9bddff0c12dde37d5bcb757",
+                "url": "https://api.github.com/repos/composer/installers/zipball/eb9b5b6f59fbaaa6aa7c8fabd2d66e60f376eaa2",
+                "reference": "eb9b5b6f59fbaaa6aa7c8fabd2d66e60f376eaa2",
                 "shasum": ""
             },
             "replace": {
+                "roundcube/plugin-installer": "*",
                 "shama/baton": "*"
             },
             "require-dev": {
@@ -121,6 +122,7 @@
                 "phpbb",
                 "piwik",
                 "ppi",
+                "roundcube",
                 "shopware",
                 "silverstripe",
                 "symfony",
@@ -129,7 +131,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-04-15 03:26:48"
+            "time": "2014-05-07 15:43:15"
         },
         {
             "name": "md/division-bar",
@@ -169,12 +171,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-project.git",
-                "reference": "fa0acec225c23546e984170cb4399fe477d8b35b"
+                "reference": "96ecc6fcc7256169041f7c89baa463cf3d8034f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/fa0acec225c23546e984170cb4399fe477d8b35b",
-                "reference": "fa0acec225c23546e984170cb4399fe477d8b35b",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/96ecc6fcc7256169041f7c89baa463cf3d8034f5",
+                "reference": "96ecc6fcc7256169041f7c89baa463cf3d8034f5",
                 "shasum": ""
             },
             "require": {
@@ -209,7 +211,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-project/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
-            "time": "2014-05-06 14:59:57"
+            "time": "2014-05-09 18:18:14"
         },
         {
             "name": "silverstripe-themes/simple",
@@ -334,51 +336,6 @@
                 "silverstripe"
             ],
             "time": "2014-03-31 19:36:16"
-        },
-        {
-            "name": "silverstripe/dashboard",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/unclecheese/silverstripe-dashboard.git",
-                "reference": "2deb5c475fabfb589609abf6053c245eac4b3b37"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-dashboard/zipball/2deb5c475fabfb589609abf6053c245eac4b3b37",
-                "reference": "2deb5c475fabfb589609abf6053c245eac4b3b37",
-                "shasum": ""
-            },
-            "require": {
-                "silverstripe/cms": "~3.1",
-                "silverstripe/framework": "~3.1"
-            },
-            "replace": {
-                "silverstripe/dashboard": "*"
-            },
-            "type": "silverstripe-module",
-            "extra": {
-                "installer-name": "dashboard"
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Uncle Cheese",
-                    "email": "unclecheese@leftandmain.com",
-                    "homepage": "http://leftandmain.com"
-                }
-            ],
-            "description": "Adds a dashboard to the SilverStripe CMS",
-            "keywords": [
-                "cms",
-                "dashboard",
-                "module",
-                "silverstripe"
-            ],
-            "time": "2014-04-29 22:15:41"
         },
         {
             "name": "silverstripe/framework",
@@ -746,12 +703,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/unclecheese/silverstripe-gridfield-betterbuttons.git",
-                "reference": "b67b0a4c5e748538de202ffe1fd452a3d6538732"
+                "reference": "ecd189fd2b60e1e815d8efa6bd0187586c9c5a15"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/b67b0a4c5e748538de202ffe1fd452a3d6538732",
-                "reference": "b67b0a4c5e748538de202ffe1fd452a3d6538732",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/ecd189fd2b60e1e815d8efa6bd0187586c9c5a15",
+                "reference": "ecd189fd2b60e1e815d8efa6bd0187586c9c5a15",
                 "shasum": ""
             },
             "require": {
@@ -775,7 +732,52 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2014-04-29 22:28:06"
+            "time": "2014-05-08 08:38:37"
+        },
+        {
+            "name": "unclecheese/dashboard",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/unclecheese/silverstripe-dashboard.git",
+                "reference": "2deb5c475fabfb589609abf6053c245eac4b3b37"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-dashboard/zipball/2deb5c475fabfb589609abf6053c245eac4b3b37",
+                "reference": "2deb5c475fabfb589609abf6053c245eac4b3b37",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/cms": "~3.1",
+                "silverstripe/framework": "~3.1"
+            },
+            "replace": {
+                "silverstripe/dashboard": "*"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "dashboard"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Uncle Cheese",
+                    "email": "unclecheese@leftandmain.com",
+                    "homepage": "http://leftandmain.com"
+                }
+            ],
+            "description": "Adds a dashboard to the SilverStripe CMS",
+            "keywords": [
+                "cms",
+                "dashboard",
+                "module",
+                "silverstripe"
+            ],
+            "time": "2014-04-29 22:15:41"
         },
         {
             "name": "unclecheese/eventcalendar",
