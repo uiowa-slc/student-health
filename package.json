@@ -1,12 +1,12 @@
 {
-  "name": "student-health",
+  "name": "division-project",
   "version": "0.1.1",
   "devDependencies": {
-    "grunt": "~0.4.4",
-    "grunt-contrib-concat": "~0.4.0",
-    "grunt-contrib-uglify": "~0.4.0",
-    "grunt-contrib-sass": "~0.7.2",
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt-simple-watch": "~0.1.2"
+    "grunt": "*",
+    "grunt-contrib-concat": "*",
+    "grunt-contrib-uglify": "*",
+    "grunt-contrib-sass": "*",
+    "grunt-contrib-watch": "*",
+    "grunt-simple-watch": "*"
   }
 }
