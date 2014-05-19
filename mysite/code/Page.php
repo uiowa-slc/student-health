@@ -2,7 +2,7 @@
 class Page extends SiteTree {
 
 	private static $db = array(
-	'PostedBy' => 'Text'
+		'PostedBy' => 'Text'
 	);
 
 	private static $has_one = array(
@@ -26,7 +26,7 @@ class Page extends SiteTree {
 		
 		return $f;
 	}
-
+	
 	
 }
 class Page_Controller extends ContentController {
@@ -48,7 +48,12 @@ class Page_Controller extends ContentController {
 	 */
 	private static $allowed_actions = array (
 	);
-
+	
+	public function RandomQuestion(){
+		return HealthAnswer::get()->Sort('RAND()')->First();
+	}
+	
+	
 	public function init() {
 		parent::init();
 
