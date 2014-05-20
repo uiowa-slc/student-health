@@ -1,7 +1,7 @@
 <?php
 class ServicesHolder extends Page {
 
-	private static $db = array(
+	public static $db = array(
 	
 	);
 	
@@ -15,7 +15,7 @@ class ServicesHolder extends Page {
 class ServicesHolder_Controller extends Page_Controller {
 
 	
-	private static $allowed_actions = array (
+	public static $allowed_actions = array (
 	);
 	
 

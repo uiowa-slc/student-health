@@ -1,7 +1,7 @@
 <?php
 class WellnessHolder extends Page {
 
-	private static $db = array(
+	public static $db = array(
 	'RightColumn' => 'HTMLText'
 	);
 	
@@ -23,7 +23,7 @@ class WellnessHolder extends Page {
 class WellnessHolder_Controller extends Page_Controller {
 
 	
-	private static $allowed_actions = array (
+	public static $allowed_actions = array (
 	);
 	
 

@@ -20,7 +20,7 @@ class StaffHolder extends Page {
 class StaffHolder_Controller extends Page_Controller {
 
 	
-	private static $allowed_actions = array (
+	public static $allowed_actions = array (
 	);
 	
 

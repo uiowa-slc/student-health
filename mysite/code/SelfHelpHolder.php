@@ -1,7 +1,7 @@
 <?php
 class SelfHelpHolder extends Page {
 
-	private static $db = array(
+	public static $db = array(
 	
 	);
 	
@@ -15,7 +15,7 @@ class SelfHelpHolder extends Page {
 class SelfHelpHolder_Controller extends Page_Controller {
 
 	
-	private static $allowed_actions = array (
+	public static $allowed_actions = array (
 	);
 	
 	

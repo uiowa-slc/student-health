@@ -1,7 +1,7 @@
 <?php
 class HomePage extends Page {
 
-	private static $db = array(
+	public static $db = array(
 	'SidebarLink' => 'Text'
 	
 	);

@@ -23,7 +23,7 @@ SiteTree::enable_nested_urls();
 HtmlEditorConfig::get('cms')->setOption('paste_text_sticky',true);
 HtmlEditorConfig::get('cms')->setOption('paste_text_sticky_default',true);
 
-//SpamProtectorManager::set_spam_protector("RecaptchaProtector");
+SpamProtectorManager::set_spam_protector("RecaptchaProtector");
 
-require_once("recaptchaKeys.php");
+require_once("recaptchaKey.php");
 
