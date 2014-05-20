@@ -55,7 +55,7 @@ class HealthAnswer extends Page {
 class HealthAnswer_Controller extends Page_Controller {
 
 	
-	private static $allowed_actions = array (
+	public static $allowed_actions = array (
 	);
 	
 	

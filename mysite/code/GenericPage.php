@@ -30,7 +30,7 @@ class GenericPage extends Page {
 class GenericPage_Controller extends Page_Controller {
 
 	
-	private static $allowed_actions = array (
+	public static $allowed_actions = array (
 	);
 	
 
