@@ -1,7 +1,7 @@
 <?php
 class HealthAnswerHolder extends Page {
 
-	public static $db = array(
+	private static $db = array(
 	
 	
 	);

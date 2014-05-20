@@ -25,14 +25,14 @@ class NewsArticle extends Page {
 
      }
      
-     public static $plural_name = "News Articles";
+     private static $plural_name = "News Articles";
 
 
 }
 class NewsArticle_Controller extends Page_Controller {
 
 	
-	public static $allowed_actions = array (
+	private static $allowed_actions = array (
 	);
 	
 

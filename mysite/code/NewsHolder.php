@@ -1,14 +1,14 @@
 <?php
 class NewsHolder extends Page {
 
-	public static $db = array(
+	private static $db = array(
 	
 	);
 	
 	static $has_one = array();	
 
 	
-	public static $allowed_children = array ('NewsArticle');
+	private static $allowed_children = array ('NewsArticle');
 	
 
      
@@ -16,7 +16,7 @@ class NewsHolder extends Page {
 class NewsHolder_Controller extends Page_Controller {
 
 	
-	public static $allowed_actions = array (
+	private static $allowed_actions = array (
 	);
 	
 	public function getPaginatedNews(){

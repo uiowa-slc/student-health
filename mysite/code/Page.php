@@ -1,11 +1,11 @@
 <?php
 class Page extends SiteTree {
 
-	public static $db = array(
+	private static $db = array(
 	'PostedBy' => 'Text'
 	);
 
-	public static $has_one = array(
+	private static $has_one = array(
 		'Picture' => 'Image'
 	);
 	
@@ -136,7 +136,7 @@ class Page_Controller extends ContentController {
 	 *
 	 * @var array
 	 */
-	public static $allowed_actions = array (
+	private static $allowed_actions = array (
 	);
 
 

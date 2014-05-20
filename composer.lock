@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "23d88f17b0dbc03b757982636e48fb39",
+    "hash": "2ffab4a5887fe8a235a60507fad7b8c6",
     "packages": [
         {
             "name": "composer/installers",
@@ -159,22 +159,22 @@
         },
         {
             "name": "silverstripe/cms",
-            "version": "3.0.10",
+            "version": "3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-cms.git",
-                "reference": "28043317bbdfd02b61734c8ea07c4225d3f6a87f"
+                "reference": "7adbf81c74c6483d071d72c4359ac4903ee65db3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/28043317bbdfd02b61734c8ea07c4225d3f6a87f",
-                "reference": "28043317bbdfd02b61734c8ea07c4225d3f6a87f",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/7adbf81c74c6483d071d72c4359ac4903ee65db3",
+                "reference": "7adbf81c74c6483d071d72c4359ac4903ee65db3",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "*",
                 "php": ">=5.3.2",
-                "silverstripe/framework": "3.0.*"
+                "silverstripe/framework": "3.1.*"
             },
             "type": "silverstripe-module",
             "autoload": {
@@ -202,20 +202,20 @@
                 "cms",
                 "silverstripe"
             ],
-            "time": "2014-03-26 23:25:18"
+            "time": "2014-03-31 19:36:16"
         },
         {
             "name": "silverstripe/framework",
-            "version": "3.0.10",
+            "version": "3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "c87373d0958a49a8170b8a034a67045bd5a93380"
+                "reference": "81b14b43528d52a8219856f64454f7942ea60254"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/c87373d0958a49a8170b8a034a67045bd5a93380",
-                "reference": "c87373d0958a49a8170b8a034a67045bd5a93380",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/81b14b43528d52a8219856f64454f7942ea60254",
+                "reference": "81b14b43528d52a8219856f64454f7942ea60254",
                 "shasum": ""
             },
             "require": {
@@ -248,27 +248,32 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2014-04-08 00:30:24"
+            "time": "2014-04-08 04:19:19"
         },
         {
             "name": "silverstripe/recaptcha",
-            "version": "1.1.x-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/chillu/silverstripe-recaptcha.git",
-                "reference": "707b8671ffd5f7556a9625d3c9d81c1078397247"
+                "reference": "ac7db259142dba769a76541fc156ef57b82f2970"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chillu/silverstripe-recaptcha/zipball/707b8671ffd5f7556a9625d3c9d81c1078397247",
-                "reference": "707b8671ffd5f7556a9625d3c9d81c1078397247",
+                "url": "https://api.github.com/repos/chillu/silverstripe-recaptcha/zipball/ac7db259142dba769a76541fc156ef57b82f2970",
+                "reference": "ac7db259142dba769a76541fc156ef57b82f2970",
                 "shasum": ""
             },
             "require": {
-                "silverstripe/framework": "3.0.*",
+                "silverstripe/framework": "~3.1",
                 "silverstripe/spamprotection": "*"
             },
             "type": "silverstripe-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2.x-dev"
+                }
+            },
             "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
@@ -283,24 +288,24 @@
                 "silverstripe",
                 "spamprotection"
             ],
-            "time": "2014-02-11 20:54:51"
+            "time": "2014-02-18 21:11:57"
         },
         {
             "name": "silverstripe/spamprotection",
-            "version": "1.0.x-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-spamprotection.git",
-                "reference": "74b799005821cc601eb4f5927eb822858249b848"
+                "reference": "39f7f0be454af5f67f2789c6e7691221896fa313"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-spamprotection/zipball/74b799005821cc601eb4f5927eb822858249b848",
-                "reference": "74b799005821cc601eb4f5927eb822858249b848",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-spamprotection/zipball/39f7f0be454af5f67f2789c6e7691221896fa313",
+                "reference": "39f7f0be454af5f67f2789c6e7691221896fa313",
                 "shasum": ""
             },
             "require": {
-                "silverstripe/framework": "3.0.*"
+                "silverstripe/framework": "~3.1"
             },
             "type": "silverstripe-module",
             "notification-url": "https://packagist.org/downloads/",
@@ -320,25 +325,25 @@
                 "silverstripe",
                 "spamprotection"
             ],
-            "time": "2013-04-05 08:19:05"
+            "time": "2014-03-07 07:38:25"
         },
         {
             "name": "unclecheese/dashboard",
-            "version": "3.0.x-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/unclecheese/silverstripe-dashboard.git",
-                "reference": "68362d0d595a1156f17febe4643198bdd14ebff5"
+                "reference": "295bdc0d841a5c853750398073a0b4d554a4d2b9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-dashboard/zipball/68362d0d595a1156f17febe4643198bdd14ebff5",
-                "reference": "68362d0d595a1156f17febe4643198bdd14ebff5",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-dashboard/zipball/295bdc0d841a5c853750398073a0b4d554a4d2b9",
+                "reference": "295bdc0d841a5c853750398073a0b4d554a4d2b9",
                 "shasum": ""
             },
             "require": {
-                "silverstripe/cms": "3.0.*",
-                "silverstripe/framework": "3.0.*"
+                "silverstripe/cms": "~3.1",
+                "silverstripe/framework": "~3.1"
             },
             "replace": {
                 "silverstripe/dashboard": "*"
@@ -365,7 +370,7 @@
                 "module",
                 "silverstripe"
             ],
-            "time": "2013-08-29 22:12:16"
+            "time": "2014-02-11 09:06:17"
         }
     ],
     "packages-dev": [

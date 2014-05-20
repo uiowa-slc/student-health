@@ -1,7 +1,7 @@
 <?php
 class NominationForm extends Page {
 
-	public static $db = array(
+	private static $db = array(
 	
 	);
 	
