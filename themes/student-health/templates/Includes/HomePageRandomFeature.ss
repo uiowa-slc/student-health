@@ -10,13 +10,13 @@
     </div>
     <div class="inner">
         <h3>
-	        Question
+	        Health Answers
         </h3>
         	<% loop RandomQuestion %>
         		<p>$Question.Summary(60)</p>
         	
-        	<p><a href="{$Link}" title="read more">Read the Answer</a></p>
-        	<p><a href="{$absoluteBaseURL}health-answers/ask-your-question">Ask Your Question</a></p>
+        	<p><a href="{$Link}" title="read more">Read the Answer</a><a href="{$absoluteBaseURL}health-answers/ask-your-question">Ask Your Question</a></p>
+        
         	<% end_loop %>
     </div>
 </div>
