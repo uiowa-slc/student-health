@@ -13,10 +13,13 @@ class HealthAnswer extends BlogEntry {
 
 		);
 
-
-	
 	static $has_one = array(
-		);
+	);
+
+	private static $singular_name = 'Health Answer Page';
+
+	private static $plural_name = 'Health Answer Pages';
+
 	
 	public function getCMSFields() {
 		$fields = parent::getCMSFields();
@@ -57,10 +60,7 @@ class HealthAnswer extends BlogEntry {
 		$formattedDate = date("l, F j, Y", $timestamp);	
 		return $formattedDate;
 	}
-
 }
 class HealthAnswer_Controller extends BlogEntry_Controller {
-
-	
 
 }

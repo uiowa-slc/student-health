@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/colymba/GridFieldBulkEditingTools.git",
-                "reference": "de7be9d8af4b658381e2ec58377c99e4e36b45f2"
+                "reference": "8836b2e389d006c9502ea7da1c48388ca5a71730"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/colymba/GridFieldBulkEditingTools/zipball/de7be9d8af4b658381e2ec58377c99e4e36b45f2",
-                "reference": "de7be9d8af4b658381e2ec58377c99e4e36b45f2",
+                "url": "https://api.github.com/repos/colymba/GridFieldBulkEditingTools/zipball/8836b2e389d006c9502ea7da1c48388ca5a71730",
+                "reference": "8836b2e389d006c9502ea7da1c48388ca5a71730",
                 "shasum": ""
             },
             "require": {
@@ -45,7 +45,7 @@
                 "gridfield bulk upload",
                 "silverstripe"
             ],
-            "time": "2014-05-19 05:56:26"
+            "time": "2014-05-12 16:10:06"
         },
         {
             "name": "composer/installers",
@@ -171,12 +171,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-project.git",
-                "reference": "959a600680a656cca4b7d460bb862b6100f393e6"
+                "reference": "96ecc6fcc7256169041f7c89baa463cf3d8034f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/959a600680a656cca4b7d460bb862b6100f393e6",
-                "reference": "959a600680a656cca4b7d460bb862b6100f393e6",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/96ecc6fcc7256169041f7c89baa463cf3d8034f5",
+                "reference": "96ecc6fcc7256169041f7c89baa463cf3d8034f5",
                 "shasum": ""
             },
             "require": {
@@ -185,9 +185,9 @@
                 "php": ">=5.3.2",
                 "silverstripe-themes/simple": "*",
                 "silverstripe/blog": "*",
-                "silverstripe/cms": "3.1.5",
+                "silverstripe/cms": "3.1.4",
                 "silverstripe/dashboard": "*",
-                "silverstripe/framework": "3.1.5",
+                "silverstripe/framework": "3.1.4",
                 "silverstripe/googlesitemaps": "*",
                 "silverstripe/installer": "*",
                 "silverstripe/mathspamprotection": "*",
@@ -211,7 +211,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-project/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
-            "time": "2014-05-15 15:33:45"
+            "time": "2014-05-09 18:18:14"
         },
         {
             "name": "silverstripe-themes/simple",
@@ -292,16 +292,16 @@
         },
         {
             "name": "silverstripe/cms",
-            "version": "3.1.5",
+            "version": "3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-cms.git",
-                "reference": "3033d454982c5fac5a2089842e767e8866f05737"
+                "reference": "7adbf81c74c6483d071d72c4359ac4903ee65db3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/3033d454982c5fac5a2089842e767e8866f05737",
-                "reference": "3033d454982c5fac5a2089842e767e8866f05737",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/7adbf81c74c6483d071d72c4359ac4903ee65db3",
+                "reference": "7adbf81c74c6483d071d72c4359ac4903ee65db3",
                 "shasum": ""
             },
             "require": {
@@ -335,73 +335,25 @@
                 "cms",
                 "silverstripe"
             ],
-            "time": "2014-05-12 23:13:44"
-        },
-        {
-            "name": "silverstripe/dashboard",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/unclecheese/silverstripe-dashboard.git",
-                "reference": "2deb5c475fabfb589609abf6053c245eac4b3b37"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-dashboard/zipball/2deb5c475fabfb589609abf6053c245eac4b3b37",
-                "reference": "2deb5c475fabfb589609abf6053c245eac4b3b37",
-                "shasum": ""
-            },
-            "require": {
-                "silverstripe/cms": "~3.1",
-                "silverstripe/framework": "~3.1"
-            },
-            "replace": {
-                "silverstripe/dashboard": "*"
-            },
-            "type": "silverstripe-module",
-            "extra": {
-                "installer-name": "dashboard"
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Uncle Cheese",
-                    "email": "unclecheese@leftandmain.com",
-                    "homepage": "http://leftandmain.com"
-                }
-            ],
-            "description": "Adds a dashboard to the SilverStripe CMS",
-            "keywords": [
-                "cms",
-                "dashboard",
-                "module",
-                "silverstripe"
-            ],
-            "time": "2014-04-29 22:15:41"
+            "time": "2014-03-31 19:36:16"
         },
         {
             "name": "silverstripe/framework",
-            "version": "3.1.5",
+            "version": "3.1.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "830c10704c98862609dea94400ff48524dffa676"
+                "reference": "81b14b43528d52a8219856f64454f7942ea60254"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/830c10704c98862609dea94400ff48524dffa676",
-                "reference": "830c10704c98862609dea94400ff48524dffa676",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/81b14b43528d52a8219856f64454f7942ea60254",
+                "reference": "81b14b43528d52a8219856f64454f7942ea60254",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "*",
                 "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~3.7@stable"
             },
             "type": "silverstripe-module",
             "autoload": {
@@ -429,7 +381,7 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2014-05-13 03:06:43"
+            "time": "2014-04-08 04:19:19"
         },
         {
             "name": "silverstripe/googlesitemaps",
@@ -624,12 +576,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-userforms.git",
-                "reference": "1218d614d00c093a16ccb62db4c7e841e65793e8"
+                "reference": "b54e7fa4c6f8370b7d88643a70dc34b8ae03c47e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/1218d614d00c093a16ccb62db4c7e841e65793e8",
-                "reference": "1218d614d00c093a16ccb62db4c7e841e65793e8",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/b54e7fa4c6f8370b7d88643a70dc34b8ae03c47e",
+                "reference": "b54e7fa4c6f8370b7d88643a70dc34b8ae03c47e",
                 "shasum": ""
             },
             "require": {
@@ -653,7 +605,7 @@
                 "silverstripe",
                 "userforms"
             ],
-            "time": "2014-05-18 22:36:39"
+            "time": "2014-04-25 13:53:45"
         },
         {
             "name": "silverstripe/widgets",
@@ -781,6 +733,51 @@
                 "silverstripe"
             ],
             "time": "2014-05-08 08:38:37"
+        },
+        {
+            "name": "unclecheese/dashboard",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/unclecheese/silverstripe-dashboard.git",
+                "reference": "2deb5c475fabfb589609abf6053c245eac4b3b37"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-dashboard/zipball/2deb5c475fabfb589609abf6053c245eac4b3b37",
+                "reference": "2deb5c475fabfb589609abf6053c245eac4b3b37",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/cms": "~3.1",
+                "silverstripe/framework": "~3.1"
+            },
+            "replace": {
+                "silverstripe/dashboard": "*"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "dashboard"
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Uncle Cheese",
+                    "email": "unclecheese@leftandmain.com",
+                    "homepage": "http://leftandmain.com"
+                }
+            ],
+            "description": "Adds a dashboard to the SilverStripe CMS",
+            "keywords": [
+                "cms",
+                "dashboard",
+                "module",
+                "silverstripe"
+            ],
+            "time": "2014-04-29 22:15:41"
         },
         {
             "name": "unclecheese/eventcalendar",
