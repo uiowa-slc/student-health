@@ -60,6 +60,26 @@ class HealthAnswer extends BlogEntry {
 		$formattedDate = date("l, F j, Y", $timestamp);	
 		return $formattedDate;
 	}
+	
+	
+	 public function getStatusFlags($cached = true){
+        $flags = parent::getStatusFlags();
+        if($this->isUserSubmitted()){
+        	$flags['isUserSubmitted'] = "Submitted";
+    	}
+    	return $flags;
+    }
+    
+	public function isUserSubmitted(){
+		if($this->Answer == ""){
+			return true;
+		}else{
+			return false;
+		}
+	}
+	
+	
+	
 }
 class HealthAnswer_Controller extends BlogEntry_Controller {
 
