@@ -27,7 +27,7 @@ class AskYourQuestion_Controller extends Page_Controller {
 	
 	function Success(){
 		$param = Session::get("success");
-		print_r ("PARAM IS " . $param);
+		//print_r ("PARAM IS " . $param);
 		if ($param=="1"){
 			return true;
 		}
@@ -42,8 +42,8 @@ class AskYourQuestion_Controller extends Page_Controller {
 			new TextField("FirstName", "First Name:"),
 			new TextField("LastName", "Last Name:"),
 			new TextAreaField("Question", "<span>*</span> Question:"),
-			new EmailField("Email", "Your Email, (will not be published):"),
-			new CheckboxField("ResponsePreference", "Check this box if you do <bold>not</bold> want your response published on this website.")
+			new EmailField("Email", "Your Email: "),
+			new CheckboxField("ResponsePreference", "Check this box if it's ok to publish the response.")
 	
 		);
 		
@@ -69,16 +69,21 @@ class AskYourQuestion_Controller extends Page_Controller {
 	
 	function askQuestion($data, $form){
 	
-	
+		$ResponseType = $data["ResponsePreference"];		
+		
 		$newHealthQuestion = new HealthAnswer();
-	    $newHealthQuestion->setParent(12);
-
-        $form->saveInto($newHealthQuestion);
-        
-        $newHealthQuestion->write();
-        $newHealthQuestion->writeToStage("Stage");
-        Session::set('Success', true);
-        
+		$newHealthQuestion->setParent(12);
+	
+	    $form->saveInto($newHealthQuestion);
+	        	    
+	    if ($newHealthQuestion->ResponsePreference == 1) {
+	        
+	        $newHealthQuestion->write();
+	        $newHealthQuestion->writeToStage("Stage");
+	        Session::set('Success', true);
+	        
+	     }
+	            
         //Email notification
 		
 		if($newHealthQuestion->Email){
