@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
 
   var globalConfig = {
-    themeDir: 'themes/imu5'
+    themeDir: 'themes/student-health'
   };
 
   // Project configuration.

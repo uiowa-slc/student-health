@@ -12,3 +12,41 @@
 	}
 	
 }
+
+#quick-links {
+	padding: 15px 0px 0px 15px;
+	width: auto;
+	ul {
+		margin: 0px; 
+	}
+	li {
+		list-style-position: outside;
+		padding: 10px 0px 10px 45px;
+		margin-bottom: 7px;
+		list-style-type: none;	
+	}
+}
+
+#quick-links li.app {
+	background: url("../images/appointments-icon.png") no-repeat;
+}
+
+#quick-links li.pharmacy {
+	background: url("../images/pharmacy.png") no-repeat;
+}
+
+#quick-links li.insurance {
+	background: url("../images/insurance.png") no-repeat;
+}
+
+#quick-links li.nurseline {
+	background: url("../images/nurseline.png") no-repeat;
+}
+
+#quick-links li.immunizations {
+	background: url("../images/immunizations.png") no-repeat;
+}
+
+#quick-links li.self-care {
+	background: url("../images/self-care.png") no-repeat;
+}   
