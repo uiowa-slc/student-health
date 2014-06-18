@@ -13,40 +13,63 @@
 	
 }
 
-#quick-links {
-	padding: 15px 0px 0px 15px;
-	width: auto;
+.nav-main li:first-child {
+	border-left: none;
+}
+
+.nav-main li {
+	border-right: none; 
+}
+
+.nav-main a {
+	color: #fff; 
+}
+
+.header {
+	background: #2d2d2d url(../../../division-project/images/nav_yellow.gif) repeat-x left bottom;
+	position: relative; 
+}
+
+.logo {
+	color: #fff;
+	
+}
+
+.quick-links {
+
 	ul {
 		margin: 0px; 
 	}
 	li {
 		list-style-position: outside;
-		padding: 10px 0px 10px 45px;
+		padding: 0px 0px 18px 45px;
 		margin-bottom: 7px;
 		list-style-type: none;	
 	}
 }
 
-#quick-links li.app {
+.quick-links li.app {
 	background: url("../images/appointments-icon.png") no-repeat;
 }
 
-#quick-links li.pharmacy {
+.quick-links li.pharmacy {
 	background: url("../images/pharmacy.png") no-repeat;
+	margin-bottom: 26px;
 }
 
-#quick-links li.insurance {
+.quick-links li.insurance {
 	background: url("../images/insurance.png") no-repeat;
 }
 
-#quick-links li.nurseline {
+.quick-links li.nurseline {
 	background: url("../images/nurseline.png") no-repeat;
 }
 
-#quick-links li.immunizations {
+.quick-links li.immunizations {
 	background: url("../images/immunizations.png") no-repeat;
+	margin-bottom: 26px;
 }
 
-#quick-links li.self-care {
+.quick-links li.self-care {
 	background: url("../images/self-care.png") no-repeat;
 }   
