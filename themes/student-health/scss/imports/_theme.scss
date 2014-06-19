@@ -50,26 +50,49 @@
 
 .quick-links li.app {
 	background: url("../images/appointments-icon.png") no-repeat;
+	
+	@media (max-width: 767px){	
+		background: none;
+		padding: 0; 
+	}
 }
 
 .quick-links li.pharmacy {
 	background: url("../images/pharmacy.png") no-repeat;
-	margin-bottom: 26px;
+	@media (max-width: 767px){	
+		background: none;
+		padding: 0; 
+	}
 }
 
 .quick-links li.insurance {
 	background: url("../images/insurance.png") no-repeat;
+	@media (max-width: 767px){	
+		background: none;
+		padding: 0; 
+	}
 }
 
 .quick-links li.nurseline {
 	background: url("../images/nurseline.png") no-repeat;
+	@media (max-width: 767px){	
+		background: none;
+		padding: 0; 
+	}
 }
 
 .quick-links li.immunizations {
 	background: url("../images/immunizations.png") no-repeat;
-	margin-bottom: 26px;
+	@media (max-width: 767px){	
+		background: none;
+		padding: 0; 
+	}
 }
 
 .quick-links li.self-care {
 	background: url("../images/self-care.png") no-repeat;
+	@media (max-width: 767px){	
+		background: none;
+		padding: 0; 
+	}
 }   
