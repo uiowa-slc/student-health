@@ -11,20 +11,21 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "26d37e307f9aa6e2e81806a6525666f8ab5ba0ff"
+                "reference": "41cf781ed1271e25bf31b715416a349996aa2527"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/26d37e307f9aa6e2e81806a6525666f8ab5ba0ff",
-                "reference": "26d37e307f9aa6e2e81806a6525666f8ab5ba0ff",
+                "url": "https://api.github.com/repos/composer/installers/zipball/41cf781ed1271e25bf31b715416a349996aa2527",
+                "reference": "41cf781ed1271e25bf31b715416a349996aa2527",
                 "shasum": ""
             },
             "replace": {
+                "roundcube/plugin-installer": "*",
                 "shama/baton": "*"
             },
             "require-dev": {
                 "composer/composer": "1.0.*@dev",
-                "phpunit/phpunit": "3.7.*"
+                "phpunit/phpunit": "4.1.*"
             },
             "type": "composer-installer",
             "extra": {
@@ -46,21 +47,23 @@
                 {
                     "name": "Kyle Robinson Young",
                     "email": "kyle@dontkry.com",
-                    "homepage": "https://github.com/shama",
-                    "role": "Developer"
+                    "homepage": "https://github.com/shama"
                 }
             ],
             "description": "A multi-framework Composer library installer",
             "homepage": "http://composer.github.com/installers/",
             "keywords": [
                 "Craft",
+                "Dolibarr",
                 "Hurad",
                 "MODX Evo",
                 "OXID",
                 "WolfCMS",
                 "agl",
                 "annotatecms",
+                "bitrix",
                 "cakephp",
+                "chef",
                 "codeigniter",
                 "concrete5",
                 "croogo",
@@ -76,9 +79,12 @@
                 "mako",
                 "mediawiki",
                 "modulework",
+                "moodle",
                 "phpbb",
                 "piwik",
                 "ppi",
+                "puppet",
+                "roundcube",
                 "shopware",
                 "silverstripe",
                 "symfony",
@@ -87,7 +93,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-04-09 16:12:43"
+            "time": "2014-07-22 17:04:15"
         },
         {
             "name": "md/division-bar",
@@ -95,12 +101,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-bar.git",
-                "reference": "83b85fca823dc970d0c5e2b6257927ad6a4ce3a8"
+                "reference": "40b10008641a727d6ad05c2005e17a7b50e07393"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-bar/zipball/83b85fca823dc970d0c5e2b6257927ad6a4ce3a8",
-                "reference": "83b85fca823dc970d0c5e2b6257927ad6a4ce3a8",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-bar/zipball/40b10008641a727d6ad05c2005e17a7b50e07393",
+                "reference": "40b10008641a727d6ad05c2005e17a7b50e07393",
                 "shasum": ""
             },
             "require": {
@@ -119,7 +125,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-bar/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-bar/issues"
             },
-            "time": "2014-03-21 22:13:45"
+            "time": "2014-06-18 14:30:05"
         },
         {
             "name": "silverstripe-themes/simple",
@@ -333,12 +339,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/unclecheese/silverstripe-dashboard.git",
-                "reference": "295bdc0d841a5c853750398073a0b4d554a4d2b9"
+                "reference": "2bbf6ba79c8ab166b4a603485f720933bf239c0d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-dashboard/zipball/295bdc0d841a5c853750398073a0b4d554a4d2b9",
-                "reference": "295bdc0d841a5c853750398073a0b4d554a4d2b9",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-dashboard/zipball/2bbf6ba79c8ab166b4a603485f720933bf239c0d",
+                "reference": "2bbf6ba79c8ab166b4a603485f720933bf239c0d",
                 "shasum": ""
             },
             "require": {
@@ -370,7 +376,7 @@
                 "module",
                 "silverstripe"
             ],
-            "time": "2014-02-11 09:06:17"
+            "time": "2014-06-09 21:37:59"
         }
     ],
     "packages-dev": [
