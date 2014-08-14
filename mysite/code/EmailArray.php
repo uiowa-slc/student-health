@@ -1,2 +1,2 @@
 <?php
-$emailArray = 'tanya-villhauer@uiowa.edu';
+$emailArray = 'trisha-welter@uiowa.edu';
