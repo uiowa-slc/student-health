@@ -27,9 +27,11 @@
 		<p><strong>Hours<br />
 		</strong>
 		During the academic year:<br />
-		8am-5pm M-F<br />
+		8am-5pm M-Th<br />
+		9am-5pm F<br />
 		During breaks:<br />
-		8am-4:30pm M-F<br />
+		8am-4:30pm M-Th<br />
+		9am-4:30om F<br />
 		<p><a href="http://studenthealth.uiowa.edu/after-hours">After Hours</a></p>
 	</div>
 	<div class="footer-info">
