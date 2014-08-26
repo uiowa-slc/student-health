@@ -3,7 +3,7 @@
         <div id="footer-content">
            <div id="block-block-5" class=""><div class="block-inner">
 <div class="footer-sized">
-	<img id="drherky" style="float:left;" src="themes/simple/images/dr-herky.png" />
+	<img id="drherky" style="float:left;" src="themes/studenthealth/images/dr-herky.png" />
 	
 	<div id="footer-top-level" class="footer-sized">
 		<li class="home"><a href="{$absoluteBaseURL}">Home</a>
@@ -11,7 +11,7 @@
 		<li class="wellness"><a href="{$absoluteBaseURL}wellness">Wellness</a>
 		<li class="health"><a href="{$absoluteBaseURL}health-answers/">Health Answers</a>
 		<li class="news"><a href="{$absoluteBaseURL}news/">News</a></li>
-		<p style="font-style: italic;">Our mission is to deliver quality healthcare and promote healthy lifestyles enhancing success and learning for all University of Iowa students.</p>
+		<p style="font-style: italic;">Our mission is to deliver quality healthcare and promote healthy lifestyles enhancing success and learning for all University of Iowa students.</p><p><em>We respect and support diverse perspectives, values and needs of others by providing an inclusive environment  that serves individuals representing diverse racial, ethnic, national origin, age, sexual orientation, gender identity, religion and abilities.</em></p>
 	</div>
 	
  </div>
