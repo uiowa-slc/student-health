@@ -3,7 +3,7 @@
         <div id="footer-content">
            <div id="block-block-5" class=""><div class="block-inner">
 <div class="footer-sized">
-	<img id="drherky" style="float:left;" src="themes/studenthealth/images/dr-herky.png" />
+	<!--<img id="drherky" style="float:left;" src="themes/studenthealth/images/dr-herky.png" />-->
 	
 	<div id="footer-top-level" class="footer-sized">
 		<li class="home"><a href="{$absoluteBaseURL}">Home</a>
