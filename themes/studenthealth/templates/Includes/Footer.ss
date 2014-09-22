@@ -52,7 +52,7 @@
 				<br />
 		<p style="margin-left: 5px;"><a href="https://www.healthonnet.org/HONcode/Conduct.html?HONConduct747124"> <img style="margin-right: 10px;" src="http://www.honcode.ch/HONcode/Seal/HONConduct747124_s.gif" hspace="2" vspace="2" align="left" width="49" height="72" style="border:0px" title="This website is certified by Health On the Net Foundation. Click to verify." alt="This website is certified by Health On the Net Foundation. Click to verify." /></a></p>
 		
-		<a href="http://www.aaahc.org/eweb/StartPage.aspx"><img width="316" height="76" alt="" src="{$ThemeDir}/images/ambulatory_healthcare_accreditation.jpeg" /></a></p>
+		<a href="http://www.aaahc.org/"><img width="316" height="76" alt="" src="{$ThemeDir}/images/ambulatory_healthcare_accreditation.jpeg" /></a></p>
 		<p class="hon-description">This site complies with the
 		<a href="http://www.healthonnet.org/HONcode/Conduct.html"> HONcode standard for trustworthy health</a>
 		information:  <a href="https://www.healthonnet.org/HONcode/Conduct.html?HONConduct747124">verify here</a>.</p></div>
