@@ -916,6 +916,13 @@ width:380px;
 margin:0 0 0 50px;;
 }
 
+#footer hr {
+    clear: both;
+    margin: 1.5em 0;
+    border: 0;
+    border-top: 1px solid #909090;
+    border-bottom: 1px solid #eae7be;
+}
 /* Temporarily commented out by Drew
 #footer li a{
 	color: #cb6f02;
@@ -1203,8 +1210,7 @@ iframe {
 }
 
 #footer-top-level {
-	width: 810px;
-	float: left;	
+	
 }
 
 #footer-top-level li {
@@ -1234,8 +1240,8 @@ iframe {
 }
 
 .footer-info {
-	width: 200px;
-	margin-right: 55px;
+	width: 210px;
+	margin-right: 45px;
 	float: left;
 }
 
