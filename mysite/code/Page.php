@@ -186,6 +186,7 @@ class Page_Controller extends ContentController {
 						$themeFolder.'/css/ie7.css',
 						$themeFolder.'/css/system.css',
 						$themeFolder.'/css/form.css',
+						'division-bar/css/_division-bar.css'
 		
 					);
 		
