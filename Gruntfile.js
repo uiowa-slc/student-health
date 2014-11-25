@@ -55,7 +55,7 @@ module.exports = function(grunt) {
     },
     watch: {
       scripts: {
-        files: ['<%=globalConfig.themeDir %>/js/*.js', '<%=globalConfig.themeDir %>/js/**/*.js'],
+        files: ['division-project/js/*.js', '<%=globalConfig.themeDir %>/js/*.js', '<%=globalConfig.themeDir %>/js/**/*.js'],
         tasks: ['concat', 'uglify'],
         options: {
           spawn: true,
