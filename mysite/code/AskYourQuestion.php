@@ -2,6 +2,7 @@
 class AskYourQuestion extends Page {
 
 	public static $db = array(
+		"EmailTo" => "Text"
 	);
 	static $has_one = array(
 	);	
@@ -92,7 +93,7 @@ class AskYourQuestion_Controller extends Page_Controller {
 			$from = "Student Health Questions";
 		}
 		
-		$to = "placeholder@uiowa.edu";
+		$to = $this->EmailTo;
 		$subject = "New Student Health Question";
 		$body = '<p>Someone submitted an Health Question.</p>
 		
