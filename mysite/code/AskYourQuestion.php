@@ -119,7 +119,8 @@ class AskYourQuestion_Controller extends Page_Controller {
 
     	$email = new Email(); 
     	$email->setTo($emailArray); 	         
-    	$email->setFrom($data["Email"]); 
+    	$email->setFrom("student-health@uiowa.edu"); 
+    	$email->replyTo($data["Email"]);
     	$email->setSubject($subject); 
     	$email->setBody($body); 
     	$email->send(); 
