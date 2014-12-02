@@ -26,4 +26,4 @@ HtmlEditorConfig::get('cms')->setOption('paste_text_sticky_default',true);
 SpamProtectorManager::set_spam_protector("RecaptchaProtector");
 
 require_once("recaptchaKey.php");
-
+Email::setAdminEmail('imu-web@uiowa.edu');
