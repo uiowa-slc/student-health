@@ -49,8 +49,8 @@ class Page_Controller extends ContentController {
 	private static $allowed_actions = array (
 	);
 	
-	public function RandomQuestion(){
-		return HealthAnswer::get()->Sort('RAND()')->First();
+	public function RandomQuestions(){
+		return HealthAnswer::get()->Sort('RAND()');
 	}
 
 	public function init() {

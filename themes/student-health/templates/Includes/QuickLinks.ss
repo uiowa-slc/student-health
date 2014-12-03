@@ -5,7 +5,7 @@
 	              <h3>Quick Links</h3>
 	             	 <div class="row">
 	       
-	             	    <div class="quick-links small-12 medium-12 large-6 columns">
+	             	    <div class="quick-links">
 							<ul>
 								<li class="app"><a href="{$BaseHref}/"> Parents / Guardians</a></li>
 								<li class="pharmacy"><a href="{$BaseHref}services/pharmacy/">Pharmacy</a></li>
@@ -13,7 +13,7 @@
 							</ul>
 	     
 						</div>
-						<div class="quick-links small-12 medium-12 large-6 columns">
+						<div class="quick-links">
 			                <ul>
 									<li class="nurseline"><a href="{$BaseHref}services/internation-travel/">International Students</a></li>
 									<li class="immunizations"><a href="{$BaseHref}services/immunizations/">Immunizations</a></li>

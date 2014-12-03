@@ -1,17 +1,17 @@
 <div class="blogSummary">
-	<h3 class="postTitle">
+	<h2 class="postTitle">
 		<% if $ExternalURL %>
 			<a href="$ExternalURL" target="_blank" title="<% _t('VIEWFULL', 'View full post titled -') %> '$Title'">$MenuTitle</a>
 		<% else %>
 			<a href="$Link" title="<% _t('VIEWFULL', 'View full post titled -') %> '$Title'">$MenuTitle</a>
 		<% end_if %>
-	</h3>
+	</h2>
 
 	<% if BlogHolder.ShowFullEntry %>
 		<p>$Content</p>
 	<% else %> 
-		<h5>$Question</h5>
-		<p>$Answer.FirstParagraph(html) ... <a href = "$Link">Read Full Post</a></p>
+		<p><strong>$Question</strong></p>
+		<p>$Answer.Summary(30)<a href = "$Link">Continue Reading</a></p>
 	<% end_if %>
 
 	<% if TagsCollection %>

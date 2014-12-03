@@ -13,14 +13,15 @@
 	        <a href="{$absoluteBaseURL}health-answers/" title="read more"> Health Answers </a>
         </h3>
         	
-        	<% loop RandomQuestion %>
+        	<% loop RandomQuestions.Limit(2) %>
         	<h5><a href="{$Link}" title="read more">$Title</a></h5>
-        		<p>$Question.Summary(60)</p>
+        		<p>$Question.Summary(30) <a href="{$Link}" title="read more">Read the Answer</a></p>
+            <% end_loop %>
+            <hr />
         	<ul class="random-health-links">
-        		<li><a href="{$Link}" title="read more">Read the Answer</a></li>
-        		<li><a href="{$absoluteBaseURL}health-answers/ask-your-question">Ask Your Question</a></li>
-        		<li><a href="{$absoluteBaseURL}health-answers/">See All Questions</a></li>
+        		<li><a href="{$absoluteBaseURL}health-answers/ask-your-question" class="btn">Ask Your Question</a></li>
+        		<li><a href="{$absoluteBaseURL}health-answers/" class="btn">See All Questions</a></li>
         	</ul>
-        	<% end_loop %>
+        	
     </div>
 </div>

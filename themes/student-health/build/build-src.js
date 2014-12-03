@@ -11109,35 +11109,6 @@ $(window).load(function() {
 
 	/* FitVids */
 	$(".module .media").fitVids();
-
-
-
-	//wrap .main-content img with a new div.
-
-	//$(".main-content img").append("<div>image</div>");
-	$(".main-content img").each(function(){
-		$(this).wrap(function(){
-			var $imgDiv = $("<div class='image' />");
-			var $capDiv = $("<div class='caption' />");
-			var $alt = $(this).attr('alt');
-
-
-			$capDiv.append($alt);
-
-			$imgDiv.append($capDiv);
-
-			return $imgDiv;
-
-
-		
-		})
-	})
-		// var $alt = $(".main-content img").attr('alt');
-		// $(".main-content .image").append($alt);
-
-
-	
-
-	//$('.main-content leftAlone').prepend('<img alt="' + title + '" width=89 src= ' + imgurl  + ' onclick =  enlarge(this)>&nbsp;');
+	$(".hero-content").fitVids();
 });
    

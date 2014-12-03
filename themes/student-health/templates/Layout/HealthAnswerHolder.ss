@@ -9,7 +9,6 @@
 	    <section class="main-content <% if $BackgroundImage %>margin-top<% end_if %>">
         <h1>$Title</h1>
      
-        <a href="ask-your-question/" class="">Have a question that's not listed? Ask it!</a>
 				<% if SelectedTag %>
 					<div class="selectedTag">
 						<em>
@@ -38,8 +37,11 @@
         </section>
         <section class="sec-content hide-print">
         	<%-- include SideNav --%>
+
+        	
         	<% include BlogSideBar %>
         	<% include BreadCrumbs %>
+        	<div class="ask-sidebar"><a href="ask-your-question/" class="btn">Ask Your Question</a></aside></div>
         </section>
     </div>
 </div>
