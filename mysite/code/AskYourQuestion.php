@@ -80,7 +80,7 @@ class AskYourQuestion_Controller extends Page_Controller {
 	    if ($newHealthQuestion->ResponsePreference == 1) {
 	        
 	        $newHealthQuestion->write();
-	        $newHealthQuestion->writeToStage("Stage");
+	        $newHealthQuestion->doRestoreToStage();
 	        Session::set('Success', true);
 	        
 	     }
