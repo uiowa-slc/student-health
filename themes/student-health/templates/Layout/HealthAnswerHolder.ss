@@ -12,13 +12,13 @@
 				<% if SelectedTag %>
 					<div class="selectedTag">
 						<em>
-						<% _t('VIEWINGTAGGED', 'Viewing entries tagged with') %> '$SelectedTag' <a href="$Link">View all news.</a>
+						<% _t('VIEWINGTAGGED', 'Viewing entries tagged with') %> '$SelectedTag' <a href="$Link">View all Health Answers</a>
 						</em>
 					</div>
 				<% else_if SelectedDate %>
 					<div class="selectedTag">
 						<em>
-						<% _t('VIEWINGPOSTEDIN', 'Viewing entries posted in') %> $SelectedNiceDate <a href="$Link">View all news.</a>
+						<% _t('VIEWINGPOSTEDIN', 'Viewing entries posted in') %> $SelectedNiceDate <a href="$Link">View all Health Answers</a>
 						</em>
 					</div>
 				<% end_if %>

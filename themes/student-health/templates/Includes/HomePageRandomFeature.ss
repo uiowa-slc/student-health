@@ -20,7 +20,7 @@
             <hr />
         	<ul class="random-health-links">
         		<li><a href="{$absoluteBaseURL}health-answers/ask-your-question" class="btn">Ask Your Question</a></li>
-        		<li><a href="{$absoluteBaseURL}health-answers/" class="btn">See All Questions</a></li>
+        		<li><a href="{$absoluteBaseURL}health-answers/" class="btn">See All Health Answers</a></li>
         	</ul>
         	
     </div>
