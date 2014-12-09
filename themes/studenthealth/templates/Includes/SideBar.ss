@@ -203,8 +203,8 @@
 <div id="socialMediaContainer">
 	<p>Connect with Student Health & Wellness: </p>
 	<div id="socialMedia">
-		<a href="https://twitter.com/hawkeye_health"><img id="twitterPic" src="{$ThemeDir}/images/twitter-logo.png" /></a>
-		<a href="http://www.youtube.com/user/UIStudentWellness"><img id="youtubePic" src="{$ThemeDir}/images/youtube-logo.png" /></a>
+		<a href="https://twitter.com/hawkeye_health"><img id="twitterPic" src="{$ThemeDir}/images/twitter-logo.png" alt="Twitter Logo"/></a>
+		<a href="http://www.youtube.com/user/UIStudentWellness"><img id="youtubePic" src="{$ThemeDir}/images/youtube-logo.png" alt="Youtube Logo"/></a>
 	</div>
 </div>
 
