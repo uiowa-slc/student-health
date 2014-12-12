@@ -108,18 +108,29 @@ class AskYourQuestion_Controller extends Page_Controller {
 		
 		$to = $this->EmailTo;
 		$subject = "New Student Health Question";
-		$body = '<p>Someone submitted an Health Question.</p>
+		$body1 = '<p>Someone submitted an Health Question.</p>
 		
 				<ul>
 				
-					<li><strong>Title:</strong> '.$newHealthQuestion->FirstName.'</li>
-					<li><strong>Title:</strong> '.$newHealthQuestion->LastName.'</li>
-					<li><strong>Sponsored By:</strong> '.$newHealthQuestion->Question.'</li>
-					<li><strong>Description:</strong> '.$newHealthQuestion->Email.'</li>
+					<li><strong>First Name:</strong> '.$newHealthQuestion->FirstName.'</li>
+					<li><strong>Last Name:</strong> '.$newHealthQuestion->LastName.'</li>
+					<li><strong>Question:</strong> '.$newHealthQuestion->Question.'</li>
+					<li><strong>Email:</strong> '.$newHealthQuestion->Email.'</li>
+					
+				</ul>';
+				
+		$body2 = '<p>Someone submitted an Health Question.</p>
+		
+				<ul>
+				
+					<li><strong>First Name:</strong> '.$newHealthQuestion->FirstName.'</li>
+					<li><strong>Last Name:</strong> '.$newHealthQuestion->LastName.'</li>
+					<li><strong>Question:</strong> '.$newHealthQuestion->Question.'</li>
+					<li><strong>Email:</strong> '.$newHealthQuestion->Email.'</li>
 					
 				</ul>
 				
-				<!--<p><a href="http://afterclass.uiowa.edu/admin/pages/edit/show/'.$newHealthQuestion->ID.'">Approve it (or don\'t) here</a></p> -->';
+				<p><a href="http://studenthealth.uiowa.edu/admin/pages/edit/show/'.$newHealthQuestion->ID.'">Approve it (or don\'t) here</a></p> ';
 		/*		
 		$body = "A new question has been asked <br><br>" . 
 	    	//'<br><br>Access link in CMS <a href="' . $newQuestion->Link() . '">hereee</a><br><br>'
@@ -149,7 +160,13 @@ class AskYourQuestion_Controller extends Page_Controller {
  	
     	//include 'EmailArray.php';
 
-    	$email = new Email($from, $to, $subject, $body); 
+		if ($newHealthQuestion->ResponsePreference == 1){
+    		$email = new Email($from, $to, $subject, $body2; 
+    	}
+    	else{
+    		$email = new Email($from, $to, $subject, $body1; 
+    	}
+
     	$email->send(); 
 
 		Controller::curr()->redirect('./success');
