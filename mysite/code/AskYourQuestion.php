@@ -2,7 +2,8 @@
 class AskYourQuestion extends Page {
 
 	public static $db = array(
-		"EmailTo" => "Text"
+		"EmailTo" => "Text",
+		"SuccessMessage" => "HTMLText"
 	);
 	static $has_one = array(
 	);	
@@ -11,7 +12,7 @@ class AskYourQuestion extends Page {
 	
 	public function getCMSFields() {
         $fields = parent::getCMSFields();
-        $fields->addFieldToTab('Root.Main', new EmailField('EmailTo', 'Email:'));
+        $fields->addFieldToTab('Root.Main', new EmailField('EmailTo', 'Email this form to:'));
         
         return $fields;
    }
@@ -20,23 +21,33 @@ class AskYourQuestion extends Page {
 class AskYourQuestion_Controller extends Page_Controller {
 
 	public static $allowed_actions = array(
-		'AskYourQuestionForm'
+		'AskYourQuestionForm',
+		'success',
 	);
+	public static $url_handlers = array(
+        'success//' => 'success',
+       
+    );
 	public function init() {
 		parent::init();
 	}
 	
-	function Success(){
-		$param = Session::get("success");
-		//print_r ("PARAM IS " . $param);
-		if ($param=="1"){
-			return true;
-		}
-		else {
-			return false;
-		}
-	}
+	// function Success(){
+	// 	$param = Session::get("success");
+	// 	//print_r ("PARAM IS " . $param);
+	// 	if ($param=="1"){
+	// 		return true;
+	// 	}
+	// 	else {
+	// 		return false;
+	// 	}
+	// }
 	
+	public function Success(){
+
+  		return $this->owner->renderWith(array('AskYourQuestion_success', 'Page'));
+    }   
+
 	public function AskYourQuestionForm(){
 		   		
 		$fields = new FieldList(
@@ -74,13 +85,15 @@ class AskYourQuestion_Controller extends Page_Controller {
 		
 		$newHealthQuestion = new HealthAnswer();
 		$newHealthQuestion->setParent(12);
+		$newHealthQuestion->Title = 'New Submitted Health Answer';
 	
 	    $form->saveInto($newHealthQuestion);
 	        	    
 	    if ($newHealthQuestion->ResponsePreference == 1) {
 	        
 	        $newHealthQuestion->write();
-	        $newHealthQuestion->doRestoreToStage();
+	        //$newHealthQuestion->doRestoreToStage();
+	       $newHealthQuestion->writeToStage('Stage');
 	        Session::set('Success', true);
 	        
 	     }
@@ -139,10 +152,11 @@ class AskYourQuestion_Controller extends Page_Controller {
     	$email = new Email($from, $to, $subject, $body); 
     	$email->send(); 
 
-		Controller::curr()->redirect('./Ask-Your-Question/Success');
+		Controller::curr()->redirect('./success');
 		
 	}
 	
+ 
 
-		
 }
+		
