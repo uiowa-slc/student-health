@@ -114,8 +114,8 @@ class AskYourQuestion_Controller extends Page_Controller {
 				
 					<li><strong>First Name:</strong> '.$newHealthQuestion->FirstName.'</li>
 					<li><strong>Last Name:</strong> '.$newHealthQuestion->LastName.'</li>
-					<li><strong>Question:</strong> '.$newHealthQuestion->Question.'</li>
 					<li><strong>Email:</strong> '.$newHealthQuestion->Email.'</li>
+					<li><strong>Question:</strong> '.$newHealthQuestion->Question.'</li>
 					
 				</ul>';
 				
@@ -125,9 +125,8 @@ class AskYourQuestion_Controller extends Page_Controller {
 				
 					<li><strong>First Name:</strong> '.$newHealthQuestion->FirstName.'</li>
 					<li><strong>Last Name:</strong> '.$newHealthQuestion->LastName.'</li>
-					<li><strong>Question:</strong> '.$newHealthQuestion->Question.'</li>
 					<li><strong>Email:</strong> '.$newHealthQuestion->Email.'</li>
-					
+					<li><strong>Question:</strong> '.$newHealthQuestion->Question.'</li>
 				</ul>
 				
 				<p><a href="http://studenthealth.uiowa.edu/admin/pages/edit/show/'.$newHealthQuestion->ID.'">Approve it (or don\'t) here</a></p> ';
