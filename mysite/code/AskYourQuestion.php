@@ -3,7 +3,7 @@ class AskYourQuestion extends Page {
 
 	public static $db = array(
 		"EmailTo" => "Text",
-		"SuccessMessage" => "HTMLText"
+		"SuccessMessage" => "Text"
 	);
 	static $has_one = array(
 	);	
@@ -13,7 +13,7 @@ class AskYourQuestion extends Page {
 	public function getCMSFields() {
         $fields = parent::getCMSFields();
         $fields->addFieldToTab('Root.Main', new EmailField('EmailTo', 'Email this form to:'));
-        
+        $fields->addFieldToTab('Root.Main', new TextField('SuccessMessage', 'Success Message:'));
         return $fields;
    }
    
@@ -45,7 +45,7 @@ class AskYourQuestion_Controller extends Page_Controller {
 	
 	public function Success(){
 
-  		return $this->owner->renderWith(array('AskYourQuestion_success', 'Page'));
+  		return isset($_REQUEST['success']) && $_REQUEST['success'] == "1";
     }   
 
 	public function AskYourQuestionForm(){
@@ -161,15 +161,15 @@ class AskYourQuestion_Controller extends Page_Controller {
     	//include 'EmailArray.php';
 
 		if ($newHealthQuestion->ResponsePreference == 1){
-    		$email = new Email($from, $to, $subject, $body2; 
+    		$email = new Email($from, $to, $subject, $body2); 
     	}
     	else{
-    		$email = new Email($from, $to, $subject, $body1; 
+    		$email = new Email($from, $to, $subject, $body1); 
     	}
 
     	$email->send(); 
 
-		Controller::curr()->redirect('./success');
+		Controller::curr()->redirect($this->Link('?success=1'));
 		
 	}
 	
