@@ -29,7 +29,6 @@
 		<p>General Phone: 319-335-8370<br />
 		Appointments: 319-335-8394<br />
 		Nurseline: 319-335-9704<br />
-		Pharmacy: 319-335-9200<br />
 		Fax (Immunizations): 319-335-7247<br />
 		<a href="info/comments">Additional Contact Information</a><br />
 	</div>

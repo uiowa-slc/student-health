@@ -176,7 +176,6 @@
 <div id="quick-links">
 <ul>
 <li class="app"><a href="{$absoluteBaseURL}info/parents/">Parents / Guardians</a></li>
-<li class="pharmacy"><a href="{$absoluteBaseURL}services/pharmacy">Pharmacy</a></li>
 <li class="insurance"><a href="{$absoluteBaseURL}info/insurance">Insurance</a></li>
 <li class="nurseline"><a href="{$absoluteBaseURL}requirements-and-forms#international">International Students</a></li>
 <li class="immunizations"><a href="{$absoluteBaseURL}services/immunizations">Immunizations</a></li>
