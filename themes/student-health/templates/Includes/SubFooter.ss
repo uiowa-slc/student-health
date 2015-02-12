@@ -20,9 +20,9 @@ Academic year hours:
     </div>
     <div class="col-1-3  ">
     	<div class=''>
-	    	<p >
-	    		<img class="" src="http://studenthealth.uiowa.edu/themes/studenthealth/images/ambulatory_healthcare_accreditation.jpeg" />
-	    		<img class="" src="http://www.honcode.ch/HONcode/Seal/HONConduct747124_s.gif" />
+	    	<p>
+	    		<img class="accred" src="http://studenthealth.uiowa.edu/themes/studenthealth/images/ambulatory_healthcare_accreditation.jpeg" />
+	    		<img class="hon" src="http://www.honcode.ch/HONcode/Seal/HONConduct747124_s.gif" />
 	    	</p>
     		<p>This site complies with the <a href="http://www.healthonnet.org/HONcode/Conduct.html"> HONcode standard for trustworthy health</a> information: <a href="https://www.healthonnet.org/HONcode/Conduct.html?HONConduct747124"> verify here</a>.</p>
     	</div>

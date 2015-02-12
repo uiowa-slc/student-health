@@ -43,6 +43,18 @@
 	.appt-btn {
 		color: black;
 		width: 100%;
-		background-color: gold;
+		background-color: transparent;
+		
+		&:hover {
+			background-color: gold;
+			color: black;
+		}
+	}
+	
+	.accred {
+		max-width: 74%;
+	}
+	.hon {
+		max-width: 25%;
 	}
 }
