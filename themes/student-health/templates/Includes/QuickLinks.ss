@@ -8,7 +8,8 @@
 	             	    <div class="quick-links small-12 medium-12 large-6 columns">
 							<ul>
 								<li class="app"><a href="{$BaseHref}/"> Parents / Guardians</a></li>
-								<li class="pharmacy"><a href="{$BaseHref}services/pharmacy/">Pharmacy</a></li>
+								<%-- the age of pharmacy is over, the time of the orks has begun! --%>
+								<%--<li class="pharmacy"><a href="{$BaseHref}services/pharmacy/">Pharmacy</a></li> --%>
 								<li class="insurance"><a href="{$BaseHref}services/immunizations/">Insurance</a></li>
 							</ul>
 	     
