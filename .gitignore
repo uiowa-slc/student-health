@@ -25,3 +25,5 @@ assets/
 mathspamprotection/
 node_modules/
 ac-json-events/
+
+mysite/recaptchaKey.php
