@@ -27,9 +27,12 @@ node_modules/
 ac-json-events/
 
 mysite/recaptchaKey.php
+<<<<<<< HEAD
 
 focuspoint/
 
 gridfieldextensions/
 
 quickaddnew/
+=======
+>>>>>>> sub-footer
