@@ -16,7 +16,7 @@
 
     </div>
     <div class="col-1-4 show-for-medium-up">
-    		<img class="tablet-herky" src="{$ThemeDir}/images/tabletherky.png" />
+    		<a href="{$BaseHref}"><img class="tablet-herky" src="{$ThemeDir}/images/tabletherky.png" /></a>
     </div>
     <div class="col-1-4">
 	<p>
