@@ -19,7 +19,7 @@
             <% end_loop %>
             <hr />
         	<ul class="random-health-links">
-        		<li><a href="{$absoluteBaseURL}health-answers/ask-your-question" class="btn">Ask Your Question</a></li>
+        		<li><a href="{$absoluteBaseURL}health-answers/ask-your-question" class="btn">Ask Your Question</a></li>&nbsp;
         		<li><a href="{$absoluteBaseURL}health-answers/" class="btn">See All Health Answers</a></li>
         	</ul>
         	
