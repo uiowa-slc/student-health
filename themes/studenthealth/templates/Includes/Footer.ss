@@ -42,7 +42,7 @@
 		<hr />
 		<p>During breaks:<br />
 		8am-4:30pm M-Th<br />
-		9am-4:30om F<br />
+		9am-4:30pm F<br />
 		<a href="http://studenthealth.uiowa.edu/after-hours">After Hours</a>
 		</p>
 	</div>
