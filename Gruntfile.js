@@ -20,7 +20,7 @@ module.exports = function(grunt) {
         options: {              // Target options
           style: 'compressed',
           //sourcemap: 'true',
-          loadPath: ['division-project/scss', 'division-project/bower_components/foundation/scss/']
+          loadPath: ['division-project/scss', 'division-bar/scss', 'division-project/bower_components/foundation/scss']
         }
       }
     },
@@ -29,13 +29,10 @@ module.exports = function(grunt) {
 
     concat: {
       js:{
-        src: ['division-project/bower_components/jquery/jquery.js',
-          'division-project/bower_components/jquery.equalheights/jquery.equalheights.js',
-          'division-project/bower_components/fitvids/jquery.fitvids.js',
-          'division-project/bower_components/flexslider/jquery.flexslider.js',
-          'division-bar/js/division-bar.js',
+        src: [
+          'division-project/build/build.src.js',
           '<%=globalConfig.themeDir %>/js/*.js', 
-          'division-project/js/*.js'],
+          ],
         dest: '<%=globalConfig.themeDir %>/build/build-src.js'
       }
     },
@@ -55,7 +52,7 @@ module.exports = function(grunt) {
     },
     watch: {
       scripts: {
-        files: ['division-project/js/*.js', '<%=globalConfig.themeDir %>/js/*.js', '<%=globalConfig.themeDir %>/js/**/*.js'],
+        files: ['<%=globalConfig.themeDir %>/js/*.js', '<%=globalConfig.themeDir %>/js/**/*.js'],
         tasks: ['concat', 'uglify'],
         options: {
           spawn: true,
@@ -67,9 +64,22 @@ module.exports = function(grunt) {
         options: {
           spawn: true,
         }
-      }
+      },
     },
-
+      criticalcss: {
+            custom: {
+                options: {
+                    url: "http://localhost:8888/student-health/",
+                    width: 1200,
+                    height: 900,
+                    outputfile: "<%=globalConfig.themeDir %>/templates/Includes/CriticalCss.ss",
+                    filename: "<%=globalConfig.themeDir %>/css/master.css", // Using path.resolve( path.join( ... ) ) is a good idea here
+                    buffer: 800*1024,
+                    ignoreConsole: false,
+                    forceInclude: ['.img-container', '.main-content']
+                }
+            }
+        }
   });
 
   // Load the plugin that provides the "uglify" task.
@@ -78,9 +88,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-simple-watch');
+  grunt.loadNpmTasks('grunt-criticalcss');
 
   // Default task(s).
   // Note: order of tasks is very important
-  grunt.registerTask('default', ['sass', 'concat', 'uglify', 'watch']);
+  grunt.registerTask('default', ['sass', 'concat', 'uglify', 'criticalcss', 'watch']);
 
 };
