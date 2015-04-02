@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "23d88f17b0dbc03b757982636e48fb39",
+    "hash": "ea116d15e0217b05da9207b99e80c8c0",
     "packages": [
         {
             "name": "composer/installers",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "8024be9aa3ee446272937f46a8807fa52b337767"
+                "reference": "f8c20b427de1cfe7a28a015c1640ce4e4eef1e33"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/8024be9aa3ee446272937f46a8807fa52b337767",
-                "reference": "8024be9aa3ee446272937f46a8807fa52b337767",
+                "url": "https://api.github.com/repos/composer/installers/zipball/f8c20b427de1cfe7a28a015c1640ce4e4eef1e33",
+                "reference": "f8c20b427de1cfe7a28a015c1640ce4e4eef1e33",
                 "shasum": ""
             },
             "replace": {
@@ -59,9 +59,11 @@
                 "Hurad",
                 "MODX Evo",
                 "OXID",
+                "SMF",
                 "Thelia",
                 "WolfCMS",
                 "agl",
+                "aimeos",
                 "annotatecms",
                 "bitrix",
                 "cakephp",
@@ -69,6 +71,7 @@
                 "codeigniter",
                 "concrete5",
                 "croogo",
+                "dokuwiki",
                 "drupal",
                 "elgg",
                 "fuelphp",
@@ -96,7 +99,7 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2014-11-01 17:51:50"
+            "time": "2015-03-26 16:11:30"
         },
         {
             "name": "md/division-bar",
@@ -104,12 +107,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-bar.git",
-                "reference": "3f07eea2e1a31bf61e2d28f62e6d8c84232f724b"
+                "reference": "18dd3df784b7fdf2eac5ecfe1a809be8b077cc06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-bar/zipball/3f07eea2e1a31bf61e2d28f62e6d8c84232f724b",
-                "reference": "3f07eea2e1a31bf61e2d28f62e6d8c84232f724b",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-bar/zipball/18dd3df784b7fdf2eac5ecfe1a809be8b077cc06",
+                "reference": "18dd3df784b7fdf2eac5ecfe1a809be8b077cc06",
                 "shasum": ""
             },
             "require": {
@@ -128,7 +131,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-bar/tree/master",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-bar/issues"
             },
-            "time": "2014-10-31 17:52:50"
+            "time": "2015-03-23 16:53:10"
         },
         {
             "name": "silverstripe-themes/simple",
@@ -136,12 +139,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe-themes/silverstripe-simple.git",
-                "reference": "63c549e82fb8d530bb88a370a8b7c3d8c61ddd74"
+                "reference": "67f1e236e1bc79ee2b66f2dfa437fb1ace663c9e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe-themes/silverstripe-simple/zipball/63c549e82fb8d530bb88a370a8b7c3d8c61ddd74",
-                "reference": "63c549e82fb8d530bb88a370a8b7c3d8c61ddd74",
+                "url": "https://api.github.com/repos/silverstripe-themes/silverstripe-simple/zipball/67f1e236e1bc79ee2b66f2dfa437fb1ace663c9e",
+                "reference": "67f1e236e1bc79ee2b66f2dfa437fb1ace663c9e",
                 "shasum": ""
             },
             "require": {
@@ -164,26 +167,29 @@
                 "silverstripe",
                 "theme"
             ],
-            "time": "2014-07-30 04:30:14"
+            "time": "2015-04-02 02:32:53"
         },
         {
             "name": "silverstripe/cms",
-            "version": "3.0.10",
+            "version": "3.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-cms.git",
-                "reference": "28043317bbdfd02b61734c8ea07c4225d3f6a87f"
+                "reference": "581cd3179b64e27ef3e5a64155b149f04db21547"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/28043317bbdfd02b61734c8ea07c4225d3f6a87f",
-                "reference": "28043317bbdfd02b61734c8ea07c4225d3f6a87f",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/581cd3179b64e27ef3e5a64155b149f04db21547",
+                "reference": "581cd3179b64e27ef3e5a64155b149f04db21547",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "*",
                 "php": ">=5.3.2",
                 "silverstripe/framework": "3.0.*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7"
             },
             "type": "silverstripe-module",
             "autoload": {
@@ -211,25 +217,28 @@
                 "cms",
                 "silverstripe"
             ],
-            "time": "2014-03-26 23:25:18"
+            "time": "2015-03-19 03:36:31"
         },
         {
             "name": "silverstripe/framework",
-            "version": "3.0.10",
+            "version": "3.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "c87373d0958a49a8170b8a034a67045bd5a93380"
+                "reference": "94b2963ad8532bda5da08d7e27387ce44ae26bdc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/c87373d0958a49a8170b8a034a67045bd5a93380",
-                "reference": "c87373d0958a49a8170b8a034a67045bd5a93380",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/94b2963ad8532bda5da08d7e27387ce44ae26bdc",
+                "reference": "94b2963ad8532bda5da08d7e27387ce44ae26bdc",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "*",
                 "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7@stable"
             },
             "type": "silverstripe-module",
             "autoload": {
@@ -257,7 +266,7 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2014-04-08 00:30:24"
+            "time": "2015-03-31 01:11:11"
         },
         {
             "name": "silverstripe/recaptcha",
@@ -384,6 +393,7 @@
         "md/division-bar": 20
     },
     "prefer-stable": false,
+    "prefer-lowest": false,
     "platform": {
         "php": ">=5.3.2"
     },
