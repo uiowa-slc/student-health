@@ -128,7 +128,7 @@ class Page_Controller extends ContentController {
 		$themeFolder = $this->ThemeDir();
 
 		//Set the folder to our theme so that relative image paths work
-		Requirements::set_combined_files_folder($themeFolder . '/combinedfiles');
+		Requirements::set_combined_files_folder($themeFolder . 'combinedfiles');
 
 		Requirements::block('event_calendar/css/calendar_widget.css');
 
