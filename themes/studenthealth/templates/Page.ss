@@ -12,38 +12,38 @@
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
 
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
+  <script type="text/javascript" src="{$ThemeDir}/build/build.js"></script>
+	
+	<script type="text/javascript">
+	jQuery(function(){
+	jQuery('#superfish-4').supersubs({minWidth: 12, maxWidth: 27, extraWidth: 1}).superfish({
+	animation: {opacity:'show'},
+	speed: 'normal',
+	autoArrows: false,
+	dropShadows: false});
+	});
+	</script>
+	<script type="text/javascript">
+	jQuery(function(){
+	jQuery('#superfish-1').supersubs({minWidth: 12, maxWidth: 27, extraWidth: 1}).superfish({
+	delay: 1000,
+	animation: {opacity:'show',},
+	speed: 'normal',
+	autoArrows: false,
+	dropShadows: false});
+	});
+	</script>
 	
 	<link rel="shortcut icon" href="$ThemeDir/images/favicon.ico" />
 	<link href='http://fonts.googleapis.com/css?family=Nobile' rel='stylesheet' type='text/css'>
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.js"></script>
-	
 
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-jQuery(function(){
-jQuery('#superfish-4').supersubs({minWidth: 12, maxWidth: 27, extraWidth: 1}).superfish({
-animation: {opacity:'show'},
-speed: 'normal',
-autoArrows: false,
-dropShadows: false});
-});
-//--><!]]>
-</script>
-<script type="text/javascript">
-<!--//--><![CDATA[//><!--
-jQuery(function(){
-jQuery('#superfish-1').supersubs({minWidth: 12, maxWidth: 27, extraWidth: 1}).superfish({
-delay: 1000,
-animation: {opacity:'show',},
-speed: 'normal',
-autoArrows: false,
-dropShadows: false});
-});
-//--><!]]>
-</script>
+
 
 
 	
+<link rel="stylesheet" type="text/css" href="{$ThemeDir}/css/app.css" />
+
 </head>
 <body class="$ClassName<% if Menu(2) %><% else %> no-sidebar<% end_if %> page-node">
 	<% include DivisionBar %>
@@ -115,7 +115,6 @@ dropShadows: false});
 <div class="clear"></div>
 <% include Footer %>
 
-  
   <script type="text/javascript">
 
   var _gaq = _gaq || [];

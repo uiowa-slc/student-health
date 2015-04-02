@@ -1,11 +1,11 @@
 <?php
 class Page extends SiteTree {
 
-	public static $db = array(
+	private static $db = array(
 		'PostedBy' => 'Text',
 	);
 
-	public static $has_one = array(
+	private static $has_one = array(
 		'Picture' => 'Image',
 	);
 
@@ -57,27 +57,6 @@ class Page extends SiteTree {
 		return $url_segment;
 	}
 
-	/*
-	public function isSelfCare(){
-	//Used in sidebar to determine if the self-care sidebar should show up (because the page is the self-care page holder or a children of it).  No, this is not the best way to do this
-	$url_segment = $this->URLSegment;
-
-	if ($url_segment == 'self-care-guide'){
-	return true;
-	}
-
-	$parent = $this->parent;
-
-	while ($parent){
-	if ($url_segment == 'self-care-guide'){
-	return true;
-	}
-	}
-
-	return false;
-	}
-	 */
-
 	public function getCMSFields() {
 
 		$fields = parent::getCMSFields();
@@ -99,81 +78,70 @@ class Page extends SiteTree {
 		$formattedDate = date("l, F j, Y", $timestamp);
 		return $formattedDate;
 	}
+	// ...
 
+	/**
+	 * Return a list of all the pages to cache
+	 *
+	 * @return array
+	 */
+	public function allPagesToCache() {
+		// Get each page type to define its sub-urls
+		$urls = array();
+
+		// memory intensive depending on number of pages
+		$pages = Page::get();
+		$ignored = array('UserDefinedForm', 'ProgramRequestForm', 'NominationForm', 'AskYourQuestion');
+
+		foreach ($pages as $page) {
+			// check to make sure this page is not in the classname
+			if (!in_array($page->ClassName, $ignored)) {
+				$urls = array_merge($urls, (array) $page->subPagesToCache());
+			}
+		}
+
+		// add any custom URLs which are not SiteTree instances
+		$urls[] = "sitemap.xml";
+
+		return $urls;
+	}
+
+	/**
+	 * Get a list of URLs to cache related to this page.
+	 *
+	 * @return array
+	 */
+	public function subPagesToCache() {
+		$urls = array();
+
+		// add current page
+		$urls[] = $this->Link();
+
+		// cache the RSS feed if comments are enabled
+		if ($this->ProvideComments) {
+			$urls[] = Director::absoluteBaseURL() . "CommentingController/rss/SiteTree/" . $this->ID;
+		}
+
+		return $urls;
+	}
+
+	/**
+	 * Get a list of URL's to publish when this page changes
+	 */
+	public function pagesAffectedByChanges() {
+		$urls = $this->subPagesToCache();
+		if ($p = $this->Parent) {
+			$urls = array_merge((array) $urls, (array) $p->subPagesToCache());
+		}
+
+		return $urls;
+	}
 }
 
 class Page_Controller extends ContentController {
 
-	/**
-	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
-	 * permissions or conditions required to allow the user to access it.
-	 *
-	 * <code>
-	 * array (
-	 *     'action', // anyone can access this action
-	 *     'action' => true, // same as above
-	 *     'action' => 'ADMIN', // you must have ADMIN permissions to access this action
-	 *     'action' => '->checkAction' // you can only access this action if $this->checkAction() returns true
-	 * );
-	 * </code>
-	 *
-	 * @var array
-	 */
-	public static $allowed_actions = array(
-	);
-
 	public function init() {
 		parent::init();
-
-		$themeFolder = $this->ThemeDir();
-
-		//Set the folder to our theme so that relative image paths work
-		Requirements::set_combined_files_folder($themeFolder . 'combinedfiles');
-
-		Requirements::block('event_calendar/css/calendar_widget.css');
-
-		/*
-		Requirements::block('event_calendar/javascript/locale/date_en.js');
-		Requirements::block('event_calendar/javascript/jquery.date.js');
-		Requirements::block('event_calendar/javascript/jquery.datePicker.js');
-		Requirements::block('event_calendar/javascript/calendar_core.js');
-		Requirements::block('event_calendar/javascript/calendar_widget.js');
-		Requirements::block('sapphire/thirdparty/jquery/jquery.js');  */
-
-		$jsFiles = array(
-
-			$themeFolder . '/javascript/jquery.bgiframe.min.js',
-			$themeFolder . '/javascript/superfish.js',
-			$themeFolder . '/javascript/supersubs.js',
-			$themeFolder . '/javascript/supposition.js',
-			$themeFolder . '/javascript/sftouchscreen.js',
-			$themeFolder . '/javascript/hoverIntent.js',
-			$themeFolder . '/javascript/superfish.js',
-			$themeFolder . '/javascript/jquery-easing.1.2.pack.js',
-			$themeFolder . '/javascript/jquery-easing-compatibility.1.2.pack.js',
-			$themeFolder . '/javascript/jquery.coda-slider-2.0.js',
-			'division-bar/js/division-bar.js',
-			$themeFolder . '/javascript/mailchimp.js',
-		);
-
-		//Add all the files to combine into an array
-		$cssFiles = array(
-			$themeFolder . '/css/superfish.css',
-			$themeFolder . '/css/system-menus.css',
-			$themeFolder . '/css/styles.css',
-			$themeFolder . '/css/reset.css',
-			$themeFolder . '/css/reset-min.css',
-			$themeFolder . '/css/ie7.css',
-			$themeFolder . '/css/system.css',
-			$themeFolder . '/css/form.css',
-			'division-bar/css/_division-bar.css',
-
-		);
-
-		//Combine!
-		Requirements::combine_files("combinedCSS.css", $cssFiles);
-		Requirements::combine_files(
-			'allcombined.js', $jsFiles);
 	}
 
 	public function getHomeChildren() {
@@ -207,12 +175,6 @@ class Page_Controller extends ContentController {
 		return $serviceschildren;
 
 	}
-	/*
-	public function getHomeChildren(){
-	$home = HomePage::get()->where("\"URLSegment\" = 'home'")->sort('Title');
-	return $home->Children();
-	}
-	 */
 
 	public function getSidebarImage() {
 		$homepage = HomePage::get()->First();

@@ -5,9 +5,9 @@ $project = 'mysite';
 
 global $database;
 $database = 'studenthealth_silverstripe';
- 
+
 // Use _ss_environment.php file for configuration
-require_once("conf/ConfigureFromEnv.php");
+require_once "conf/ConfigureFromEnv.php";
 
 MySQLDatabase::set_connection_charset('utf8');
 
@@ -20,10 +20,9 @@ i18n::set_locale('en_US');
 // enable nested URLs for this site (e.g. page/sub-page/)
 SiteTree::enable_nested_urls();
 /* Paste as Plain Text By Default */
-HtmlEditorConfig::get('cms')->setOption('paste_text_sticky',true);
-HtmlEditorConfig::get('cms')->setOption('paste_text_sticky_default',true);
+HtmlEditorConfig::get('cms')->setOption('paste_text_sticky', true);
+HtmlEditorConfig::get('cms')->setOption('paste_text_sticky_default', true);
 
-SpamProtectorManager::set_spam_protector("RecaptchaProtector");
-
-require_once("recaptchaKey.php");
 Email::setAdminEmail('imu-web@uiowa.edu');
+
+SiteTree::add_extension("FilesystemPublisher('cache/')");

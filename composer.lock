@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "ea116d15e0217b05da9207b99e80c8c0",
+    "hash": "24541a9b5030609eb013ef9ef6d5d71f",
     "packages": [
         {
             "name": "composer/installers",
@@ -171,25 +171,22 @@
         },
         {
             "name": "silverstripe/cms",
-            "version": "3.0.x-dev",
+            "version": "3.1.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-cms.git",
-                "reference": "581cd3179b64e27ef3e5a64155b149f04db21547"
+                "reference": "7f1f6156347d6e5c6135d12b35090368bad94188"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/581cd3179b64e27ef3e5a64155b149f04db21547",
-                "reference": "581cd3179b64e27ef3e5a64155b149f04db21547",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-cms/zipball/7f1f6156347d6e5c6135d12b35090368bad94188",
+                "reference": "7f1f6156347d6e5c6135d12b35090368bad94188",
                 "shasum": ""
             },
             "require": {
                 "composer/installers": "*",
                 "php": ">=5.3.2",
-                "silverstripe/framework": "3.0.*"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~3.7"
+                "silverstripe/framework": "3.1.*"
             },
             "type": "silverstripe-module",
             "autoload": {
@@ -217,20 +214,20 @@
                 "cms",
                 "silverstripe"
             ],
-            "time": "2015-03-19 03:36:31"
+            "time": "2015-03-19 04:51:25"
         },
         {
             "name": "silverstripe/framework",
-            "version": "3.0.x-dev",
+            "version": "3.1.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-framework.git",
-                "reference": "94b2963ad8532bda5da08d7e27387ce44ae26bdc"
+                "reference": "ffcbeb581258764a01f498e3fb8fa6d9dccbc501"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/94b2963ad8532bda5da08d7e27387ce44ae26bdc",
-                "reference": "94b2963ad8532bda5da08d7e27387ce44ae26bdc",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-framework/zipball/ffcbeb581258764a01f498e3fb8fa6d9dccbc501",
+                "reference": "ffcbeb581258764a01f498e3fb8fa6d9dccbc501",
                 "shasum": ""
             },
             "require": {
@@ -266,34 +263,70 @@
                 "framework",
                 "silverstripe"
             ],
-            "time": "2015-03-31 01:11:11"
+            "time": "2015-03-20 06:29:20"
         },
         {
-            "name": "silverstripe/recaptcha",
-            "version": "1.1.x-dev",
+            "name": "silverstripe/mathspamprotection",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/chillu/silverstripe-recaptcha.git",
-                "reference": "707b8671ffd5f7556a9625d3c9d81c1078397247"
+                "url": "https://github.com/silverstripe/silverstripe-mathspamprotection.git",
+                "reference": "5fcbe627421aa0122efc96c3be898e1ee2d5eccd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/chillu/silverstripe-recaptcha/zipball/707b8671ffd5f7556a9625d3c9d81c1078397247",
-                "reference": "707b8671ffd5f7556a9625d3c9d81c1078397247",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-mathspamprotection/zipball/5fcbe627421aa0122efc96c3be898e1ee2d5eccd",
+                "reference": "5fcbe627421aa0122efc96c3be898e1ee2d5eccd",
                 "shasum": ""
             },
             "require": {
-                "silverstripe/framework": "3.0.*",
-                "silverstripe/spamprotection": "*"
+                "silverstripe/spamprotection": "dev-master"
             },
             "type": "silverstripe-module",
             "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
+                    "name": "Will Rossiter",
+                    "email": "will@fullscreen.io"
+                }
+            ],
+            "description": "This module provides a simple math protection mechanism for prevent spam from your forms.Includes an EditableMathSpamField to integrate with the UserForms module.",
+            "keywords": [
+                "mathspamprotection",
+                "silverstripe",
+                "spamprotection"
+            ],
+            "time": "2015-01-27 20:11:23"
+        },
+        {
+            "name": "silverstripe/recaptcha",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/chillu/silverstripe-recaptcha.git",
+                "reference": "02a53f235c4965e79198c3934b8b27ce33abb9fc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/chillu/silverstripe-recaptcha/zipball/02a53f235c4965e79198c3934b8b27ce33abb9fc",
+                "reference": "02a53f235c4965e79198c3934b8b27ce33abb9fc",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "~3.1",
+                "silverstripe/spamprotection": "*"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.2.x-dev"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
                     "name": "Ingo Schommer",
-                    "email": "ingo@silverstripe.com",
-                    "homepage": "http://chillu.com",
-                    "role": "tech-lead"
+                    "email": "ingo@silverstripe.com"
                 }
             ],
             "description": "Provides a form field which allows form to validate for non-bot submissions by giving them a challenge to decrypt an image.",
@@ -301,26 +334,34 @@
                 "silverstripe",
                 "spamprotection"
             ],
-            "time": "2014-02-11 20:54:51"
+            "time": "2014-12-11 10:38:25"
         },
         {
             "name": "silverstripe/spamprotection",
-            "version": "1.0.x-dev",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-spamprotection.git",
-                "reference": "74b799005821cc601eb4f5927eb822858249b848"
+                "reference": "747a801ba5e394867c9891bdb8c53e92878a700b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-spamprotection/zipball/74b799005821cc601eb4f5927eb822858249b848",
-                "reference": "74b799005821cc601eb4f5927eb822858249b848",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-spamprotection/zipball/747a801ba5e394867c9891bdb8c53e92878a700b",
+                "reference": "747a801ba5e394867c9891bdb8c53e92878a700b",
                 "shasum": ""
             },
             "require": {
-                "silverstripe/framework": "3.0.*"
+                "silverstripe/framework": "~3.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7@stable"
             },
             "type": "silverstripe-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.0.x-dev"
+                }
+            },
             "notification-url": "https://packagist.org/downloads/",
             "authors": [
                 {
@@ -329,8 +370,7 @@
                 },
                 {
                     "name": "Will Rossiter",
-                    "email": "will@fullscreen.io",
-                    "homepage": "http://wilr.github.com"
+                    "email": "will@fullscreen.io"
                 }
             ],
             "description": "Spam protection module for SilverStripe.",
@@ -338,25 +378,63 @@
                 "silverstripe",
                 "spamprotection"
             ],
-            "time": "2013-04-05 08:19:05"
+            "time": "2015-03-24 23:59:49"
         },
         {
-            "name": "unclecheese/dashboard",
-            "version": "3.0.x-dev",
+            "name": "silverstripe/staticpublisher",
+            "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/unclecheese/silverstripe-dashboard.git",
-                "reference": "68362d0d595a1156f17febe4643198bdd14ebff5"
+                "url": "https://github.com/silverstripe-labs/silverstripe-staticpublisher.git",
+                "reference": "4504fd0900763d63113f81fa7cb3522151f57d61"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-dashboard/zipball/68362d0d595a1156f17febe4643198bdd14ebff5",
-                "reference": "68362d0d595a1156f17febe4643198bdd14ebff5",
+                "url": "https://api.github.com/repos/silverstripe-labs/silverstripe-staticpublisher/zipball/4504fd0900763d63113f81fa7cb3522151f57d61",
+                "reference": "4504fd0900763d63113f81fa7cb3522151f57d61",
                 "shasum": ""
             },
             "require": {
-                "silverstripe/cms": "3.0.*",
-                "silverstripe/framework": "3.0.*"
+                "silverstripe/framework": "~3.1"
+            },
+            "type": "silverstripe-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Sam Minnee",
+                    "email": "sam@silverstripe.com"
+                },
+                {
+                    "name": "Will Rossiter",
+                    "email": "will@fullscreen.io"
+                }
+            ],
+            "description": "StaticPublisher provides an extensions for exporting a SilverStripe application to either a local or remote file systems.",
+            "keywords": [
+                "export",
+                "publisher",
+                "silverstripe-labs",
+                "static"
+            ],
+            "time": "2015-03-10 03:17:43"
+        },
+        {
+            "name": "unclecheese/dashboard",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/unclecheese/silverstripe-dashboard.git",
+                "reference": "d677a02280ed8937fe3be3e46b09df1966389aba"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-dashboard/zipball/d677a02280ed8937fe3be3e46b09df1966389aba",
+                "reference": "d677a02280ed8937fe3be3e46b09df1966389aba",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/cms": "~3.1",
+                "silverstripe/framework": "~3.1"
             },
             "replace": {
                 "silverstripe/dashboard": "*"
@@ -372,8 +450,7 @@
             "authors": [
                 {
                     "name": "Uncle Cheese",
-                    "email": "unclecheese@leftandmain.com",
-                    "homepage": "http://leftandmain.com"
+                    "email": "unclecheese@leftandmain.com"
                 }
             ],
             "description": "Adds a dashboard to the SilverStripe CMS",
@@ -383,14 +460,15 @@
                 "module",
                 "silverstripe"
             ],
-            "time": "2013-08-29 22:12:16"
+            "time": "2015-04-01 22:00:41"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "md/division-bar": 20
+        "md/division-bar": 20,
+        "silverstripe/mathspamprotection": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

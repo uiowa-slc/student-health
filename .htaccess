@@ -21,15 +21,56 @@ ErrorDocument 500 /assets/error-500.html
 	SetEnv HTTP_MOD_REWRITE On
 	RewriteEngine On
 
-	RewriteCond %{REQUEST_URI} ^(.*)$
-	RewriteCond %{REQUEST_FILENAME} !-f
-	RewriteRule .* framework/main.php?url=%1&%{QUERY_STRING} [L]
-</IfModule>
+RewriteEngine On
+
+## CONFIG FOR DEV ENVIRONMENTS
+
+# Cached content - student-health subdirectory
+RewriteCond %{REQUEST_METHOD} ^GET$
+RewriteCond %{QUERY_STRING} ^$
+RewriteCond %{REQUEST_URI} ^/student-health/(.*)$
+RewriteCond %{REQUEST_URI} /student-health/(.*[^/])/?$
+RewriteCond %{DOCUMENT_ROOT}/student-health/cache/%1.html -f
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule .* /student-health/cache/%1.html [L]
+
+# Cached content - homepage
+RewriteCond %{REQUEST_METHOD} ^GET$
+RewriteCond %{QUERY_STRING} ^$
+RewriteCond %{REQUEST_URI} ^/student-health/?$
+RewriteCond /student-health/cache/index.html -f
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule .* /student-health/cache/index.html [L]
+
+## CONFIG FOR TEST/LIVE ENVIRONMENTS
+
+# Cached content - live webserver
+RewriteCond %{REQUEST_METHOD} ^GET$
+RewriteCond %{QUERY_STRING} ^$
+RewriteCond %{REQUEST_URI} /(.*[^/])/?$
+RewriteCond %{DOCUMENT_ROOT}/cache/%1.html -f
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule .* /cache/%1.html [L]
+
+# Cached content - homepage
+RewriteCond %{REQUEST_METHOD} ^GET$
+RewriteCond %{QUERY_STRING} ^$
+RewriteCond %{REQUEST_URI} ^/?$
+RewriteCond %{DOCUMENT_ROOT}/cache/index.html -f
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule .* /cache/index.html [L]
+
+## DYNAMIC CONFIG
+
+# Dynamic content
+RewriteCond %{REQUEST_URI} !(\.gif)|(\.jpg)|(\.png)|(\.css)|(\.js)|(\.php)$
+RewriteCond %{REQUEST_URI} ^(.*)$
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule .* staticpublisher/main.php?url=%1&%{QUERY_STRING} [L]
 ### SILVERSTRIPE END ###
 
-
 #php_value error_reporting 2147483647
-php_flag display_errors off
+php_flag display_errors on
 php_value max_execution_time 259200
 
 # ------------------------------------------------------------------------------
