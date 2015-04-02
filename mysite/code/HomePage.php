@@ -32,7 +32,7 @@ class HomePage extends Page {
 
 		$fields = parent::getCMSFields();
 
-		$fields->addFieldToTab('Root.Main', new UploadField('SidebarImage', 'Place an image in the bottom-left portion of the sidebar here'));
+		//$fields->addFieldToTab('Root.Main', new UploadField('SidebarImage', 'Place an image in the bottom-left portion of the sidebar here'));
 		$fields->addFieldToTab('Root.Main', new TextField('SidebarLink', 'Link for the bottom-left sidebar image'));
 
 		return $fields;
