@@ -51,9 +51,10 @@
 	        <% loop HomePageFeatures.Limit(2) %>
 	            <% include HomePageFeature %>
 	         <% end_loop %>
-	         <% include HomePageRandomFeature %>
+	         
+           <% include QuickLinks %>
 	         <% include LatestPost %>
-			 <% include QuickLinks %>
+			 
         </div><!-- end .container -->
     </section>
 
