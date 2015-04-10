@@ -33,7 +33,7 @@ module.exports = function(grunt) {
           'division-project/build/build.src.js',
           '<%=globalConfig.themeDir %>/js/*.js', 
           ],
-        dest: '<%=globalConfig.themeDir %>/build/build-src.js'
+        dest: '<%=globalConfig.themeDir %>/build/build.src.js'
       }
     },
 
@@ -41,12 +41,9 @@ module.exports = function(grunt) {
     //toggle mangle to leave variable names intact
 
     uglify: {
-      options: {
-        mangle: true
-      },
       my_target:{
         files:{
-        '<%=globalConfig.themeDir %>/build/build.js': ['<%=globalConfig.themeDir %>/build/build-src.js'],
+        '<%=globalConfig.themeDir %>/build/build.js': ['<%=globalConfig.themeDir %>/build/build.src.js']
         }
       }
     },

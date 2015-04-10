@@ -14,7 +14,8 @@ require_once "conf/ConfigureFromEnv.php";
 i18n::set_locale('en_US');
 FulltextSearchable::enable();
 // Enable nested URLs for this site (e.g. page/sub-page/)
-if (class_exists('SiteTree')) {SiteTree::enable_nested_urls();
+if (class_exists('SiteTree')) {
+	SiteTree::enable_nested_urls();
 }
 
 Requirements::set_force_js_to_bottom(true);

@@ -11,7 +11,7 @@ input[type="search"]{ -webkit-appearance: textfield; box-sizing: content-box; }
 html, input{ color: rgb(34, 34, 34); }
 a{ color: rgb(0, 136, 204); outline-style: none; outline-width: initial; outline-color: initial; text-decoration: none; }
 p, ul{ margin-top: 0.6667em; margin-right: 0px; margin-bottom: 0.6667em; margin-left: 0px; }
-h1, h2, h3, h4, h5{ color: rgb(51, 51, 51); font-family: proxima-nova-condensed, sans-serif; margin-top: 1em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; letter-spacing: 1px; line-height: 1.2; font-weight: 600; text-rendering: optimizelegibility; }
+h1, h2, h3, h4{ color: rgb(51, 51, 51); font-family: proxima-nova-condensed, sans-serif; margin-top: 1em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; letter-spacing: 1px; line-height: 1.2; font-weight: 600; text-rendering: optimizelegibility; }
 h1{ font-size: 2.66667rem; font-weight: 300; margin-top: 0.25em; margin-right: 0px; margin-bottom: 0.25em; margin-left: 0px; text-transform: uppercase; padding-bottom: 10px; }
 @media screen and (min-width: 768px){
 h1{ font-size: 4rem; }
@@ -19,7 +19,6 @@ h1{ font-size: 4rem; }
 h2{ font-size: 2.2rem; }
 h3{ font-size: 1.73333rem; }
 h4{ font-size: 1.46667rem; }
-h5{ font-size: 1.2rem; }
 ul{ padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; margin-left: 24px; }
 ul ul{ margin-top: 0px; margin-bottom: 0px; }
 hr{ clear: both; margin-top: 1.5em; margin-right: 0px; margin-bottom: 1.5em; margin-left: 0px; border-right-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221); border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(255, 255, 255); }
@@ -138,6 +137,33 @@ input{ margin-left: 0px; width: 100%; }
 @media screen and (min-width: 480px){
 .hero-text li{ float: left; }
 }
+.hero-text li a{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 206, 57); color: rgb(255, 255, 255); display: block; font-family: proxima-nova-condensed, sans-serif; font-size: 1.4rem; font-weight: 600; letter-spacing: 0.05em; padding-top: 5px; padding-right: 10px; padding-bottom: 5px; padding-left: 10px; text-shadow: rgba(0, 0, 0, 0.296875) 1px 1px 1px; text-transform: uppercase; -webkit-box-shadow: rgba(0, 0, 0, 0.296875) 0px 1px 1px; -webkit-transition-property: all; -webkit-transition-duration: 0.2s; -webkit-transition-timing-function: ease-out; -webkit-transition-delay: initial; background-position: initial initial; background-repeat: initial initial; }
+.hero-article-wrapper{ margin-bottom: 1em; overflow-x: hidden; overflow-y: hidden; }
+@media screen and (min-width: 768px){
+.hero-article-wrapper{ width: 278px; margin-bottom: 0px; display: inline-block; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); padding-top: 1em; padding-right: 1em; padding-bottom: 1em; padding-left: 1em; text-align: left; vertical-align: middle; background-position: initial initial; background-repeat: initial initial; }
+}
+.hero-article{ border-top-width: 1px; border-top-style: solid; border-top-color: rgb(221, 221, 221); margin-top: 1.7em; padding-top: 1em; width: 100%; }
+@media screen and (max-width: 768px) and (min-width: 480px){
+.hero-article{ border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-width: initial; border-color: initial; float: left; margin-top: 0px; width: 49%; padding-top: 10px; padding-right: 10px; padding-bottom: 10px; padding-left: 10px; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); background-position: initial initial; background-repeat: initial initial; }
+}
+@media screen and (min-width: 768px){
+.hero-article{ float: none; width: 100%; }
+}
+.hero-article:first-child{ border-top-style: none; border-top-width: initial; border-top-color: initial; margin-top: 0px; margin-right: 2%; padding-top: 0px; }
+@media screen and (max-width: 768px) and (min-width: 480px){
+.hero-article:first-child{ padding-top: 10px; }
+}
+.hero-title{ margin-top: 0.2em; margin-right: 0px; margin-bottom: 0.2em; margin-left: 0px; }
+.hero-title a{ color: rgb(51, 51, 51); }
+.hero-content{ line-height: 1.5; margin-bottom: 1em; }
+@media screen and (min-width: 480px){
+.hero-content{ font-size: 0.93333rem; }
+}
+.hero-link{ color: rgb(255, 255, 255); display: block; background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(0, 0, 0); padding-top: 4px; padding-right: 10px; padding-bottom: 4px; padding-left: 10px; text-align: center; text-transform: uppercase; background-position: initial initial; background-repeat: initial initial; }
+.hero-link::after{ content: ''; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 4.5px; border-right-width: 0px; border-bottom-width: 4.5px; border-left-width: 5px; border-top-color: transparent; border-right-color: transparent; border-bottom-color: transparent; border-left-color: rgb(255, 206, 57); display: inline-block; height: 0px; position: relative; left: 4px; width: 0px; margin-top: 0px; margin-right: 3px; margin-bottom: 0px; margin-left: 3px; }
+@media screen and (min-width: 480px){
+.hero-link{ float: right; font-size: 0.8rem; }
+}
 .home-highlights{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(242, 242, 242); padding-top: 5em; padding-right: 0px; padding-bottom: 5em; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
 .module{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); -webkit-box-shadow: rgba(0, 0, 0, 0.398438) 0px 1px 1px; box-shadow: rgba(0, 0, 0, 0.398438) 0px 1px 1px; border-top-left-radius: 2px 2px; border-top-right-radius: 2px 2px; border-bottom-right-radius: 2px 2px; border-bottom-left-radius: 2px 2px; margin-bottom: 1em; min-height: 305px; background-position: initial initial; background-repeat: initial initial; }
 @media screen and (min-width: 480px){
@@ -147,7 +173,6 @@ input{ margin-left: 0px; width: 100%; }
 .module .media{ border-bottom-width: 4px; border-bottom-style: solid; border-bottom-color: rgb(255, 206, 57); }
 .module .inner{ font-size: 0.93333rem; line-height: 1.5; padding-top: 1em; padding-right: 1em; padding-bottom: 1em; padding-left: 1em; }
 .module h3{ font-size: 20px; margin-top: 0.3em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; text-transform: uppercase; }
-.module h3 a{ color: rgb(51, 51, 51); }
 .loading .nav-main-wrapper{ opacity: 0; }
 @media screen and (min-width: 768px){
 .loading .nav-main-wrapper{ opacity: 1; }
@@ -284,10 +309,6 @@ img{ max-width: 100% !important; }
 p, h2, h3{ orphans: 3; widows: 3; }
 h2, h3{ page-break-after: avoid; }
 }
-.random-health-links{ list-style-type: none; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; }
-.random-health-links li{ display: inline-block; }
-.random-health-links li a{ font-size: 0.899em; padding-right: 5px; padding-top: 12px; }
-.random-health-links li a.btn{ padding-top: 4px; padding-right: 14px; padding-bottom: 4px; padding-left: 14px; }
 @media screen and (min-width: 768px){
 .nav-main li:first-child{ border-left-style: none; border-left-width: initial; border-left-color: initial; }
 .nav-main li{ border-right-style: none; border-right-width: initial; border-right-color: initial; }
@@ -310,9 +331,9 @@ h2, h3{ page-break-after: avoid; }
 @media (max-width: 767px){
 .quick-links li.nurseline{ background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
 }
-.quick-links li.immunizations{ background-image: url(../images/immunizations.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: no-repeat no-repeat; }
+.quick-links li.mychart{ background-image: url(../images/immunizations.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: no-repeat no-repeat; }
 @media (max-width: 767px){
-.quick-links li.immunizations{ background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
+.quick-links li.mychart{ background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
 }
 .quick-links li.self-care{ background-image: url(../images/self-care.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: no-repeat no-repeat; }
 @media (max-width: 767px){
