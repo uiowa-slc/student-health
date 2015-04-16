@@ -2,6 +2,8 @@
 	<div class="container">
 	<div class="colgroup">
     <div class="col-1-2">
+    <% include LastEditedNote %>
+	<p>
 		<a href="appointments/" class="btn text-center">Make an Appointment</a>
 		<p>
 <strong>Academic year hours:</strong>
@@ -19,10 +21,7 @@
     		<a href="{$BaseHref}"><img class="tablet-herky" alt="Student Health & Wellness Logo" data-src="{$ThemeDir}/images/tabletherky.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></a>
     </div>
     <div class="col-1-4">
-    	<% if ClassName != HomePage %>
-    	<p class="last-edit">This page was updated on $LastEdited.NiceUS by  <a href="info">{$allVersions.First.Author.Name}. </p>
-    	<% end_if %>
-	<p>
+
 		<a href="http://www.aaahc.org/" target="_blank"><img class="accred" alt="AAAHC Accreditation Logo" data-src="http://studenthealth.uiowa.edu/themes/studenthealth/images/ambulatory_healthcare_accreditation.jpeg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></a>
 		<a href="" target="_blank"><img class="hon" alt="HON Code Logo" data-src="http://www.honcode.ch/HONcode/Seal/HONConduct747124_s.gif" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></a>
 	</p>
