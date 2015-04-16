@@ -153,6 +153,10 @@ input{ margin-left: 0px; width: 100%; }
 @media screen and (max-width: 768px) and (min-width: 480px){
 .hero-article:first-child{ padding-top: 10px; }
 }
+.hero-article img{ display: none; }
+@media screen and (min-width: 768px){
+.hero-article img{ display: block; }
+}
 .hero-title{ margin-top: 0.2em; margin-right: 0px; margin-bottom: 0.2em; margin-left: 0px; }
 .hero-title a{ color: rgb(51, 51, 51); }
 .hero-content{ line-height: 1.5; margin-bottom: 1em; }
@@ -331,7 +335,7 @@ h2, h3{ page-break-after: avoid; }
 @media (max-width: 767px){
 .quick-links li.nurseline{ background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
 }
-.quick-links li.mychart{ background-image: url(../images/immunizations.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: no-repeat no-repeat; }
+.quick-links li.mychart{ background-image: url(../images/computer-icon.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: no-repeat no-repeat; }
 @media (max-width: 767px){
 .quick-links li.mychart{ background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
 }
