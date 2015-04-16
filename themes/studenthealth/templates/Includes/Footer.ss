@@ -12,7 +12,7 @@
 		<li class="health"><a href="{$absoluteBaseURL}health-answers/">Health Answers</a>
 		<li class="news"><a href="{$absoluteBaseURL}news/">News</a></li>
 		<hr />
-		<p style="font-style: italic;">Our mission is to deliver quality healthcare and promote healthy lifestyles enhancing success and learning for all University of Iowa students.</p><p><em>We respect and support diverse perspectives, values and needs of others by providing an inclusive environment  that serves individuals representing diverse racial, ethnic, national origin, age, sexual orientation, gender identity, religion and abilities.</em></p>
+		<p style="font-style: italic;">Our mission is to deliver quality healthcare and promote healthy lifestyles enhancing success and learning for all University of Iowa students.</p><p><em>We respect and support diverse perspectives, values and needs of others by providing an inclusive environment  that serves individuals representing diverse races, ethnicities, national origins, ages, sexual orientations, gender identities, religions and abilities.</em></p>
 		<hr />
 	</div>
 	
