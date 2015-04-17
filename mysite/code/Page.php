@@ -53,6 +53,12 @@ class Page_Controller extends ContentController {
 		return HealthAnswer::get()->Sort('RAND()');
 	}
 
+	public function allStaffTeams(){
+		print_r(StaffTeam::get());
+		return StaffTeam::get();
+
+	}
+
 	public function init() {
 		parent::init();
 
