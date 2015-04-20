@@ -18,7 +18,7 @@
 						<ul class="second-level">
 							<% loop $Top.allStaffTeams %>
 								<li <% if $LinkOrCurrent = "current" %>class="active"<% end_if %>>
-									<a href="info/staff/#{$ID}">$Name</a>
+									<a href="info/staff/#{$Title.URLATT}">$Name</a>
 									
 
 								</li>
