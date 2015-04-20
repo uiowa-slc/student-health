@@ -54,7 +54,7 @@ class Page_Controller extends ContentController {
 	}
 
 	public function allStaffTeams(){
-		print_r(StaffTeam::get());
+	
 		return StaffTeam::get();
 
 	}
