@@ -153,10 +153,6 @@ input{ margin-left: 0px; width: 100%; }
 @media screen and (max-width: 768px) and (min-width: 480px){
 .hero-article:first-child{ padding-top: 10px; }
 }
-.hero-article img{ display: none; }
-@media screen and (min-width: 768px){
-.hero-article img{ display: block; }
-}
 .hero-title{ margin-top: 0.2em; margin-right: 0px; margin-bottom: 0.2em; margin-left: 0px; }
 .hero-title a{ color: rgb(51, 51, 51); }
 .hero-content{ line-height: 1.5; margin-bottom: 1em; }
@@ -175,8 +171,10 @@ input{ margin-left: 0px; width: 100%; }
 }
 .module:first-child{ margin-left: 0px; }
 .module .media{ border-bottom-width: 4px; border-bottom-style: solid; border-bottom-color: rgb(255, 206, 57); }
+.module .media img{ width: 100%; }
 .module .inner{ font-size: 0.93333rem; line-height: 1.5; padding-top: 1em; padding-right: 1em; padding-bottom: 1em; padding-left: 1em; }
 .module h3{ font-size: 20px; margin-top: 0.3em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; text-transform: uppercase; }
+.module h3 a{ color: rgb(51, 51, 51); }
 .loading .nav-main-wrapper{ opacity: 0; }
 @media screen and (min-width: 768px){
 .loading .nav-main-wrapper{ opacity: 1; }

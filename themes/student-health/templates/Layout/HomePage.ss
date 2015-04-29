@@ -47,7 +47,7 @@
 
     </div>
 	<section class="home-highlights">
-        <div class="container clearfix">
+        <div class="container clearfix" data-equalizer>
 	        <% loop HomePageFeatures.Limit(2) %>
 	            <% include HomePageFeature %>
 	         <% end_loop %>

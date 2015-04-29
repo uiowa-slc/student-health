@@ -31,6 +31,9 @@ module.exports = function(grunt) {
       js:{
         src: [
           'division-project/build/build.src.js',
+          'division-project/bower_components/foundation/js/vendor/jquery.js',
+          'division-project/bower_components/foundation/js/foundation/foundation.js',
+          'division-project/bower_components/foundation/js/foundation/foundation.equalizer.js',
           '<%=globalConfig.themeDir %>/js/*.js', 
           ],
         dest: '<%=globalConfig.themeDir %>/build/build.src.js'
