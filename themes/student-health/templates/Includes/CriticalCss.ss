@@ -153,6 +153,10 @@ input{ margin-left: 0px; width: 100%; }
 @media screen and (max-width: 768px) and (min-width: 480px){
 .hero-article:first-child{ padding-top: 10px; }
 }
+.hero-article img{ display: none; }
+@media screen and (min-width: 768px){
+.hero-article img{ display: block; }
+}
 .hero-title{ margin-top: 0.2em; margin-right: 0px; margin-bottom: 0.2em; margin-left: 0px; }
 .hero-title a{ color: rgb(51, 51, 51); }
 .hero-content{ line-height: 1.5; margin-bottom: 1em; }
@@ -171,10 +175,8 @@ input{ margin-left: 0px; width: 100%; }
 }
 .module:first-child{ margin-left: 0px; }
 .module .media{ border-bottom-width: 4px; border-bottom-style: solid; border-bottom-color: rgb(255, 206, 57); }
-.module .media img{ width: 100%; }
 .module .inner{ font-size: 0.93333rem; line-height: 1.5; padding-top: 1em; padding-right: 1em; padding-bottom: 1em; padding-left: 1em; }
 .module h3{ font-size: 20px; margin-top: 0.3em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; text-transform: uppercase; }
-.module h3 a{ color: rgb(51, 51, 51); }
 .loading .nav-main-wrapper{ opacity: 0; }
 @media screen and (min-width: 768px){
 .loading .nav-main-wrapper{ opacity: 1; }
@@ -319,7 +321,7 @@ h2, h3{ page-break-after: avoid; }
 .header{ background-image: url(../../../division-project/images/nav_yellow.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(45, 45, 45); position: relative; background-position: 0% 100%; background-repeat: repeat no-repeat; }
 .logo{ color: rgb(255, 255, 255); }
 .quick-links ul{ margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }
-.quick-links li{ list-style-position: outside; padding-top: 0px; padding-right: 0px; padding-bottom: 18px; padding-left: 45px; margin-bottom: 7px; list-style-type: none; }
+.quick-links li{ list-style-position: outside; padding-top: 0px; padding-right: 0px; padding-bottom: 18px; padding-left: 45px; margin-bottom: 13px; list-style-type: none; }
 .quick-links li a{ line-height: 37px; }
 .quick-links li.app{ background-image: url(../images/appointments-icon.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: no-repeat no-repeat; }
 @media (max-width: 767px){

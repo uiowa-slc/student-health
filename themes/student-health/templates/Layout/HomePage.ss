@@ -47,14 +47,12 @@
 
     </div>
 	<section class="home-highlights">
-        <div class="container clearfix" data-equalizer>
-	        <% loop HomePageFeatures.Limit(2) %>
-	            <% include HomePageFeature %>
-	         <% end_loop %>
-	         
+        <div class="container clearfix"  data-equal="div.module">
            <% include QuickLinks %>
 	         <% include LatestPost %>
-			 
+          <% loop HomePageFeatures.Limit(2) %>
+              <% include HomePageFeature %>
+           <% end_loop %>
         </div><!-- end .container -->
     </section>
 
