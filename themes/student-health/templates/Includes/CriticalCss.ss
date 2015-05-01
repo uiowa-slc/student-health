@@ -322,7 +322,8 @@ h2, h3{ page-break-after: avoid; }
 .logo{ color: rgb(255, 255, 255); }
 .quick-links-container h3{ padding-bottom: 25px; }
 .quick-links ul{ margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }
-.quick-links li a{ list-style-position: outside; padding-top: 0px; padding-right: 0px; padding-bottom: 18px; padding-left: 45px; margin-bottom: 15px; list-style-type: none; line-height: 37px; }
+.quick-links li{ list-style-type: none; list-style-position: outside; }
+.quick-links li a{ padding-top: 0px; padding-right: 0px; padding-bottom: 18px; padding-left: 45px; margin-bottom: 15px; display: block; line-height: 37px; }
 .quick-links li.app a{ background-image: url(../images/appointments-icon.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: no-repeat no-repeat; }
 @media (max-width: 767px){
 .quick-links li.app a{ background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
