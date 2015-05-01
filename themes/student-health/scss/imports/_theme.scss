@@ -42,23 +42,31 @@
 	
 }
 
+.quick-links-container{
+	h3{
+		padding-bottom: 25px;
+	}
+}
 .quick-links {
 
 	ul {
 		margin: 0px; 
 	}
-	li {
-		list-style-position: outside;
-		padding: 0px 0px 18px 45px;
-		margin-bottom: 13px;
+
+	li{
 		list-style-type: none;
-		a{
-			line-height: 37px;
-		}	
+		list-style-position: outside;
+	}
+	li a{
+		
+		padding: 0px 0px 18px 45px;
+		margin-bottom: 15px;
+		display: block;
+		line-height: 37px;	
 	}
 }
 
-.quick-links li.app {
+.quick-links li.app a {
 	background: url("../images/appointments-icon.png") no-repeat;
 	
 	@media (max-width: 767px){	
@@ -67,7 +75,7 @@
 	}
 }
 
-.quick-links li.pharmacy {
+.quick-links li.pharmacy a{
 	background: url("../images/pharmacy.png") no-repeat;
 	@media (max-width: 767px){	
 		background: none;
@@ -75,7 +83,7 @@
 	}
 }
 
-.quick-links li.insurance {
+.quick-links li.insurance a{
 	background: url("../images/insurance.png") no-repeat;
 	@media (max-width: 767px){	
 		background: none;
@@ -83,7 +91,7 @@
 	}
 }
 
-.quick-links li.nurseline {
+.quick-links li.nurseline a{
 	background: url("../images/nurseline.png") no-repeat;
 	@media (max-width: 767px){	
 		background: none;
@@ -91,7 +99,7 @@
 	}
 }
 
-.quick-links li.mychart {
+.quick-links li.mychart a{
 	background: url("../images/computer-icon.png") no-repeat;
 	@media (max-width: 767px){	
 		background: none;
@@ -99,7 +107,7 @@
 	}
 }
 
-.quick-links li.self-care {
+.quick-links li.self-care a{
 	background: url("../images/self-care.png") no-repeat;
 	@media (max-width: 767px){	
 		background: none;

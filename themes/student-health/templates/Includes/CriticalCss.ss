@@ -320,28 +320,28 @@ h2, h3{ page-break-after: avoid; }
 }
 .header{ background-image: url(../../../division-project/images/nav_yellow.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(45, 45, 45); position: relative; background-position: 0% 100%; background-repeat: repeat no-repeat; }
 .logo{ color: rgb(255, 255, 255); }
+.quick-links-container h3{ padding-bottom: 25px; }
 .quick-links ul{ margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }
-.quick-links li{ list-style-position: outside; padding-top: 0px; padding-right: 0px; padding-bottom: 18px; padding-left: 45px; margin-bottom: 13px; list-style-type: none; }
-.quick-links li a{ line-height: 37px; }
-.quick-links li.app{ background-image: url(../images/appointments-icon.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: no-repeat no-repeat; }
+.quick-links li a{ list-style-position: outside; padding-top: 0px; padding-right: 0px; padding-bottom: 18px; padding-left: 45px; margin-bottom: 15px; list-style-type: none; line-height: 37px; }
+.quick-links li.app a{ background-image: url(../images/appointments-icon.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: no-repeat no-repeat; }
 @media (max-width: 767px){
-.quick-links li.app{ background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
+.quick-links li.app a{ background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
 }
-.quick-links li.insurance{ background-image: url(../images/insurance.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: no-repeat no-repeat; }
+.quick-links li.insurance a{ background-image: url(../images/insurance.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: no-repeat no-repeat; }
 @media (max-width: 767px){
-.quick-links li.insurance{ background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
+.quick-links li.insurance a{ background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
 }
-.quick-links li.nurseline{ background-image: url(../images/nurseline.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: no-repeat no-repeat; }
+.quick-links li.nurseline a{ background-image: url(../images/nurseline.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: no-repeat no-repeat; }
 @media (max-width: 767px){
-.quick-links li.nurseline{ background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
+.quick-links li.nurseline a{ background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
 }
-.quick-links li.mychart{ background-image: url(../images/computer-icon.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: no-repeat no-repeat; }
+.quick-links li.mychart a{ background-image: url(../images/computer-icon.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: no-repeat no-repeat; }
 @media (max-width: 767px){
-.quick-links li.mychart{ background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
+.quick-links li.mychart a{ background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
 }
-.quick-links li.self-care{ background-image: url(../images/self-care.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: no-repeat no-repeat; }
+.quick-links li.self-care a{ background-image: url(../images/self-care.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: no-repeat no-repeat; }
 @media (max-width: 767px){
-.quick-links li.self-care{ background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
+.quick-links li.self-care a{ background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
 }
 .subfooter img{ max-height: 160px; }
 .subfooter [class*="col-"]:last-of-type{ border-right-style: none; border-right-width: initial; border-right-color: initial; }
