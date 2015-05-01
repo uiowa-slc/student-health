@@ -29,7 +29,8 @@ module.exports = function(grunt) {
 
     concat: {
       js:{
-        src: ['division-project/bower_components/jquery/jquery.js',
+        src: [
+          'division-project/build/build.src.js',
           'division-project/bower_components/jquery.equalheights/jquery.equalheights.js',
          // 'division-project/bower_components/foundation/js/foundation/foundation.js',
           //'division-project/bower_components/foundation/js/foundation/foundation.equalizer.js',
