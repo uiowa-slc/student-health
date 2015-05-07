@@ -29,6 +29,7 @@ img{ vertical-align: middle; }
 .clearfix::after{ clear: both; }
 .clearfix{ }
 .text-center{ text-align: center; }
+.clear{ clear: both; }
 .division-topbar input[type="submit"]{ -webkit-appearance: button; cursor: pointer; }
 .division-topbar input[type="search"]{ -webkit-appearance: textfield; box-sizing: border-box; }
 .division-topbar *{ box-sizing: border-box; }
@@ -103,6 +104,7 @@ img{ vertical-align: middle; }
 .btn{ display: inline-block; padding-top: 4px; padding-right: 14px; padding-bottom: 4px; padding-left: 14px; margin-bottom: 0px; font-size: 14px; line-height: 20px; text-align: center; vertical-align: middle; cursor: pointer; color: rgb(51, 51, 51); text-shadow: rgba(255, 255, 255, 0.746094) 0px 1px 1px; background-color: rgb(245, 245, 245); background-image: -webkit-linear-gradient(top, rgb(255, 255, 255), rgb(230, 230, 230)); border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-color: rgb(221, 221, 221); border-right-color: rgb(221, 221, 221); border-left-color: rgb(221, 221, 221); border-bottom-color: rgb(162, 162, 162); -webkit-box-shadow: rgba(255, 255, 255, 0.199219) 0px 1px 0px inset, rgba(0, 0, 0, 0.046875) 0px 1px 2px; box-shadow: rgba(255, 255, 255, 0.199219) 0px 1px 0px inset, rgba(0, 0, 0, 0.046875) 0px 1px 2px; background-repeat: repeat no-repeat; }
 .btn:first-child{ }
 .btn{ border-top-color: rgba(0, 0, 0, 0.148438); border-right-color: rgba(0, 0, 0, 0.148438); border-bottom-color: rgba(0, 0, 0, 0.246094); border-left-color: rgba(0, 0, 0, 0.148438); }
+ input[type="submit"].btn{ }
 form{ margin-top: 1em; margin-right: 0px; margin-bottom: 1em; margin-left: 0px; }
 input{ font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 label{ display: block; font-weight: bold; margin-bottom: 3px; }
@@ -173,8 +175,10 @@ input{ margin-left: 0px; width: 100%; }
 }
 .module:first-child{ margin-left: 0px; }
 .module .media{ border-bottom-width: 4px; border-bottom-style: solid; border-bottom-color: rgb(255, 206, 57); }
+.module .media img{ width: 100%; }
 .module .inner{ font-size: 0.93333rem; line-height: 1.5; padding-top: 1em; padding-right: 1em; padding-bottom: 1em; padding-left: 1em; }
 .module h3{ font-size: 20px; margin-top: 0.3em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; text-transform: uppercase; }
+.module h3 a{ color: rgb(51, 51, 51); }
 .module h4{ font-size: 15px; }
 .loading .nav-main-wrapper{ opacity: 0; }
 @media screen and (min-width: 768px){
@@ -217,9 +221,11 @@ input{ margin-left: 0px; width: 100%; }
 .nav-main .active a{ background-image: url(../../../division-project/images/nav_hover.gif); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: 0% 100%; background-repeat: repeat no-repeat; }
 .nav-main .active a::after{ content: ''; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 0px; border-right-width: 6px; border-bottom-width: 6px; border-left-width: 6px; border-top-color: transparent; border-right-color: transparent; border-bottom-color: rgb(34, 34, 34); border-left-color: transparent; display: inline-block; height: 0px; position: absolute; left: 50%; margin-left: -6px; bottom: 4px; text-decoration: none; width: 0px; }
 }
+#mc_embed_signup input#mc-embedded-subscribe{ margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }
 .footer img{ max-width: 266px; }
 .footer .dsl-footer{ height: 72px; }
 .footer .dsl-footer img{ margin-top: -20px; }
+.footer #mc_embed_signup #mc-embedded-subscribe{ margin-top: 10px; }
 .footer .social-icon{ font-family: iconies_socialregular; }
 @media screen and (min-width: 480px){
 .footer p{ font-size: 0.86667rem; }
@@ -234,6 +240,7 @@ input{ margin-left: 0px; width: 100%; }
 @media screen and (min-width: 480px){
 .footer-nav a{ border-left-width: 1px; border-left-style: solid; border-left-color: rgb(46, 46, 46); font-size: 0.86667rem; padding-top: 5px; padding-right: 0px; padding-bottom: 5px; padding-left: 10px; }
 }
+.footer .btn{ color: rgb(51, 51, 51); }
 .footer hr{ border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(46, 46, 46); margin-top: 0.5em; margin-right: 0px; margin-bottom: 0.5em; margin-left: 0px; }
 html{ font-size: 15px; }
 body{ background-image: initial; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: rgb(255, 255, 255); color: rgb(68, 68, 68); font-family: proxima-nova, 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 15px; line-height: 1.6; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
@@ -325,27 +332,16 @@ h2, h3{ page-break-after: avoid; }
 .quick-links-container h3{ padding-bottom: 25px; }
 .quick-links ul{ margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; }
 .quick-links li{ list-style-type: none; list-style-position: outside; }
-.quick-links li a{ padding-top: 0px; padding-right: 0px; padding-bottom: 18px; padding-left: 45px; margin-bottom: 15px; display: block; line-height: 37px; }
+.quick-links li a{ padding-top: 0px; padding-right: 0px; padding-bottom: 18px; padding-left: 45px; margin-bottom: 15px; display: block; }
+@media (min-width: 768px){
+.quick-links li a{ line-height: 37px; }
+}
 .quick-links li.app a{ background-image: url(../images/appointments-icon.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: no-repeat no-repeat; }
-@media (max-width: 767px){
-.quick-links li.app a{ background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
-}
 .quick-links li.insurance a{ background-image: url(../images/insurance.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: no-repeat no-repeat; }
-@media (max-width: 767px){
-.quick-links li.insurance a{ background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
-}
 .quick-links li.nurseline a{ background-image: url(../images/nurseline.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: no-repeat no-repeat; }
-@media (max-width: 767px){
-.quick-links li.nurseline a{ background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
-}
 .quick-links li.mychart a{ background-image: url(../images/computer-icon.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: no-repeat no-repeat; }
-@media (max-width: 767px){
-.quick-links li.mychart a{ background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
-}
 .quick-links li.self-care a{ background-image: url(../images/self-care.png); background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; background-position: initial initial; background-repeat: no-repeat no-repeat; }
-@media (max-width: 767px){
-.quick-links li.self-care a{ background-image: none; background-attachment: initial; background-origin: initial; background-clip: initial; background-color: initial; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px; background-position: initial initial; background-repeat: initial initial; }
-}
+#mc-embedded-subscribe{ margin-bottom: 10px; }
 .subfooter img{ max-height: 160px; }
 .subfooter [class*="col-"]:last-of-type{ border-right-style: none; border-right-width: initial; border-right-color: initial; }
 .subfooter .accred{ max-width: 74%; }
