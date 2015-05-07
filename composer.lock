@@ -252,12 +252,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-project.git",
-                "reference": "a2149c8fd60285e2643a1dd7df5c36cdea233da5"
+                "reference": "5e8f650c73c8739db9eb273d817e863acc79f3b3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/a2149c8fd60285e2643a1dd7df5c36cdea233da5",
-                "reference": "a2149c8fd60285e2643a1dd7df5c36cdea233da5",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/5e8f650c73c8739db9eb273d817e863acc79f3b3",
+                "reference": "5e8f650c73c8739db9eb273d817e863acc79f3b3",
                 "shasum": ""
             },
             "require": {
@@ -294,7 +294,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-project/tree/2.0.x",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
-            "time": "2015-05-06 19:58:29"
+            "time": "2015-05-07 14:39:53"
         },
         {
             "name": "md/rss-display",
@@ -1084,12 +1084,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/unclecheese/silverstripe-gridfield-betterbuttons.git",
-                "reference": "77a0c07af01b025ccb58b254c80928148ef58bd3"
+                "reference": "bdc893f7f02a0c5e41d00856a2a6c6ca8656cbf3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/77a0c07af01b025ccb58b254c80928148ef58bd3",
-                "reference": "77a0c07af01b025ccb58b254c80928148ef58bd3",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/bdc893f7f02a0c5e41d00856a2a6c6ca8656cbf3",
+                "reference": "bdc893f7f02a0c5e41d00856a2a6c6ca8656cbf3",
                 "shasum": ""
             },
             "require": {
@@ -1112,7 +1112,7 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2015-04-22 04:39:29"
+            "time": "2015-05-07 05:11:01"
         },
         {
             "name": "unclecheese/eventcalendar",
