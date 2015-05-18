@@ -1,4 +1,4 @@
-<div class="module latest-post quick-links-container" data-equalizer-watch>
+<div class="module latest-post quick-links-container">
 	<div class="media">
 	</div>
 	<div class="inner">

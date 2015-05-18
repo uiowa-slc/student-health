@@ -34,7 +34,7 @@ module.exports = function(grunt) {
           'division-project/bower_components/jquery.equalheights/jquery.equalheights.js',
          // 'division-project/bower_components/foundation/js/foundation/foundation.js',
           //'division-project/bower_components/foundation/js/foundation/foundation.equalizer.js',
-          '<%=globalConfig.themeDir %>/js/*.js', 
+          '<%=globalConfig.themeDir %>/js/init.js', 
           ],
         dest: '<%=globalConfig.themeDir %>/build/build.src.js'
       }
@@ -79,7 +79,18 @@ module.exports = function(grunt) {
                     forceInclude: ['.img-container', '.main-content']
                 }
             }
+        },
+      cssmin: {
+        options: {
+          shorthandCompacting: false,
+          roundingPrecision: -1
+        },
+        target: {
+          files: {
+            '<%=globalConfig.themeDir %>/templates/Includes/CriticalCss.ss': ['<%=globalConfig.themeDir %>/templates/Includes/CriticalCss.ss']
+          }
         }
+      }
   });
 
   // Load the plugin that provides the "uglify" task.
@@ -89,9 +100,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-simple-watch');
   grunt.loadNpmTasks('grunt-criticalcss');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   // Default task(s).
   // Note: order of tasks is very important
-  grunt.registerTask('default', ['sass', 'concat', 'uglify', 'criticalcss', 'watch']);
+  grunt.registerTask('default', ['sass', 'concat', 'uglify', 'criticalcss', 'cssmin','watch']);
 
 };

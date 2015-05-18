@@ -1,4 +1,4 @@
-<div class="module" data-equalizer-watch>
+<div class="module">
     <div class="media">
     <% if $YouTubeEmbed %>
     	$YouTubeEmbed

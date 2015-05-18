@@ -47,7 +47,7 @@
 
     </div>
 	<section class="home-highlights">
-        <div class="container clearfix"  data-equal="div.module">
+        <div class="container clearfix">
            <% include QuickLinks %>
 	         <% include LatestPost %>
           <% loop HomePageFeatures.Limit(2) %>
