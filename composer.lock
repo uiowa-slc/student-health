@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4f43fbb3af3b2e2ef0a55de3230a2204",
+    "hash": "85d519f74f49b7812ef3b11b5b62553a",
     "packages": [
         {
             "name": "colymba/gridfield-bulk-editing-tools",
@@ -248,16 +248,16 @@
         },
         {
             "name": "md/division-project",
-            "version": "2.0.1",
+            "version": "2.0.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-project.git",
-                "reference": "50da7334184bbf7c118b325b6a8fddc51b4ae3b9"
+                "reference": "83ad6b7243fa0bf8a35ad58dbe76b6ba3891d757"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/50da7334184bbf7c118b325b6a8fddc51b4ae3b9",
-                "reference": "50da7334184bbf7c118b325b6a8fddc51b4ae3b9",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/83ad6b7243fa0bf8a35ad58dbe76b6ba3891d757",
+                "reference": "83ad6b7243fa0bf8a35ad58dbe76b6ba3891d757",
                 "shasum": ""
             },
             "require": {
@@ -266,6 +266,7 @@
                 "md/ac-json-events": "dev-master",
                 "md/division-bar": "*",
                 "md/rss-display": "*",
+                "md/silverstripe-flickr": "*",
                 "normann/gridfieldpaginatorwithshowall": "*",
                 "php": ">=5.3.2",
                 "sheadawson/quickaddnew": "*",
@@ -291,10 +292,10 @@
             "type": "silverstripe-module",
             "description": "The University of Iowa Division of Student Life Project Code and Theme",
             "support": {
-                "source": "https://github.com/StudentLifeMarketingAndDesign/division-project/tree/2.0.1",
+                "source": "https://github.com/StudentLifeMarketingAndDesign/division-project/tree/2.0.x",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
-            "time": "2015-03-23 17:47:41"
+            "time": "2015-05-18 20:31:12"
         },
         {
             "name": "md/rss-display",
@@ -327,6 +328,42 @@
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/rss-display/issues"
             },
             "time": "2015-04-28 20:02:10"
+        },
+        {
+            "name": "md/silverstripe-flickr",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-flickr.git",
+                "reference": "3f487aedffb039d10ba102f8c092465e33bf4b8c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/silverstripe-flickr/zipball/3f487aedffb039d10ba102f8c092465e33bf4b8c",
+                "reference": "3f487aedffb039d10ba102f8c092465e33bf4b8c",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/framework": "~3.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7"
+            },
+            "type": "silverstripe-module",
+            "extra": {
+                "installer-name": "flickr"
+            },
+            "authors": [
+                {
+                    "name": "madmatt",
+                    "email": "signups@madman.net.nz"
+                }
+            ],
+            "description": "Provides simple bindings for the Flickr API, converting API responses into SilverStripe objects",
+            "support": {
+                "source": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-flickr/tree/master"
+            },
+            "time": "2015-05-12 17:47:43"
         },
         {
             "name": "normann/gridfieldpaginatorwithshowall",
@@ -1201,7 +1238,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "md/division-project": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
