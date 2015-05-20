@@ -4,7 +4,7 @@
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "85d519f74f49b7812ef3b11b5b62553a",
+    "hash": "a35bfbf3b5dddcc2792119666d998d09",
     "packages": [
         {
             "name": "colymba/gridfield-bulk-editing-tools",
@@ -252,12 +252,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-project.git",
-                "reference": "3bcb746254bd2dc6d28017a3c8fd61a3f71c3682"
+                "reference": "3b73edd0af350ccc08cb0d03779fd583dd91954d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/3bcb746254bd2dc6d28017a3c8fd61a3f71c3682",
-                "reference": "3bcb746254bd2dc6d28017a3c8fd61a3f71c3682",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/3b73edd0af350ccc08cb0d03779fd583dd91954d",
+                "reference": "3b73edd0af350ccc08cb0d03779fd583dd91954d",
                 "shasum": ""
             },
             "require": {
@@ -279,7 +279,7 @@
                 "silverstripe/installer": "*",
                 "silverstripe/mathspamprotection": "*",
                 "silverstripe/recaptcha": "*",
-                "silverstripe/staticpublishqueue": "*",
+                "silverstripe/staticpublisher": "*",
                 "silverstripe/tenon": "*",
                 "silverstripe/timepickerfield": "*",
                 "silverstripe/userforms": "*",
@@ -295,7 +295,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-project/tree/2.0.x",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
-            "time": "2015-05-18 21:25:29"
+            "time": "2015-05-20 19:36:48"
         },
         {
             "name": "md/rss-display",
@@ -699,45 +699,6 @@
             "time": "2015-04-27 23:06:07"
         },
         {
-            "name": "silverstripe/gridfieldajaxrefresh",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/silverstripe-labs/silverstripe-gridfieldajaxrefresh.git",
-                "reference": "304c68d1d0e84e51c96ffdf370fedd2d8d53b5d3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe-labs/silverstripe-gridfieldajaxrefresh/zipball/304c68d1d0e84e51c96ffdf370fedd2d8d53b5d3",
-                "reference": "304c68d1d0e84e51c96ffdf370fedd2d8d53b5d3",
-                "shasum": ""
-            },
-            "require": {
-                "silverstripe/framework": "~3.0"
-            },
-            "type": "silverstripe-module",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "BSD-3-Clause"
-            ],
-            "authors": [
-                {
-                    "name": "Julian Seidenberg",
-                    "email": "julian@silverstripe.com"
-                }
-            ],
-            "description": "Adds the ability to either automatically or manually refresh a SilverStripe GridField",
-            "keywords": [
-                "ajax",
-                "auto-refresh",
-                "automatic",
-                "gridfield",
-                "refresh",
-                "silverstripe"
-            ],
-            "time": "2014-08-14 20:35:49"
-        },
-        {
             "name": "silverstripe/mathspamprotection",
             "version": "dev-master",
             "source": {
@@ -853,42 +814,42 @@
             "time": "2015-05-05 05:19:21"
         },
         {
-            "name": "silverstripe/staticpublishqueue",
+            "name": "silverstripe/staticpublisher",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/silverstripe-labs/silverstripe-staticpublishqueue.git",
-                "reference": "6961f2994dc49d87248908d9d8b2400b88a8b133"
+                "url": "https://github.com/silverstripe-labs/silverstripe-staticpublisher.git",
+                "reference": "937a3b5606444f2c82ac8958b0f8d322fbaba994"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe-labs/silverstripe-staticpublishqueue/zipball/6961f2994dc49d87248908d9d8b2400b88a8b133",
-                "reference": "6961f2994dc49d87248908d9d8b2400b88a8b133",
+                "url": "https://api.github.com/repos/silverstripe-labs/silverstripe-staticpublisher/zipball/937a3b5606444f2c82ac8958b0f8d322fbaba994",
+                "reference": "937a3b5606444f2c82ac8958b0f8d322fbaba994",
                 "shasum": ""
             },
             "require": {
-                "silverstripe/cms": "3.1.*",
-                "silverstripe/framework": "3.1.*",
-                "silverstripe/gridfieldajaxrefresh": "dev-master"
+                "silverstripe/framework": "~3.1"
             },
             "type": "silverstripe-module",
             "notification-url": "https://packagist.org/downloads/",
-            "description": "Static publishing queue to create static versions of pages for enhanced performance and security",
-            "keywords": [
-                "cache",
-                "caching",
-                "html",
-                "performance",
-                "publishing",
-                "queue",
-                "security",
-                "silverstripe",
-                "static",
-                "static-cache",
-                "static-caching",
-                "static-publishing"
+            "authors": [
+                {
+                    "name": "Sam Minnee",
+                    "email": "sam@silverstripe.com"
+                },
+                {
+                    "name": "Will Rossiter",
+                    "email": "will@fullscreen.io"
+                }
             ],
-            "time": "2015-01-04 20:39:55"
+            "description": "StaticPublisher provides an extensions for exporting a SilverStripe application to either a local or remote file systems.",
+            "keywords": [
+                "export",
+                "publisher",
+                "silverstripe-labs",
+                "static"
+            ],
+            "time": "2015-05-18 22:02:44"
         },
         {
             "name": "silverstripe/tenon",
@@ -1025,12 +986,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-widgets.git",
-                "reference": "ccea929cb9308a61904b199e500060d01a2d3b1d"
+                "reference": "b95f2043742e7737177f4ec22b888b4f68461150"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-widgets/zipball/ccea929cb9308a61904b199e500060d01a2d3b1d",
-                "reference": "ccea929cb9308a61904b199e500060d01a2d3b1d",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-widgets/zipball/b95f2043742e7737177f4ec22b888b4f68461150",
+                "reference": "b95f2043742e7737177f4ec22b888b4f68461150",
                 "shasum": ""
             },
             "require": {
@@ -1059,7 +1020,7 @@
                 "silverstripe",
                 "widgets"
             ],
-            "time": "2015-05-03 23:46:37"
+            "time": "2015-05-19 21:13:08"
         },
         {
             "name": "simplepie/simplepie",
@@ -1239,7 +1200,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "md/division-project": 20
+        "md/division-project": 20,
+        "silverstripe/staticpublisher": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
