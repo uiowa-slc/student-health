@@ -76,7 +76,7 @@ module.exports = function(grunt) {
                     filename: "<%=globalConfig.themeDir %>/css/master.css", // Using path.resolve( path.join( ... ) ) is a good idea here
                     buffer: 800*1024,
                     ignoreConsole: false,
-                    forceInclude: ['.img-container', '.main-content']
+                    forceInclude: ['.img-container', '.main-content', '.sec-content', '.sec-nav', '.sec-nav ul', '.sec-nav a', '.section-title', '.margin-top']
                 }
             }
         },

@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a35bfbf3b5dddcc2792119666d998d09",
+    "hash": "5ae9aa484f7826ad6a1d09ef7850f600",
     "packages": [
         {
             "name": "colymba/gridfield-bulk-editing-tools",
@@ -252,12 +252,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-project.git",
-                "reference": "3b73edd0af350ccc08cb0d03779fd583dd91954d"
+                "reference": "9de24af1683cf0387852e75723357390f0f2453c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/3b73edd0af350ccc08cb0d03779fd583dd91954d",
-                "reference": "3b73edd0af350ccc08cb0d03779fd583dd91954d",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/9de24af1683cf0387852e75723357390f0f2453c",
+                "reference": "9de24af1683cf0387852e75723357390f0f2453c",
                 "shasum": ""
             },
             "require": {
@@ -286,7 +286,7 @@
                 "silverstripe/widgets": "*",
                 "simplepie/simplepie": "*",
                 "unclecheese/betterbuttons": "*",
-                "unclecheese/eventcalendar": "*",
+                "unclecheese/eventcalendar": "1.0.x",
                 "undefinedoffset/sortablegridfield": "*"
             },
             "type": "silverstripe-module",
@@ -295,7 +295,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-project/tree/2.0.x",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
-            "time": "2015-05-20 19:36:48"
+            "time": "2015-05-27 18:26:37"
         },
         {
             "name": "md/rss-display",
@@ -335,12 +335,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-flickr.git",
-                "reference": "3f487aedffb039d10ba102f8c092465e33bf4b8c"
+                "reference": "2bca8c158e2349f7a72ff87a1cb84cfce728b758"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/silverstripe-flickr/zipball/3f487aedffb039d10ba102f8c092465e33bf4b8c",
-                "reference": "3f487aedffb039d10ba102f8c092465e33bf4b8c",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/silverstripe-flickr/zipball/2bca8c158e2349f7a72ff87a1cb84cfce728b758",
+                "reference": "2bca8c158e2349f7a72ff87a1cb84cfce728b758",
                 "shasum": ""
             },
             "require": {
@@ -363,7 +363,7 @@
             "support": {
                 "source": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-flickr/tree/master"
             },
-            "time": "2015-05-12 17:47:43"
+            "time": "2015-05-27 15:47:26"
         },
         {
             "name": "normann/gridfieldpaginatorwithshowall",
@@ -775,12 +775,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-spamprotection.git",
-                "reference": "9c649f0b6c56eec4c85bcd66094d165ef6333375"
+                "reference": "12947ae886bae73bd86342fa9c10a2bbc241071d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-spamprotection/zipball/9c649f0b6c56eec4c85bcd66094d165ef6333375",
-                "reference": "9c649f0b6c56eec4c85bcd66094d165ef6333375",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-spamprotection/zipball/12947ae886bae73bd86342fa9c10a2bbc241071d",
+                "reference": "12947ae886bae73bd86342fa9c10a2bbc241071d",
                 "shasum": ""
             },
             "require": {
@@ -811,7 +811,7 @@
                 "silverstripe",
                 "spamprotection"
             ],
-            "time": "2015-05-05 05:19:21"
+            "time": "2015-05-26 05:14:40"
         },
         {
             "name": "silverstripe/staticpublisher",
@@ -942,12 +942,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/silverstripe/silverstripe-userforms.git",
-                "reference": "740530d4e613b4460d6bcedb2984a9047d0508d3"
+                "reference": "e9df40cc5a8a8f0a5c9b987158b3ba96f3cd7417"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/740530d4e613b4460d6bcedb2984a9047d0508d3",
-                "reference": "740530d4e613b4460d6bcedb2984a9047d0508d3",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-userforms/zipball/e9df40cc5a8a8f0a5c9b987158b3ba96f3cd7417",
+                "reference": "e9df40cc5a8a8f0a5c9b987158b3ba96f3cd7417",
                 "shasum": ""
             },
             "require": {
@@ -978,7 +978,7 @@
                 "silverstripe",
                 "userforms"
             ],
-            "time": "2015-04-30 07:43:17"
+            "time": "2015-05-26 06:20:25"
         },
         {
             "name": "silverstripe/widgets",
@@ -1082,12 +1082,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/unclecheese/silverstripe-gridfield-betterbuttons.git",
-                "reference": "8d28b709cd12329a93c63db0ce17074faf5c397c"
+                "reference": "aaea9e42ad45baf6123547377247d4e7437bb546"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/8d28b709cd12329a93c63db0ce17074faf5c397c",
-                "reference": "8d28b709cd12329a93c63db0ce17074faf5c397c",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-gridfield-betterbuttons/zipball/aaea9e42ad45baf6123547377247d4e7437bb546",
+                "reference": "aaea9e42ad45baf6123547377247d4e7437bb546",
                 "shasum": ""
             },
             "require": {
@@ -1110,20 +1110,20 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2015-05-12 10:54:06"
+            "time": "2015-05-25 04:18:57"
         },
         {
             "name": "unclecheese/eventcalendar",
-            "version": "dev-master",
+            "version": "1.0.11",
             "source": {
                 "type": "git",
                 "url": "https://github.com/unclecheese/silverstripe-event-calendar.git",
-                "reference": "dabcc14af88a70caa052925a67e44a1511af359c"
+                "reference": "d88d48092de751b5f36f204f4b0ff00dfb7aef2d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/unclecheese/silverstripe-event-calendar/zipball/dabcc14af88a70caa052925a67e44a1511af359c",
-                "reference": "dabcc14af88a70caa052925a67e44a1511af359c",
+                "url": "https://api.github.com/repos/unclecheese/silverstripe-event-calendar/zipball/d88d48092de751b5f36f204f4b0ff00dfb7aef2d",
+                "reference": "d88d48092de751b5f36f204f4b0ff00dfb7aef2d",
                 "shasum": ""
             },
             "require": {
@@ -1153,7 +1153,7 @@
                 "events",
                 "silverstripe"
             ],
-            "time": "2015-05-05 22:14:07"
+            "time": "2015-02-18 21:34:57"
         },
         {
             "name": "undefinedoffset/sortablegridfield",
