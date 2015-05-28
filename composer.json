@@ -32,10 +32,6 @@
         {
             "type": "vcs",
             "url": "https://github.com/StudentLifeMarketingAndDesign/rss-display"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-flickr"
         }
     ]
 
