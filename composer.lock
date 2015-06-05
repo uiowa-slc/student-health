@@ -252,12 +252,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-project.git",
-                "reference": "2fd1fdf417d40fb30a7a54d504bc647601df1bb5"
+                "reference": "827d43ee3c23b7475a8defab9ed63a38cbc36910"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/2fd1fdf417d40fb30a7a54d504bc647601df1bb5",
-                "reference": "2fd1fdf417d40fb30a7a54d504bc647601df1bb5",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/827d43ee3c23b7475a8defab9ed63a38cbc36910",
+                "reference": "827d43ee3c23b7475a8defab9ed63a38cbc36910",
                 "shasum": ""
             },
             "require": {
@@ -295,7 +295,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-project/tree/2.0.x",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
-            "time": "2015-06-04 21:31:53"
+            "time": "2015-06-05 20:14:23"
         },
         {
             "name": "md/rss-display",
@@ -335,12 +335,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-flickr.git",
-                "reference": "4d07a1e9f647d4598c8f77efce97fd0aa56b56bd"
+                "reference": "43a76b76a8fbf587bed959d1d10ecca5ac0cfbd5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/silverstripe-flickr/zipball/4d07a1e9f647d4598c8f77efce97fd0aa56b56bd",
-                "reference": "4d07a1e9f647d4598c8f77efce97fd0aa56b56bd",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/silverstripe-flickr/zipball/43a76b76a8fbf587bed959d1d10ecca5ac0cfbd5",
+                "reference": "43a76b76a8fbf587bed959d1d10ecca5ac0cfbd5",
                 "shasum": ""
             },
             "require": {
@@ -363,7 +363,7 @@
             "support": {
                 "source": "https://github.com/StudentLifeMarketingAndDesign/silverstripe-flickr/tree/master"
             },
-            "time": "2015-05-29 16:29:02"
+            "time": "2015-06-05 16:08:55"
         },
         {
             "name": "normann/gridfieldpaginatorwithshowall",
