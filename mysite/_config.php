@@ -52,5 +52,5 @@ GD::set_default_quality(80);
 SiteTree::add_extension("FilesystemPublisher('cache/')");
 
 if(Director::isLive()) {
-	Director::forceSSL(array('/^Security/','/^admin/'));
+	Director::forceSSL();
 }
