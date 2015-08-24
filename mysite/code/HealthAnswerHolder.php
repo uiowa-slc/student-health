@@ -1,41 +1,25 @@
 <?php
-class HealthAnswerHolder extends Page {
+class HealthAnswerHolder extends BlogHolder {
 
-	private static $db = array(
-	
-	
-	);
+	private static $db = array();
 	
 	static $has_one = array();	
-	
-	static $allowed_children = array('HealthAnswer', 'HealthAnswerHolder');
 
-	
-	
+	private static $singular_name = 'Health Answer Holder';
 
-     
+	private static $plural_name = 'Health Answer Holder';
+	
+	static $allowed_children = array('HealthAnswer');
 }
-class HealthAnswerHolder_Controller extends Page_Controller {
 
-	/*
-	public function getPaginatedAnswers(){
-	
-		$healthanswers = HealthAnswer::get();
-		
-		$pages = new PaginatedList($healthanswers, $this->request);    	
-	    $pages->setPageLength(2);
-	    
-	    $pages->sort('LastEdited');
-		
-	    return $pages;
-	    	    		
-	}
-	*/
+
+class HealthAnswerHolder_Controller extends BlogHolder_Controller {
 	
 	public function getAllAnswers(){
 		$healthanswers = HealthAnswer::get();
 		
 		$pages = new PaginatedList($healthanswers, $this->request);    	
+	  
 	    $pages->setPageLength(5);
 	    
 	    $pages->sort('ArticleDate', 'DESC');
@@ -46,8 +30,8 @@ class HealthAnswerHolder_Controller extends Page_Controller {
 	
 	public function getPaginatedAnswers(){
 	
-		
 		$pages = new PaginatedList($this->Children(), $this->request);   	
+	
 	    $pages->setPageLength(5);
 	    
 	    $pages->sort('ArticleDate', 'DESC');
@@ -55,15 +39,4 @@ class HealthAnswerHolder_Controller extends Page_Controller {
 	    return $pages;
 		
 	}
-	
-	public function withinPageRange(){
-		
-		
-	}
-	
-	
-	
-	
-	
-
 }

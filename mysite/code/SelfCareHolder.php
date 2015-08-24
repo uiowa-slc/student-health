@@ -1,32 +1,13 @@
 <?php
-class Page extends SiteTree {
+class SelfCareHolder extends Page {
+	private static $singular_name = 'Self Care Holder';
 
-	private static $db = array(
-		'PostedBy' => 'Text',
-	);
+	private static $plural_name = 'Self Care Holder';
 
-	private static $has_one = array(
-		'Picture' => 'Image',
-	);
-
-	private static $many_many = array(
-	);
-
-	private static $many_many_extraFields = array(
-	);
-
-	private static $plural_name = "Pages";
-
-	private static $defaults = array();
-
-	public function getCMSFields() {
-		$f = parent::getCMSFields();
-
-		return $f;
-	}
-
+	private static $allowed_children = array('SelfCarePage');
 }
-class Page_Controller extends ContentController {
+
+class SelfCareHolder_Controller extends Page_Controller {
 
 	/**
 	 * An array of actions that can be accessed via a request. Each array element should be an action name, and the
@@ -43,19 +24,9 @@ class Page_Controller extends ContentController {
 	 *
 	 * @var array
 	 */
-	private static $allowed_actions = array(
+	private static $allowed_actions = array (
 	);
-
-	public function RandomQuestions() {
-		return HealthAnswer::get()->Sort('RAND()');
-	}
-
-
-	public function allStaffTeams() {
-
-		return StaffTeam::get();
-
-	}
+	
 
 	public function init() {
 		parent::init();
@@ -64,6 +35,9 @@ class Page_Controller extends ContentController {
 		// instead of putting Requirements calls here.  However these are
 		// included so that our older themes still work
 
+   
 	}
 
+
+	
 }

@@ -1,98 +1,152 @@
 <?php
 class AskYourQuestion extends Page {
 
-	private static $db = array(
-	"EmailTo" => "Text"
+	public static $db = array(
+		"EmailTo" => "Text",
+		"SuccessMessage" => "Text"
+	);
+	static $has_one = array(
+	);	
+	static $has_many = array(
 	);
 	
-	static $has_one = array();	
-
 	public function getCMSFields() {
-	
         $fields = parent::getCMSFields();
-	
-        $fields->addFieldToTab('Root.Main', new EmailField('EmailTo', 'Email:'));
-        
+        $fields->addFieldToTab('Root.Main', new EmailField('EmailTo', 'Email this form to:'));
+        $fields->addFieldToTab('Root.Main', new TextField('SuccessMessage', 'Success Message:'));
         return $fields;
    }
+   
 }
 class AskYourQuestion_Controller extends Page_Controller {
 
-	//static $allowed_actions = array('questionForm');
+	public static $allowed_actions = array(
+		'AskYourQuestionForm',
+		'success',
+	);
+	public static $url_handlers = array(
+        'success//' => 'success',
+       
+    );
+	public function init() {
+		parent::init();
+	}
+	
+	// function Success(){
+	// 	$param = Session::get("success");
+	// 	//print_r ("PARAM IS " . $param);
+	// 	if ($param=="1"){
+	// 		return true;
+	// 	}
+	// 	else {
+	// 		return false;
+	// 	}
+	// }
+	
+	public function Success(){
 
-	public function questionForm(){
-			
-		$tempQuestion = QuestionPage::get()->First();
-		
-		//$fields = $tempQuestion->getFrontEndFields();
+  		return isset($_REQUEST['success']) && $_REQUEST['success'] == "1";
+    }   
+
+	public function AskYourQuestionForm(){
+		   		
+		$fields = new FieldList(
+			new TextField("FirstName", "First Name:"),
+			new TextField("LastName", "Last Name:"),
+			new TextAreaField("Question", "<span>*</span> Question:"),
+			new EmailField("Email", "Your Email: "),
+			new CheckboxField("ResponsePreference", "Check this box if it's ok to publish the response.")
+	
+		);
 		
 		/*
-		$questionType = OptionsetField::create("QuestionType", "<span>*</span> Question type:",  $sourced = array(
-      "Alcohol" => "Alcohol",
-      "Cold / Flu" => "Cold / Flu",
-      "Fitness" => "Fitness",
-      "General" => "General",
-      "Illness" => "Illness",
-      "Medicine" => "Medicine",
-      "Mental Health" => "Mental Health",
-      "Nutrition" => "Nutrition",
-      "Sexual Health" => "Sexual Health",
-      "Stress" => "Stress"), $value = "1"); 
-      */
-   
-
-   		
-   		$responsePreference = OptionsetField::create("ResponsePreference", "<span>*</span> Would you like a response?", $source = array(
+		$responsePreference = OptionsetField::create("ResponsePreference", "<span>*</span> Is it ok to publish the response to your question", $source = array(
 		 "Yes" => "Yes",
 		 "No" => "No"), $value = "1");
-		 
-
-		
-		$fields = new FieldList(
-		
-		TextField::create("FirstName", "First Name:"),
-		TextField::create("LastName", "Last Name:"),
-		TextAreaField::create("Question", "<span>*</span> Question:"),
-		$responsePreference,
-
-		EmailField::create("Email", "Email:")
-		
-	
-
-		);
+		 */
 		
 		$actions = new FieldList(
             new FormAction('askQuestion', 'Submit')
         );
         
-        $validator = new RequiredFields('Question', 'ResponsePreference');
+        $validator = new RequiredFields('FirstName', 'Question', 'Email');
         
-		$form = new Form($this, 'questionForm', $fields, $actions, $validator);
-		
-		$protector = SpamProtectorManager::update_form($form, 'Message', null, "Please enter the following words");
-		
+		$form = new Form($this, 'AskYourQuestionForm', $fields, $actions, $validator);
+		//$form->enableSpamProtection();
+		//$protector = SpamProtectorManager::update_form($form, 'Message', null, "Please enter the following words");
 		
 		return $form;
+		
 	}
 	
 	function askQuestion($data, $form){
 	
-		Session::clear("message");
+		$ResponseType = $data["ResponsePreference"];		
 		
-		//$newQuestion = new HealthAnswer();
-		//$form->saveInto($newQuestion);
+		$newHealthQuestion = new HealthAnswer();
+		$newHealthQuestion->setParent(12);
+		$newHealthQuestion->Title = 'New Submitted Health Answer';
+	
+	    $form->saveInto($newHealthQuestion);
+	        	    
+	    if ($newHealthQuestion->ResponsePreference == 1) {
+	        
+	        $newHealthQuestion->write();
+	        //$newHealthQuestion->doRestoreToStage();
+	       $newHealthQuestion->writeToStage('Stage');
+	        Session::set('Success', true);
+	        
+	     }
+	            
+        //Email notification
 		
+		if($newHealthQuestion->Email){
+			$from = $newHealthQuestion->Email;
+		}else {
+			$from = "Student Health Questions";
+		}
 		
-		$questionHolder = QuestionHolder::get()->First();
-
+		$to = $this->EmailTo;
+		$subject = "New Student Health Question";
+		$body1 = '<p>Someone submitted an Health Question.</p>
+		
+				<ul>
+				
+					<li><strong>First Name:</strong> '.$newHealthQuestion->FirstName.'</li>
+					<li><strong>Last Name:</strong> '.$newHealthQuestion->LastName.'</li>
+					<li><strong>Email:</strong> '.$newHealthQuestion->Email.'</li>
+					<li><strong>Question:</strong> '.$newHealthQuestion->Question.'</li>
+					
+				</ul>';
+				
+		$body2 = '<p>Someone submitted an Health Question.</p>
+		
+				<ul>
+				
+					<li><strong>First Name:</strong> '.$newHealthQuestion->FirstName.'</li>
+					<li><strong>Last Name:</strong> '.$newHealthQuestion->LastName.'</li>
+					<li><strong>Email:</strong> '.$newHealthQuestion->Email.'</li>
+					<li><strong>Question:</strong> '.$newHealthQuestion->Question.'</li>
+				</ul>
+				
+				<p><a href="http://studenthealth.uiowa.edu/admin/pages/edit/show/'.$newHealthQuestion->ID.'">Approve it (or don\'t) here</a></p> ';
+		/*		
+		$body = "A new question has been asked <br><br>" . 
+	    	//'<br><br>Access link in CMS <a href="' . $newQuestion->Link() . '">hereee</a><br><br>'
+	    	'First Name: '. $data["FirstName"] . '<br><br>
+	    	Last Name: '. $data["LastName"] . '<br><br>
+	    	Question: '. $data["Question"] . '<br><br>
+	    	ResponsePreference: '. $data["ResponsePreference"] . '<br><br>
+	    	Email: '. $data["Email"] . '<br><br>';
+	    */
+	
+		//Session::clear("message");
+				
+		//$questionHolder = QuestionHolder::get()->First();
 		//$newQuestion->setParent($questionHolder);
-		//$newQuestion->Title = $data["FirstName"] . $data["LastName"];
-		
-		
-		
+		//$newQuestion->Title = $data["FirstName"] . $data["LastName"];	
 		//$newQuestion->writeToStage('Stage');
 		//$newQuestion->publish('Stage');
-
 
 		/*Error message functionality for forms
 		$form->AddErrorMessage('ResponsePreference', "You must indicate that you've read our Terms and Conditions before registering.", 'good');
@@ -100,51 +154,25 @@ class AskYourQuestion_Controller extends Page_Controller {
 		$form->sessionMessage("Your question has been sent!", "good");
 		$form->setMessage("Your question has been sent!", 'good');*/
 		
-		Session::set("success", "1");
+		//Session::set("success", "1");
 		//$url = Director::absoluteBaseURL() .'/health-answers/ask-your-question/?success=1';
-		
-		$subject = "New Student Health Question";
-		
-    	$body = "A new question has been asked <br><br>" . 
-    	//'<br><br>Access link in CMS <a href="' . $newQuestion->Link() . '">hereee</a><br><br>'
-    	'First Name: '. $data["FirstName"] . '<br><br>
-    	Last Name: '. $data["LastName"] . '<br><br>
-    	Question: '. $data["Question"] . '<br><br>
-    	ResponsePreference: '. $data["ResponsePreference"] . '<br><br>
-    	Email: '. $data["Email"] . '<br><br>';
-    	
+ 	
+    	//include 'EmailArray.php';
 
-    	
-    	include 'EmailArray.php';
+		if ($newHealthQuestion->ResponsePreference == 1){
+    		$email = new Email($from, $to, $subject, $body2); 
+    	}
+    	else{
+    		$email = new Email($from, $to, $subject, $body1); 
+    	}
 
-    	$email = new Email(); 
-    	$email->setTo($emailArray); 	         
-    	$email->setFrom($data["Email"]); 
-    	$email->setSubject($subject); 
-    	$email->setBody($body); 
     	$email->send(); 
 
-		return Controller::redirectBack();
-		
-		
+		Controller::curr()->redirect($this->Link('?success=1'));
 		
 	}
 	
-	function Success(){
-		//$param = $this->request->allParams();
-		//$param = $this->request->param('success');
-		
-		$param = Session::get("success");
-		
-		//print_r ("PARAM IS " . $param);
-		
+ 
 
-		if ($param=="1"){
-			return true;
-		}
-		else {
-			return false;
-		}
-	}
-		
 }
+		
