@@ -9,5 +9,5 @@ After:
 # Caution: Indentation through two spaces, not tabs
 SSViewer:
   theme: 'simple'
-FileSystemPublisher:
+FilesystemPublisher:
   static_base_url: 'https://studenthealth.uiowa.edu'
