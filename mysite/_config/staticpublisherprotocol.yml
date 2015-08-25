@@ -1,0 +1,7 @@
+---
+Only:
+  environment_type: 'live'
+---
+Director:
+  alternate_protocol: 'https'
+---
