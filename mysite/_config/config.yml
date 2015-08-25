@@ -10,4 +10,5 @@ After:
 SSViewer:
   theme: 'simple'
 Director:
+  environment_type: 'live'
   alternate_protocol: 'https'
