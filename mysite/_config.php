@@ -51,6 +51,6 @@ HtmlEditorConfig::get('cms')->setOption('paste_strip_class_attributes', 'true');
 GD::set_default_quality(80);
 SiteTree::add_extension("FilesystemPublisher('cache/')");
 
-if(Director::isLive()) {
+/*if(Director::isLive()) {
 	Director::forceSSL();
-}
+}*/
