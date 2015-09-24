@@ -4,10 +4,10 @@
 	            <div class="inner">
 	              <h3>Latest Posts</h3>
 	              <% with $Page("news") %>
-	                <% loop Entries(3) %>
+	                <% loop $BlogPosts.Limit(3) %>
 	                <article>
 	                  <h4><a href="$Link">$Title</a></h4>
-	                 	 <p>$Content.LimitCharacters(60) <a href="$Link" title="Read more on &quot;{$Title}&quot;">Continue Reading</a></p>
+	                 	 <p>$Content.LimitCharacters(100) <a href="$Link" title="Read more on &quot;{$Title}&quot;">Continue Reading</a></p>
 	                </article>
 	                <% if not Last %><hr /><% end_if %>
 	                <% end_loop %>
