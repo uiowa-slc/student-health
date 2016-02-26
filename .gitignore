@@ -36,7 +36,6 @@ staticpublishqueue/
 tenon/
 cache
 flickr/
-
 staticpublisher/
 assets-OLD/
 assets.zip
@@ -44,3 +43,5 @@ betternavigator/
 lumberjack/
 maintenance-mode/
 tagfield/
+reports/
+siteconfig/
