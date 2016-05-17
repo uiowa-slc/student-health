@@ -1,10 +1,13 @@
 /* Global
 -------------------------------------------*/
 @import "../../../division-project/scss/master";
+
+//division dark theme:
+@import "../../../division-project/scss/layout/dark-theme";
+
 @import "foundation/components/grid";
 @import "foundation/components/block-grid";
 @import "foundation/components/visibility";
-
 
 /* Theme specific styles */
 @import "imports/_theme.scss";

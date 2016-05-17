@@ -339,12 +339,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/StudentLifeMarketingAndDesign/division-project.git",
-                "reference": "4c2b852600f2ed087aa943cdbe00bb47498e677e"
+                "reference": "8e98a45ea2cc9ffbc8bf035b91157f3db9761e4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/4c2b852600f2ed087aa943cdbe00bb47498e677e",
-                "reference": "4c2b852600f2ed087aa943cdbe00bb47498e677e",
+                "url": "https://api.github.com/repos/StudentLifeMarketingAndDesign/division-project/zipball/8e98a45ea2cc9ffbc8bf035b91157f3db9761e4c",
+                "reference": "8e98a45ea2cc9ffbc8bf035b91157f3db9761e4c",
                 "shasum": ""
             },
             "require": {
@@ -384,7 +384,7 @@
                 "source": "https://github.com/StudentLifeMarketingAndDesign/division-project/tree/3.3.x",
                 "issues": "https://github.com/StudentLifeMarketingAndDesign/division-project/issues"
             },
-            "time": "2016-05-16 16:26:02"
+            "time": "2016-05-17 14:51:41"
         },
         {
             "name": "md/rss-display",
@@ -1567,12 +1567,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/UndefinedOffset/SortableGridField.git",
-                "reference": "0270e32c835769e986402251f0f7de5d571ce735"
+                "reference": "372819a57a922ee5360d430d6055d3985fac87bb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/UndefinedOffset/SortableGridField/zipball/0270e32c835769e986402251f0f7de5d571ce735",
-                "reference": "0270e32c835769e986402251f0f7de5d571ce735",
+                "url": "https://api.github.com/repos/UndefinedOffset/SortableGridField/zipball/372819a57a922ee5360d430d6055d3985fac87bb",
+                "reference": "372819a57a922ee5360d430d6055d3985fac87bb",
                 "shasum": ""
             },
             "require": {
@@ -1599,7 +1599,7 @@
                 "gridfield",
                 "silverstripe"
             ],
-            "time": "2016-05-03 15:18:40"
+            "time": "2016-05-17 00:22:10"
         }
     ],
     "packages-dev": [],
