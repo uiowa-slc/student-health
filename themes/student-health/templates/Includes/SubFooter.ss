@@ -6,11 +6,9 @@
 				<a href="appointments/" class="btn text-center">Make an Appointment</a>
 				<p>
 					<strong>Academic year hours:</strong>
-					8:00am - 5:00pm M-Th<br />
-					9:00am - 5:00pm F<br />
-					<strong>Break hours:</strong>
-					8:00am - 4:30pm M-Th<br />
-				9:00am - 4:30pm F</p>
+					8am - 5pm M-Th &amp; 9am - 5pm F<br />
+					<strong>Break &amp; summer hours:</strong>
+					8am - 4:30pm M-Th &amp; 9am - 4:30pm F</p>
 				<a href="http://studenthealth.uiowa.edu/after-hours">After Hours</a>
 			</div>
 			<div class="show-for-large-up large-4 columns">
