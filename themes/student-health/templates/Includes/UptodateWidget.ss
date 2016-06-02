@@ -1,4 +1,3 @@
-<h3 class="section-title">Get Health Answers</h3>
 <div id="uptodatesearchcontainer" style="width: 160px; padding: 6px; background-color: #ffffff; text-align: left; font-family: Helvetica; font-size: 11px; line-height: 14px;">
 
 
@@ -63,14 +62,3 @@
 <input type="hidden" id="_MEDIUM" name="utm_medium" value="widget">
 <input type="hidden" id="_SOURCE" name="utm_source" value="widget"> 
 <input type="hidden" id="searchUrlBase" value="http://www.uptodate.com/patients/contents/search"></div>
-<h3 class="section-title">Quick Links</h3>
-<nav class="sec-nav">
-	<ul class="first-level">
-		<li class="app"><a href="info/parents/"> Parents / Guardians</a></li>
-		<li class="insurance"><a href="info/insurance/">Insurance</a></li>
-		<li class="nurseline"><a href="info/requirements-and-forms/#international">International Students</a></li>
-		<li class="mychart"><a href="info/my-medical-chart/">MyChart</a></li>
-		<li class="self-care"><a href="services/self-care-guide/">Self-Care Guide</a></li>
-
-	</ul>
-</nav>

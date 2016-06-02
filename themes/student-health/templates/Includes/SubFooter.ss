@@ -12,7 +12,14 @@
 				<a href="http://studenthealth.uiowa.edu/after-hours">After Hours</a>
 			</div>
 			<div class="show-for-large-up large-4 columns">
-				<a href="{$BaseHref}"><img class="tablet-herky" alt="Student Health & Wellness Logo" data-src="{$ThemeDir}/images/tabletherky.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></a>
+				<div class="row">
+					<div class="large-6 columns">
+						<a href="{$BaseHref}"><img class="tablet-herky" alt="Student Health & Wellness Logo" data-src="{$ThemeDir}/images/tabletherky.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></a>
+					</div>
+					<div class="large-6 columns">
+						<% include UptodateWidget %>
+					</div>
+				</div>
 			</div>
 			<div class="large-3 columns">
 				<p>
