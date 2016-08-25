@@ -1,3 +1,7 @@
+<% loop Children.Sort("RAND()") %>
+	<p>$Title</p>
+
+<% end_loop %>
 <footer class="subfooter clearfix" role="contentinfo">
 	<div class="row">
 		<div class="medium-6 large-5 columns">
