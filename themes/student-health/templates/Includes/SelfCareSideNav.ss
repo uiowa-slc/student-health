@@ -1,9 +1,9 @@
 <div class="widget">
-<h3>Up to date</h3>
+<h3>UpToDate</h3>
 
 Can’t find what you are looking for? The University of Iowa Student Health & Wellness subscribes to UpToDate, an online medical library created by doctors.
 
-<div id="uptodatesearchcontainer" style="width:160px; padding: 6px; background-color: #ffffff; text-align: left; font-family: Helvetica; font-size: 11px; line-height: 14px;"> If you are seeing this, you have attempted to link to the UpToDate widget but are experiencing a problem. Please visit <a href="https://www.uptodate.com/patients/refer.html" rel="nofollow">UpToDate</a> for more information. </div> <script language="javascript" type="text/javascript" src="https://www.uptodate.com/patient_search_box.js?widgetId=1&clientId="></script>
+<div id="uptodatesearchcontainer" style="width:160px; padding: 6px 0; text-align: left; font-family: Helvetica; font-size: 11px; line-height: 14px;"> If you are seeing this, you have attempted to link to the UpToDate widget but are experiencing a problem. Please visit <a href="https://www.uptodate.com/patients/refer.html" rel="nofollow">UpToDate</a> for more information. </div> <script language="javascript" type="text/javascript" src="https://www.uptodate.com/patient_search_box.js?widgetId=1&clientId="></script>
 </div>
 
  <% if Menu(2) %>

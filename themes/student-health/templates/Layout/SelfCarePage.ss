@@ -8,7 +8,7 @@
 	    	$Form
 	    </section>
 	    <section class="sec-content hide-print">
-	    	<% include SideNav %>
+	    	<% include SelfCareSideNav %>
 	    </section>
 	</div>
 </div>
