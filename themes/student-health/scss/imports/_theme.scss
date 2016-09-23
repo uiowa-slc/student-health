@@ -36,12 +36,14 @@
 	li {
 		list-style-type: none;
 		list-style-position: outside;
+
 	}
 
 	li a {
-		padding: 0px 0px 18px 45px;
-		margin-bottom: 15px;
+		padding: 0px 0px 10px 45px;
+		margin-bottom: 10px;
 		display: block;
+		font-size: 19px;
 
 		@media (min-width: $break-medium) {
 			line-height: 37px;
@@ -108,4 +110,8 @@
 
 #mc-embedded-subscribe {
 	margin-bottom: 10px;
+}
+
+.widget {
+	padding-left: 20px;
 }

@@ -15,7 +15,7 @@
 				<ul>
 					<li class="nurseline"><a href="info/requirements-and-forms/#international">International Students</a></li>
 					<li class="mychart"><a href="info/my-medical-chart/">MyChart</a></li>
-					<li class="self-care"><a href="services/self-care-guide/">Self-Care Guide</a></li>
+					<li class="self-care"><a href="services/self-care-guide/">Health Answers & Self-Care Guide</a></li>
 				</ul>
 			</div>
 		</div>
