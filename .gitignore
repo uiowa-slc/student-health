@@ -48,3 +48,6 @@ siteconfig/
 secureassets/
 segment-field/
 blog-sortable-categories/
+activedirectory/
+multivaluefield/
+queuedjobs/

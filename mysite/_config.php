@@ -4,7 +4,7 @@ global $project;
 $project = 'mysite';
 
 global $database;
-//!!! YOU HAVE TO DEFINE YOUR DATABASE FIRST, MAN. !!!
+//!!! YOU HAVE TO DEFINE YOUR DATABASE FIRST!!!
 $database = 'student-health';
 
 // Use _ss_environment.php file for configuration
@@ -54,3 +54,5 @@ SiteTree::add_extension("FilesystemPublisher('cache/')");
 if (Director::isLive()) {
 	Director::forceSSL();
 }
+
+Authenticator::set_default_authenticator('SAMLAuthenticator');
