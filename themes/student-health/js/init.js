@@ -1,1 +1,2 @@
-$('.module').equalHeights();
+// $('.module').equalHeights();
+

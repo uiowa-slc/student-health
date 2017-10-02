@@ -4,12 +4,8 @@
 			<% include LastEditedNote %>
 			<p>
 				<a href="appointments/" class="btn text-center">Make an Appointment</a>
-				<p>
-					<strong>Academic year hours:</strong>
-					8am - 5pm M-Th &amp; 9am - 5pm F<br />
-					<strong>Break &amp; summer hours:</strong>
-					8am - 4:30pm M-Th &amp; 9am - 4:30pm F</p>
-				<a href="http://studenthealth.uiowa.edu/after-hours">After Hours</a>
+			</p>
+			$SiteConfig.Hours
 			</div>
 			<div class="show-for-large-up large-4 columns">
 				<a href="{$BaseHref}"><img class="tablet-herky" alt="Student Health & Wellness Logo" data-src="{$ThemeDir}/images/tabletherky.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></a>

@@ -7140,4 +7140,5 @@ $(function() {
 
 })(jQuery);
 
-$('.module').equalHeights();
+// $('.module').equalHeights();
+
