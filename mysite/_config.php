@@ -54,5 +54,5 @@ SiteTree::add_extension("FilesystemPublisher('cache/')");
 if (Director::isLive()) {
 	Director::forceSSL();
 }
-
+Authenticator::unregister('MemberAuthenticator');
 Authenticator::set_default_authenticator('SAMLAuthenticator');
