@@ -84,3 +84,25 @@
 		padding: 0; 
 	}*/
 }
+.subfooter {
+	border-top: 1px solid #ddd;
+	padding: 20px 0;
+	font-size: 15px;
+	p{
+		margin: 0.6667em 0;
+	}
+
+}
+
+.subfooter__image{
+	max-height: 130px;
+}
+
+.subfooter__accred{
+	max-width: 74%;
+}
+
+.last-edit{
+	color: #AAA;
+  	font-size: 0.8em;
+}
