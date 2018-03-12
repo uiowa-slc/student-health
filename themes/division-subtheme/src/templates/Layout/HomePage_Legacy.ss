@@ -58,18 +58,14 @@ $Header
 					<div class="row">
 						<div class="quick-links">
 							<ul>
-								<li class="app"><a href="info/parents/"> Parents / Guardians</a></li>
-								<li class="insurance"><a href="info/insurance/">Insurance</a></li>
-							</ul>
-							
-						</div>
-						<div class="quick-links">
-							<ul>
-								<li class="nurseline"><a href="info/requirements-and-forms/#international">International Students</a></li>
-								<li class="mychart"><a href="info/my-medical-chart/">MyChart</a></li>
-								<li class="self-care"><a href="services/self-care-guide/">Health Answers & Self-Care Guide</a></li>
+								<li class="quick-links__item"><a href="info/parents/" class="quick-links__link quick-links__link--parents">For Parents / Guardians</a></li>
+								<li class="quick-links__item"><a href="info/insurance/" class="quick-links__link quick-links__link--insurance">Insurance</a></li>
+								<li class="quick-links__item"><a class="quick-links__link quick-links__link--intl"href="info/requirements-and-forms/#international">International Students</a></li>
+								<li class="quick-links__item"><a class="quick-links__link quick-links__link--mychart" href="info/my-medical-chart/">MyChart</a></li>
+								<li class="quick-links__item"><a class="quick-links__link quick-links__link--self-care"href="services/self-care-guide/">Health Answers &amp; Self-Care Guide</a></li>
 							</ul>
 						</div>
+
 					</div>
 				</div>
 			</div>
