@@ -1,0 +1,86 @@
+.quick-links {
+
+	&__header{
+		padding-bottom: 25px;
+	}
+	&__list {
+		margin: 0px;
+	}
+
+	&__item {
+		list-style-type: none;
+		list-style-position: outside;
+	}
+
+
+
+	&__link {
+		padding: 0px 0px 10px 45px;
+		margin-bottom: 10px;
+		display: block;
+		font-size: 13px;
+		background-repeat: no-repeat;
+		@media (min-width: 767px) {
+			line-height: 37px;
+			font-size: 19px;
+		}
+	}
+	&__link--small{
+		font-size: 11px;
+		background-size: 20px;
+		padding-left: 30px;
+		@media (min-width: 767px) {
+			line-height: 20px;
+			font-size: 14px;
+		}
+	}
+	&__link--parents{
+		background-image: url("../images/parents.png");
+	}
+	&__link--pharmacy{
+		background-image: url("../images/pharmacy.png");
+	}
+	&__link--insurance{
+		background-image: url("../images/insurance.png");
+	}
+	&__link--intl{
+		background-image: url("../images/intl.png");
+	}
+	&__link--mychart{
+		background-image: url("../images/computer-icon.png");
+	}
+	&__link--self-care{
+		background-image: url("../images/self-care.png");
+	}
+
+}
+
+.footer-logo-area {
+	border-top: 1px solid #ddd;
+	padding: 20px 0;
+	font-size: 15px;
+	margin-top: 60px;
+	p{
+		margin: 0.6667em 0;
+	}
+
+}
+
+.footer-logo-area__logo{
+	max-height: 130px;
+	display: block;
+	margin: auto;
+}
+
+.footer-logo-area__image{
+
+}
+
+.footer-logo-area__accred{
+	max-width: 74%;
+}
+
+.footer-logo-area__last-edit{
+	color: #AAA;
+  	font-size: 0.8em;
+}
