@@ -5,12 +5,8 @@
 			<% include LastEditedNote %>
 			<p>
 				<a href="appointments/" class="button text-center">Make an Appointment</a>
-				<p>
-					<strong>Academic year hours:</strong>
-					8am - 5pm M-Th &amp; 9am - 5pm F<br />
-					<strong>Break &amp; summer hours:</strong>
-					8am - 4:30pm M-Th &amp; 9am - 4:30pm F</p>
-				<a href="http://studenthealth.uiowa.edu/after-hours">After Hours &rarr;</a>
+			</p>
+			$SiteConfig.Hours
 			</div>
 			<div class="show-for-large columns large-5">
 
