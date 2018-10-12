@@ -1,7 +1,14 @@
 <?php
-class HealthAnswer extends BlogEntry {
 
-	static $db = array(
+use SilverStripe\Assets\Image;
+use SilverStripe\Forms\HTMLEditor\HTMLEditorField;
+use SilverStripe\Forms\TextField;
+use SilverStripe\Forms\DateField;
+use SilverStripe\Control\Email\Email;
+use SilverStripe\Blog\Model\BlogPost;
+class HealthAnswer extends BlogPost {
+
+	private static $db = array(
 		"FirstName"          => 'Text',
 		"LastName"           => 'Text',
 		"ResponsePreference" => "Text",
@@ -13,7 +20,7 @@ class HealthAnswer extends BlogEntry {
 
 	);
 
-	static $has_one = array(
+	private static $has_one = array(
 	);
 
 	private static $singular_name = 'Health Answer Page';
@@ -32,7 +39,7 @@ class HealthAnswer extends BlogEntry {
 		$fields->removeByName("PhotosBy");
 		$fields->removeByName("PhotosByEmail");
 		$fields->removeByName("ExternalURL");
-		$fields->removeByName("Image");
+		$fields->removeByName(Image::class);
 
 		$fields->addFieldToTab('Root.Main', new HTMLEditorField('Question'));
 		$fields->addFieldToTab('Root.Main', new HTMLEditorField('Answer'));
@@ -44,7 +51,7 @@ class HealthAnswer extends BlogEntry {
 		$dateField->setConfig('dateformat', 'MM/dd/YYYY');
 
 		$fields->addFieldToTab('Root.QuestionInfo', new TextField('ResponsePreference', 'Response Preference'));
-		$fields->addFieldToTab('Root.QuestionInfo', new TextField('Email'));
+		$fields->addFieldToTab('Root.QuestionInfo', new TextField(Email::class));
 		$fields->addFieldToTab('Root.QuestionInfo', new TextField('QuestionType', 'Question Type'));
 
 		return $fields;
@@ -72,8 +79,5 @@ class HealthAnswer extends BlogEntry {
 			return false;
 		}
 	}
-
-}
-class HealthAnswer_Controller extends BlogPost_Controller {
 
 }

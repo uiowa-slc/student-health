@@ -1,7 +1,6 @@
----
-Only:
-  environment_type: 'live'
----
-Director:
-  alternate_protocol: 'https'
----
+# ---
+# Only:
+#   environment_type: 'live'
+# ---
+# SilverStripe\Control\Director:
+#   alternate_protocol: https

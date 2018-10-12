@@ -54,7 +54,6 @@
 	}
 
 }
-
 .footer-logo-area {
 	border-top: 1px solid #ddd;
 	padding: 20px 0;
@@ -67,15 +66,10 @@
 }
 
 .footer-logo-area__logo{
-	max-height: 130px;
+	max-height: 160px;
 	display: block;
 	margin: auto;
 }
-
-.footer-logo-area__image{
-
-}
-
 .footer-logo-area__accred{
 	max-width: 74%;
 }
@@ -83,4 +77,29 @@
 .footer-logo-area__last-edit{
 	color: #AAA;
   	font-size: 0.8em;
+}
+
+#mc_embed_signup form {
+	padding: 0;
+	width: 280px;
+}
+
+#mc_embed_signup input {
+	border-color: rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.15) rgba(0, 0, 0, 0.25);
+}
+#mc_embed_signup .clear{
+	clear: none;
+	display: inline;
+	float: none;
+}
+
+.footer-logo-area {
+	border-top: 1px solid #ddd;
+	padding: 20px 0;
+	font-size: 15px;
+	margin-top: 60px;
+	p{
+		margin: 0.6667em 0;
+	}
+
 }

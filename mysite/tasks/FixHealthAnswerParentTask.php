@@ -1,4 +1,9 @@
 <?php
+
+use SilverStripe\Control\Director;
+use SilverStripe\Security\Permission;
+use SilverStripe\Security\Security;
+use SilverStripe\Dev\BuildTask;
 class FixHealthAnswerParent extends BuildTask {
  
     protected $title = 'Fix Health Answers Parents';
