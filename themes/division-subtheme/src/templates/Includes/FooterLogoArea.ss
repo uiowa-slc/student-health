@@ -39,7 +39,6 @@
 					<a href="http://www.aaahc.org/" target="_blank"><img class="footer-logo-area__accred" alt="Accredited by the Accreditation Association for Ambulatory Health Care, Inc." src="{$ThemeDir}/src/images/aaahc.jpg"/></a>
 					<a href="https://www.healthonnet.org/HONcode/Conduct.html?HONConduct747124" target="_blank"><img class="hon" alt="HON Code Certified on 10/2013" src="https://www.honcode.ch/HONcode/Seal/HONConduct747124_s.gif"/></a>
 				</p>
-				<p>This site complies with the <a href="http://www.healthonnet.org/HONcode/Conduct.html" target="_blank"> HONcode standard for trustworthy health information:</a>  <a href="https://www.healthonnet.org/HONcode/Conduct.html?HONConduct747124" target="_blank"> verify here</a>.</p>
 			</div>
 		</div>
 	</footer>
