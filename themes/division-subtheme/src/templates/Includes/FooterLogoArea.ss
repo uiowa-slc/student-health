@@ -5,19 +5,15 @@
 			<% include LastEditedNote %>
 			<p>
 				<a href="appointments/" class="button text-center">Make an Appointment</a>
-				<p>
-					<strong>Academic year hours:</strong>
-					8am - 5pm M-Th &amp; 9am - 5pm F<br />
-					<strong>Break &amp; summer hours:</strong>
-					8am - 4:30pm M-Th &amp; 9am - 4:30pm F</p>
-				<a href="http://studenthealth.uiowa.edu/after-hours">After Hours &rarr;</a>
+			</p>
+			$SiteConfig.Hours
 			</div>
 			<div class="show-for-large columns large-5">
 
 				<div class="row">
 
 					<div class="large-7 columns">
-			
+
 						<div class="quick-links">
 							<ul>
 								<li class="quick-links__item"><a href="info/parents/" class="quick-links__link quick-links__link--small quick-links__link--parents"> For Parents / Guardians</a></li>
@@ -31,8 +27,7 @@
 					</div>
 
 					<div class="large-5 columns">
-
-				<a href="{$BaseHref}"><img class="footer-logo-area__logo" alt="Student Health & Wellness Logo" src="{$ThemeDir}/src/images/SHW-Stacked.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"/></a>
+						<a href="{$BaseHref}"><img class="footer-logo-area__logo" alt="Student Health & Wellness Logo" src="{$ThemeDir}/dist/images/SHW-Stacked.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"/></a>
 					</div>
 
 				</div>
@@ -40,10 +35,9 @@
 			</div>
 			<div class="columns large-3">
 				<p>
-					<a href="http://www.aaahc.org/" target="_blank"><img class="footer-logo-area__accred" alt="Accredited by the Accreditation Association for Ambulatory Health Care, Inc." src="{$ThemeDir}/src/images/aaahc.jpg"/></a>
-					<a href="https://www.healthonnet.org/HONcode/Conduct.html?HONConduct747124" target="_blank"><img class="hon" alt="HON Code Certified on 10/2013" src="https://www.honcode.ch/HONcode/Seal/HONConduct747124_s.gif"/></a>
+					Medical services: <br />
+					<a href="http://www.aaahc.org/" target="_blank"><img class="footer-logo-area__accred" alt="Accredited by the Accreditation Association for Ambulatory Health Care, Inc." src="{$ThemeDir}/dist/images/aaahc.jpg"/></a>
 				</p>
-				<p>This site complies with the <a href="http://www.healthonnet.org/HONcode/Conduct.html" target="_blank"> HONcode standard for trustworthy health information:</a>  <a href="https://www.healthonnet.org/HONcode/Conduct.html?HONConduct747124" target="_blank"> verify here</a>.</p>
 			</div>
 		</div>
 	</footer>
