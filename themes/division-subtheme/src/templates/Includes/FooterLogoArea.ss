@@ -27,7 +27,7 @@
 					</div>
 
 					<div class="large-5 columns">
-						<a href="{$BaseHref}"><img class="footer-logo-area__logo" alt="Student Health & Wellness Logo" src="{$ThemeDir}/dist/images/SHW-Stacked.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"/></a>
+						<a href="{$BaseHref}"><img class="footer-logo-area__logo dp-lazy" alt="Student Health & Wellness Logo" data-original="{$ThemeDir}/dist/images/sh-logo.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"/></a>
 					</div>
 
 				</div>
@@ -35,8 +35,7 @@
 			</div>
 			<div class="columns large-3">
 				<p>
-					Medical services: <br />
-					<a href="http://www.aaahc.org/" target="_blank"><img class="footer-logo-area__accred" alt="Accredited by the Accreditation Association for Ambulatory Health Care, Inc." src="{$ThemeDir}/dist/images/aaahc.jpg"/></a>
+					<a href="http://www.aaahc.org/" target="_blank"><img class="footer-logo-area__accred dp-lazy" alt="Accredited by the Accreditation Association for Ambulatory Health Care, Inc." data-original="{$ThemeDir}/dist/images/aaahc.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></a>
 				</p>
 			</div>
 		</div>
