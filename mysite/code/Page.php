@@ -1,5 +1,5 @@
 <?php
-
+use SilverStripe\Assets\Image;
 use SilverStripe\CMS\Model\SiteTree;
 
 class Page extends SiteTree {
@@ -9,7 +9,7 @@ class Page extends SiteTree {
 	);
 
 	private static $has_one = array(
-		'Picture' => 'Image',
+		'Picture' => Image::class,
 	);
 
 	private static $many_many = array(
