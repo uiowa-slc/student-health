@@ -8,11 +8,9 @@
 			</p>
 			$SiteConfig.Hours
 			</div>
-			<div class="show-for-large columns large-5">
+			<div class="show-for-large columns large-4">
 
-				<div class="row">
 
-					<div class="large-7 columns">
 
 						<div class="quick-links">
 							<ul>
@@ -24,19 +22,13 @@
 							</ul>
 						</div>
 
-					</div>
-
-					<div class="large-5 columns">
-						<a href="{$BaseHref}"><img class="footer-logo-area__logo dp-lazy" alt="Student Health & Wellness Logo" data-original="{$ThemeDir}/dist/images/sh-logo.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"/></a>
-					</div>
-
-				</div>
 
 			</div>
-			<div class="columns large-3">
-				<p>
-					<a href="http://www.aaahc.org/" target="_blank"><img class="footer-logo-area__accred dp-lazy" alt="Accredited by the Accreditation Association for Ambulatory Health Care, Inc." data-original="{$ThemeDir}/dist/images/aaahc.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></a>
-				</p>
-			</div>
+            <div class="large-4 columns">
+                <p>
+                    <a href="http://www.aaahc.org/" target="_blank"><img class="footer-logo-area__accred dp-lazy" alt="Accredited by the Accreditation Association for Ambulatory Health Care, Inc." data-original="{$ThemeDir}/dist/images/aaahc.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></a>
+                </p>
+            </div>
+
 		</div>
 	</footer>
