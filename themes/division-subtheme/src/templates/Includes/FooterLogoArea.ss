@@ -26,7 +26,7 @@
 			</div>
             <div class="large-4 columns">
                 <p>
-                    <a href="http://www.aaahc.org/" target="_blank"><img class="footer-logo-area__accred dp-lazy" alt="Accredited by the Accreditation Association for Ambulatory Health Care, Inc." data-original="{$ThemeDir}/dist/images/aaahc.jpg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></a>
+                    <a href="http://www.aaahc.org/" target="_blank"><img class="footer-logo-area__accred dp-lazy" alt="Accredited by the Accreditation Association for Ambulatory Health Care, Inc." data-original="{$ThemeDir}/dist/images/aaahc.png" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" /></a>
                 </p>
             </div>
 
