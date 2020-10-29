@@ -17,7 +17,7 @@
 								<li class="quick-links__item"><a href="info/parents/" class="quick-links__link quick-links__link--small quick-links__link--parents"> For Parents / Guardians</a></li>
 								<li class="quick-links__item"><a href="info/insurance/" class="quick-links__link quick-links__link--insurance quick-links__link--small">Insurance</a></li>
 								<li class="quick-links__item"><a class="quick-links__link quick-links__link--intl quick-links__link--small" href="info/requirements-and-forms/#international">International Students</a></li>
-								<li class="quick-links__item"><a class="quick-links__link quick-links__link--mychart quick-links__link--small" href="info/my-medical-chart/">MyChart</a></li>
+								<li class="quick-links__item"><a class="quick-links__link quick-links__link--mychart quick-links__link--small" href="https://mychart.uihealthcare.org/mychart/" target="_blank">MyChart</a></li>
 								<li class="quick-links__item"><a class="quick-links__link quick-links__link--self-care quick-links__link--small" href="services/self-care-guide/">Health Answers &amp; Self-Care Guide</a></li>
 							</ul>
 						</div>
